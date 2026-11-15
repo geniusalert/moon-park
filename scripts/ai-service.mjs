@@ -1,10 +1,13 @@
 import {readFile} from 'node:fs/promises';
 import {parseEnv} from 'node:util';
+import {dirname,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {PLAN_SCHEMA,validateAIPlan} from '../src/ai-plan.js';
 import {MISSION_SITES,POLAR_DESTINATIONS} from '../src/mission-catalogue.js';
 
+const ROOT=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 export async function metaConfiguration(){
- let file={};try{file=parseEnv(await readFile('.env','utf8'));}catch(e){if(e.code!=='ENOENT')throw new Error('Unable to read AI configuration');}
+ let file={};try{file=parseEnv(await readFile(resolve(ROOT,'.env'),'utf8'));}catch(e){if(e.code!=='ENOENT')throw new Error('Unable to read AI configuration');}
  const env={...file,...process.env};
  const legacy=env.META_API_FORMAT==='llama';
  const base=(env.META_API_BASE_URL||(legacy?'https://api.llama.com/v1':'https://api.meta.ai/v1')).replace(/\/$/,'');
@@ -12,7 +15,7 @@ export async function metaConfiguration(){
  return {key:env.META_API_KEY||env.MODEL_API_KEY||env.LLAMA_API_KEY||'',base,legacy,model:env.META_MODEL||(legacy?'Llama-4-Maverick-17B-128E-Instruct-FP8':'muse-spark-1.3')};
 }
 let cataloguePromise;
-async function catalogue(){return cataloguePromise??= (async()=>{const base=JSON.parse(await readFile('data/mission-data.json','utf8'));const manifest=JSON.parse(await readFile('.'+base.candidates.url,'utf8'));return [...base.sites.map(p=>({id:p.id,name:p.name,latitude:p.latitude,longitude:p.longitude,kind:'benchmark'})),...manifest.regions.flatMap(r=>r.points),...POLAR_DESTINATIONS,...MISSION_SITES];})();}
+async function catalogue(){return cataloguePromise??= (async()=>{const base=JSON.parse(await readFile(resolve(ROOT,'data/mission-data.json'),'utf8'));const manifest=JSON.parse(await readFile(resolve(ROOT,base.candidates.url.replace(/^\/+/,'')),'utf8'));return [...base.sites.map(p=>({id:p.id,name:p.name,latitude:p.latitude,longitude:p.longitude,kind:'benchmark'})),...manifest.regions.flatMap(r=>r.points),...POLAR_DESTINATIONS,...MISSION_SITES];})();}
 export function validateImages(images=[]){
  if(!Array.isArray(images)||images.length>2)throw new Error('Attach up to two images');
  return images.map(image=>{if(typeof image?.dataURL!=='string'||!/^data:image\/(png|jpeg|webp);base64,[A-Za-z0-9+/]+=*$/.test(image.dataURL))throw new Error('Attach PNG, JPEG or WebP images');const bytes=Buffer.from(image.dataURL.split(',')[1],'base64');if(bytes.length>1.4*1024*1024||bytes.length<12)throw new Error('Each image must be between 12 bytes and 1.4 MB');const type=image.dataURL.slice(5,image.dataURL.indexOf(';'));const valid=type==='image/png'?bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])):type==='image/jpeg'?bytes[0]===255&&bytes[1]===216&&bytes[2]===255:bytes.toString('ascii',0,4)==='RIFF'&&bytes.toString('ascii',8,12)==='WEBP';if(!valid)throw new Error('Image bytes do not match the declared format');return image.dataURL;});
