@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": 10,
+  "previousArchive": "moon-park-research-v0.9.zip",
+  "previousArchiveSha256": "47c12fb5f809efaf9933c3e63fafa1e07e52f00ff61049d2ef6368b280889005",
+  "previousValidPixels": 3293646,
+  "currentValidPixels": 4004001,
+  "newlyAvailablePixels": 710355,
+  "priorPixelsUnchanged": true,
+  "previousRetainedBlocks": 187,
+  "currentRetainedBlocks": 227,
+  "networkBytesThisRun": 10485760,
+  "sourceFullBytes": 767209421,
+  "scope": "Completeness and retained-byte transition for the requested context crop. The full master file was not downloaded; registration is not established."
+}

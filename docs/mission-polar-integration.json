@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-13",
+  "status": "passed",
+  "request": {
+    "latitude": -89.4390257245831,
+    "longitude": -137.14401541244482,
+    "startUTC": "2027-01-01T00:00:00Z",
+    "duration": 1,
+    "delay": 0,
+    "height": 2,
+    "analysisModel": "terrain"
+  },
+  "resultId": "7716345b6c8f749c9daefe99c06a739bac3c62be10cb0e89ed2eae000dc64e0c",
+  "raysPerHeight": 2880,
+  "horizonModel": {
+    "version": "airless-lola-v2",
+    "refraction": "none",
+    "effectiveRadiusFactor": 1,
+    "referenceRadiusM": 1737400.0,
+    "groundElevationM": 1959.154479980481,
+    "observerHeightDefinition": "Radial metres above interpolated local terrain; not height above datum",
+    "localVertical": "Radial vector, not slope normal or gravity plumb line",
+    "azimuthConvention": "North=0, east=90; clockwise; longitude zero reference at pole",
+    "azimuthStepDeg": 0.125,
+    "maxRadiusM": 180000.0,
+    "rayStepM": "1 m through 200 m; 10 m through 12 km; 60 m through 180 km",
+    "terrainInterpolation": "Bilinear native DEM pixel centres; all four support cells required",
+    "datumSphereIsObstruction": false,
+    "remoteEnvelope": {
+      "maxElevationM": 12000.0,
+      "status": "Conditional engineering assumption; not global terrain validation"
+    },
+    "heights": {
+      "2": {
+        "smoothLocalSphere": {
+          "elevationDeg": -0.08688759700029806,
+          "surfaceDistanceM": 2637.6940594503744,
+          "lineOfSightM": 2637.6960814164927
+        },
+        "maxRadialRefinementDeltaDeg": 0.1124283400849031,
+        "maxAngularMidpointDeltaDeg": 0.021179452472623872,
+        "remoteEnvelopeExcludedRays": 0,
+        "totalRays": 2880
+      },
+      "5": {
+        "smoothLocalSphere": {
+          "elevationDeg": -0.13738125474022334,
+          "surfaceDistanceM": 4170.55750208954,
+          "lineOfSightM": 4170.565494606194
+        },
+        "maxRadialRefinementDeltaDeg": 0.04132558229412697,
+        "maxAngularMidpointDeltaDeg": 0.02154320294821277,
+        "remoteEnvelopeExcludedRays": 0,
+        "totalRays": 2880
+      },
+      "10": {
+        "smoothLocalSphere": {
+          "elevationDeg": -0.19428620096211996,
+          "surfaceDistanceM": 5898.051917688637,
+          "lineOfSightM": 5898.074523910292
+        },
+        "maxRadialRefinementDeltaDeg": 0.01494888388149973,
+        "maxAngularMidpointDeltaDeg": 0.02214944241362371,
+        "remoteEnvelopeExcludedRays": 0,
+        "totalRays": 2880
+      }
+    },
+    "limitations": [
+      "Finite ray sampling can miss sub-grid terrain and features between rays. Refinement deltas are diagnostics, not calibrated error bounds.",
+      "LOLA elevations and registration have measurement uncertainty; no stochastic confidence is claimed.",
+      "Terrain within one metre, lander structures and boulders below DEM resolution are not modeled.",
+      "Beyond-radius exclusion is conditional on the stated maximum-elevation envelope."
+    ]
+  },
+  "groundResolutionM": 5,
+  "displayPixelM": 50,
+  "ephemerisProvenance": {
+    "sun": {
+      "engine": "JPL Horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.961154479980481%27&START_TIME=%272027-01-01+00%3A00%3A00%27&STOP_TIME=%272027-01-04+01%3A10%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+      "sha256": "6d2c1457d90a5b1f5e7e91dc0105d099ae06032b754ad0d802f31dfa0c1828a4",
+      "parameters": {
+        "format": "json",
+        "COMMAND": "'10'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.961154479980481'",
+        "START_TIME": "'2027-01-01 00:00:00'",
+        "STOP_TIME": "'2027-01-04 01:10:00'",
+        "STEP_SIZE": "'10 m'",
+        "QUANTITIES": "'4,20'",
+        "CSV_FORMAT": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CAL_FORMAT": "'CAL'",
+        "TIME_DIGITS": "'SECONDS'"
+      },
+      "coordinateSpecific": true,
+      "frame": "MOON_ME_DE421",
+      "reportedFrame": "Horizons MEAN_ME",
+      "refraction": "none",
+      "observerAltitudeM": 1961.154479980481,
+      "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+      "cacheHit": false,
+      "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+    },
+    "earth": {
+      "engine": "JPL Horizons",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.961154479980481%27&START_TIME=%272027-01-01+00%3A00%3A00%27&STOP_TIME=%272027-01-04+01%3A10%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+      "sha256": "4ac8141569fd826db0ee2fdba17786b98f2f501de1ddce2081324eeab7ab94b6",
+      "parameters": {
+        "format": "json",
+        "COMMAND": "'399'",
+        "OBJ_DATA": "'NO'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.961154479980481'",
+        "START_TIME": "'2027-01-01 00:00:00'",
+        "STOP_TIME": "'2027-01-04 01:10:00'",
+        "STEP_SIZE": "'10 m'",
+        "QUANTITIES": "'4,20'",
+        "CSV_FORMAT": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CAL_FORMAT": "'CAL'",
+        "TIME_DIGITS": "'SECONDS'"
+      },
+      "coordinateSpecific": true,
+      "frame": "MOON_ME_DE421",
+      "reportedFrame": "Horizons MEAN_ME",
+      "refraction": "none",
+      "observerAltitudeM": 1961.154479980481,
+      "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+      "cacheHit": false,
+      "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+    }
+  },
+  "performance": {
+    "seconds": 65.47666810000374,
+    "peakWorkingSetBytes": 580980736,
+    "horizonCacheHit": false,
+    "observationCacheHit": false
+  }
+}

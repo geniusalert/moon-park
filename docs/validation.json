@@ -1,0 +1,238 @@
+{
+  "generatedAt": "2026-11-12T17:06:16.143Z",
+  "checks": [
+    {
+      "name": "Site01 sun Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 sun ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site01 earth Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 earth ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site01 terrain source hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 observer-height horizon monotonicity",
+      "pass": true
+    },
+    {
+      "name": "Site01 regional horizon cannot remove a sampled local obstruction",
+      "pass": true
+    },
+    {
+      "name": "Site01 all rays reach 180 km",
+      "pass": true
+    },
+    {
+      "name": "Site01 Horizons elevation cross-check within 0.001 degree sanity threshold",
+      "pass": true
+    },
+    {
+      "name": "Site04 sun Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 sun ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site04 earth Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 earth ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site04 terrain source hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 observer-height horizon monotonicity",
+      "pass": true
+    },
+    {
+      "name": "Site04 regional horizon cannot remove a sampled local obstruction",
+      "pass": true
+    },
+    {
+      "name": "Site04 all rays reach 180 km",
+      "pass": true
+    },
+    {
+      "name": "Site04 Horizons elevation cross-check within 0.001 degree sanity threshold",
+      "pass": true
+    },
+    {
+      "name": "Site11 sun Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 sun ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site11 earth Horizons reference hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 earth ten-minute cadence",
+      "pass": true
+    },
+    {
+      "name": "Site11 terrain source hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 observer-height horizon monotonicity",
+      "pass": true
+    },
+    {
+      "name": "Site11 regional horizon cannot remove a sampled local obstruction",
+      "pass": true
+    },
+    {
+      "name": "Site11 all rays reach 180 km",
+      "pass": true
+    },
+    {
+      "name": "Site11 Horizons elevation cross-check within 0.001 degree sanity threshold",
+      "pass": true
+    },
+    {
+      "name": "regional crop source hash",
+      "pass": true
+    },
+    {
+      "name": "NAIF kernel data\\raw\\kernels\\naif0012.tls hash",
+      "pass": true
+    },
+    {
+      "name": "NAIF kernel data\\raw\\kernels\\de421.bsp hash",
+      "pass": true
+    },
+    {
+      "name": "NAIF kernel data\\raw\\kernels\\moon_pa_de421_1900-2050.bpc hash",
+      "pass": true
+    },
+    {
+      "name": "NAIF kernel data\\raw\\kernels\\moon_080317.tf hash",
+      "pass": true
+    }
+  ],
+  "sites": [
+    {
+      "id": "Site01",
+      "coordinates": [
+        -137.14401541244482,
+        -89.4390257245831
+      ],
+      "minimumRayCoverageM": 180000,
+      "temporalSensitivity": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72,
+          "overlap": 59.333333333333336,
+          "longestDark": 0,
+          "modelPass": true
+        },
+        {
+          "stepMinutes": 20,
+          "sunHours": 72,
+          "overlap": 59.333333333333336,
+          "longestDark": 0,
+          "modelPass": true
+        },
+        {
+          "stepMinutes": 30,
+          "sunHours": 72,
+          "overlap": 59,
+          "longestDark": 0,
+          "modelPass": true
+        }
+      ]
+    },
+    {
+      "id": "Site04",
+      "coordinates": [
+        -161.90779352654087,
+        -89.7908003122825
+      ],
+      "minimumRayCoverageM": 180000,
+      "temporalSensitivity": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72,
+          "overlap": 0,
+          "longestDark": 0,
+          "modelPass": false
+        },
+        {
+          "stepMinutes": 20,
+          "sunHours": 72,
+          "overlap": 0,
+          "longestDark": 0,
+          "modelPass": false
+        },
+        {
+          "stepMinutes": 30,
+          "sunHours": 72,
+          "overlap": 0,
+          "longestDark": 0,
+          "modelPass": false
+        }
+      ]
+    },
+    {
+      "id": "Site11",
+      "coordinates": [
+        -68.39564496957904,
+        -88.6646268225162
+      ],
+      "minimumRayCoverageM": 180000,
+      "temporalSensitivity": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72,
+          "overlap": 57,
+          "longestDark": 0,
+          "modelPass": true
+        },
+        {
+          "stepMinutes": 20,
+          "sunHours": 72,
+          "overlap": 57,
+          "longestDark": 0,
+          "modelPass": true
+        },
+        {
+          "stepMinutes": 30,
+          "sunHours": 72,
+          "overlap": 57,
+          "longestDark": 0,
+          "modelPass": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "SPICE/Horizons comparison is not independent observational truth",
+    "Terrain is finite-radius and spatial convergence remains incomplete",
+    "Terrain-clone statistics and human usability remain unvalidated"
+  ],
+  "recoveryMilliseconds": 56.55970000000002,
+  "recovery": {
+    "tested": 63,
+    "passing": 42
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "application": "Moon Park alignment workbench",
+  "version": "0.9.0",
+  "createdAt": "2026-11-11T13:31:57.048Z",
+  "software": {
+    "index.html": "b37865372dd91126adb3da374f4f647d3bf4156abacc609857284560fb0410fc",
+    "package-lock.json": "2989201fe43df02de1f54d69f347cad88ba359f546d13f3e7fa55ed1802344cf",
+    "package.json": "e2eeef24dab41fb58f20aab00871a32dd0e3f1206bf606a92b44ef4cebea9f75",
+    "requirements.txt": "3719eb22fe96106702d12038d0769baa883180e64646484b07889c12fcc5b19f",
+    "scripts/benchmark.mjs": "2d58e7f0b2aa46997c5d55c93d3312bf08dd401152acf097ecfc923478e94ad5",
+    "scripts/build_presentation.mjs": "d9a5261f1cb4efa27c18a1b7dd1bb57d6bdec1236be8d567b90a93d0522c2bc0",
+    "scripts/build_science.py": "fd1021b3f42b03594829f9983746bc14ec098a5180382970232fb230cb452514",
+    "scripts/build_uncertainty.py": "c327aebcab7c51f10b394f032ee161b54f0a7ccf30e7c93dd858782d608e6f64",
+    "scripts/candidate_geometry.py": "b61a9ac6e54cc51cc6f1f26596ba9a3dc4f29c58600f6fefd2372a1654c7656d",
+    "scripts/compare_terrain.mjs": "36d324939aa808a1b2d296c6e6ae2458e6c078371c76639f70f0330b8a22265b",
+    "scripts/discover_regional.py": "760a5010f727915a6ae72806573dd23ac7c1d332c24e6e6af037970799452098",
+    "scripts/export_image_requests.mjs": "b7a7cdb59199e19aac143b9f1456c3f01a8ebdca72b579e90e2b9e048268a41c",
+    "scripts/extend_horizons.py": "83f90a3657d3df5e81f3732535d688e98434d8e5040e7b2b8dc32289c1ed5ed2",
+    "scripts/fetch_clones.py": "c9ab584e238f6d79e6dea2d533e68f389bbc0cc1f1e0f89bbc9b6584d75b9511",
+    "scripts/fetch_ephemeris.py": "461f78cd7d1b342e85faa5a4782f6482819b60284d51d723654294e016efe40e",
+    "scripts/fetch_kernels.py": "fc03cee9ef61f27dc7181832ffd52f27e42e244fd7c76939211c4c6732d90a48",
+    "scripts/fetch_regional.py": "978ef2f241240ad6563cd26749073a8f0f838c78d0a50a0c371a7b9ce8fd4e38",
+    "scripts/inspect_sources.py": "a8a907225adbf644df4609f40d8455635e5a88972e3666a2659e3da293a933dd",
+    "scripts/package_release.py": "8f6a6de4c04b0bcd4b69bc3b6725427fa71d4331a4e952d08d617cf11cc069ef",
+    "scripts/prepare_candidates.py": "02e39de081171348cf71c4cb4cd0bc278444bf35a2b874f91efca262c67ba806",
+    "scripts/prepare_context_imagery.py": "a253e267de46432e6470eb5b12a2a70ca9c1130933a48a46df269d15b60e3fdd",
+    "scripts/prepare_ephemerides.py": "fcf8afc0b16884264ce28cccc74d6522b6456aac920a8a4dc1a22a830e2bd555",
+    "scripts/prepare_imagery_catalog.py": "95202e9b142029ea9a4196a90293a9e6648f64bfadccf8d5d63bf6085e41ea1d",
+    "scripts/prepare_partial_context.py": "6df0e044cca87dfb668bb9f7cffce87b0085320577e125cefc55bc40aa0a35b9",
+    "scripts/prepare_registration.py": "0b0beb7fa82b9eb63e9b6b3be7752e16bf64f5b6d24adf6b144fe575e4bcfbae",
+    "scripts/prepare_spatial.py": "82d829f77ba43bc254c4c71b79517f5c0a7eac271ae472b50030ca6473117dd5",
+    "scripts/prepare_spice.py": "5e028bd499739b2a138e3a86d88de1df1be526a464b51baeb7ec31b66a5acc8f",
+    "scripts/prepare_terrain.py": "c6d4ad2eed73a693e26734acd665eb80ce9b41ab76e176f973d28675356eb581",
+    "scripts/prepare_variants.py": "8be442fea0c21b4fad5007122b7174e55725b05e2657e8eaae7595d6d4a5d222",
+    "scripts/refine_uncertainty.py": "1cd6789fd4c65c300d9fdf6ee7dc25091e38e000ff07301a44f5031037e6b4d5",
+    "scripts/serve.mjs": "1bfee2f33df94f660841ddbacbeba89d0bfd2a5098028a4ae6683031b105a5d8",
+    "scripts/snapshot_baseline.mjs": "527f606d71381b34774290e20901901e6920e3b641829a571e616acaaf93d3dc",
+    "scripts/stamp_build.py": "07cebd1a8ecdd40f14b63b25af27983abc5cdd0d5f0b445754a01de99eb3d05b",
+    "scripts/summarize_pilot.py": "e91abf3045128becb388ea240598a403cb98518c9d6303914432f76531284f7b",
+    "scripts/validate_candidate_science.py": "9c668e5beacbd1005f300f0e0776bc0eef5a18ef19e2e835527c6654ec7450da",
+    "scripts/validate_candidates.mjs": "5d9c4ed198517b04386760306d4826463c3f8e2f8443d0c65157f1d9da978721",
+    "scripts/validate_convergence.py": "191f32d4c09ebd01307819e0f49f48c988965504afe4746829dbc47a9840832f",
+    "scripts/validate_data.mjs": "bc696570e89183f46a6894cac4655025ff6a6fdf0171163f83ffd87de068052c",
+    "scripts/validate_imagery.py": "ef4158fe1ef43ee6b08e07f9b40d73d8de45a562bd9f2ac3fbadc103c7e2fc74",
+    "scripts/validate_registration.py": "55ed62325ca049b80e14b08500129b6f99e3606926f14191503ac3d9aaec2f95",
+    "scripts/validate_spatial.mjs": "b32b90fcc6b9011ff135cd4a2665e1147a432241e51ddbdadee273978d750cce",
+    "scripts/validate_trace.mjs": "63166a43395875d62d4a7fba517d60f9950bfd8a30d2611633d19728d41a0a14",
+    "scripts/validate_uncertainty.mjs": "10a5d17e8ecd6ba274c75c1716db4bc931f6e574c4cd51603adf61ad4f164294",
+    "scripts/vendor_three.mjs": "88b215fc2967e011eecebff15db0ce9c230206abea54e759d2aafaf03c8dfe80",
+    "src/additions.css": "e5a6938edabbec73a4f320852254f322a825fa72642dbfde1d2d41fe35f42447",
+    "src/candidate-model.js": "9dbc4b024d6e786e211e35e82f03414257175f46d4b69d1ff74bb427fbbb5977",
+    "src/dashboard.js": "03ebc7803ed8e868ca22d372dbcc9b217b67c911031b3f2ce9e22c133a231ccf",
+    "src/engine.js": "10778b2965ca8e2eaf4fe3244cc8dfb53155def2e4226cb020874acdcdbf342a",
+    "src/horizon-trace.js": "22458584b69d03be3764642f03d305ea91d0a60d35fb06124bf82c84674dc2e8",
+    "src/imagery-context.js": "637d2c2c7ee52fe8fe65bf9787d4188b8085e719ac4f95be7c3203f34ac6d2f5",
+    "src/mission.js": "2bcd8a0edd6c5989598379d95dd0a7aa8a00f3d198833122ea944cb925a3e91d",
+    "src/pilot.js": "cb8d4031f8d50c82f69bb1600a56f3e3ead69dba004c2b5cbb8752eee23d75ef",
+    "src/region-study.js": "f6449092b1c655f456e912fbc761b6aa357bf7fc81aeeb99db06c794f70a5c0a",
+    "src/registration-model.js": "8c656d33cd477fa59e19513248c19f075c4a97dad6d05003321c857a75c0ee6d",
+    "src/registration.css": "910e6c2963d3da5db8e9b07d54ed822cb0dd46c28639d79e464d5372c006901d",
+    "src/registration.js": "45a925e02e57e80a4c73ecde0d248ec2a7e6a304b299d7f339e3300acc2c5049",
+    "src/robustness.js": "7e6678f15af5948d87707a020817f21dc5d109113329b37ec1968be335afa355",
+    "src/spatial-math.js": "812cf076bcc62e0fca72811b856386f90eaa5c1858cd6c5bc86790f2a1203874",
+    "src/spatial-view.js": "93f97448f378fc5cdac08c34881e19fd9b206efeb20aa5f405a0073b2218862a",
+    "src/spatial.css": "336e099b9febef977aa690d3abd9fd76322f1a18d2e91c4414336458ad6d4314",
+    "src/style.css": "dd8c3b9959d30579534c150e6152fce9606ded1279d809a1d2a507a2c698f6a4",
+    "src/vendor/OrbitControls.js": "e7fca2fe9e7670a828af9b28084669a5909445b7f36f1f26cee9bf8f2961c32c",
+    "src/vendor/THREE-LICENSE.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "src/vendor/three.core.js": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578",
+    "src/vendor/three.module.js": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341",
+    "src/vendor/manifest.json": "ce96131b66b8d0507c3d35fc196f2e6eed2227a9477f0a682c76481c7a0edd29",
+    "pilot.html": "3335f474909f0857c4ece6cd7c8a96a3db2b928ac9fb1d446ae300b42b839742",
+    "registration.html": "48e6871ba723ae10d489851b1c98bec54ca8f653fc3b5723767c2185d14934f7"
+  },
+  "registrationSource": {
+    "url": "/data/registration/catalog-b874148b975d.json",
+    "sha256": "b874148b975d28ea912de23183630ddc603562c6ca0f561aaa78925251d8eaf8",
+    "entryCount": 3,
+    "scope": "Unregistered inspection assets; no shifts are applied to images or mission terrain."
+  },
+  "siteId": "Site04",
+  "sourceImage": {
+    "url": "/data/imagery/shackleton-context-native.tif",
+    "sha256": "ce106eccf6cf72de99e9683cddf37a38ee4ce7956fdef1ca97ee062d365913ef"
+  },
+  "sourceMetadata": {
+    "url": "/data/imagery/shackleton-context.source.json",
+    "sha256": "616c1675d9821ce52cdbca4288d6593eb4c79be163778934ceae627e03f3b078"
+  },
+  "demSource": {
+    "sha256": "38ff70dbdf2f066c2cfa94a646c3a59d653ce7f6b4528b15fc1b43ee397ce758",
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Site04_final_adj_5mpp_surf.tif"
+  },
+  "inspectionAssets": {
+    "image": {
+      "url": "/data/registration/Site04-image.png",
+      "sha256": "8ec06244af9f3726ed984186733fa58bea044ef865b70bad8e654565a3937776"
+    },
+    "shade45": {
+      "url": "/data/registration/Site04-shade45.png",
+      "sha256": "d4e4afcd37799cd6ee586b52424ed6ecb6592cf25a13454d1cc615e692d3df8d"
+    },
+    "shade135": {
+      "url": "/data/registration/Site04-shade135.png",
+      "sha256": "4a0d1eee981f8f0b11c612286d8ec8ac0f010f33563d65acb29dc96ca571f817"
+    },
+    "shade225": {
+      "url": "/data/registration/Site04-shade225.png",
+      "sha256": "c5b40d714571e8e65134f88499b554d9a3e242c1d8606e564e23cbb61dc6e39e"
+    },
+    "shade315": {
+      "url": "/data/registration/Site04-shade315.png",
+      "sha256": "221848e0d1d7208f8385be052bffce79261067ec2740e5cdc75bd730e7277e62"
+    },
+    "slope": {
+      "url": "/data/registration/Site04-slope.png",
+      "sha256": "0c3fc77d335493a959837a4146125df88a1d465304ed626b7aae3fd1277b9409"
+    }
+  },
+  "acquisitionIncomplete": false,
+  "operatorEvidence": "Unreviewed operator selections; no independent correspondence verification",
+  "pairs": [
+    {
+      "id": "f8f2a167-e81c-4a25-b574-b0544fa5e9eb",
+      "label": "DEVELOPER CONTROL TEST — arbitrary positions, not a feature match",
+      "role": "fit",
+      "image": [
+        -2812.5,
+        -6667.5
+      ],
+      "terrain": [
+        -2807.509975062344,
+        -6667.5
+      ]
+    },
+    {
+      "id": "aa476404-94a5-4a37-8d63-133c6e77b0de",
+      "label": "DEVELOPER CHECK — arbitrary offset, excluded from fit",
+      "role": "check",
+      "image": [
+        -2817.490024937656,
+        -6667.5
+      ],
+      "terrain": [
+        -2802.5199501246884,
+        -6667.5
+      ]
+    }
+  ],
+  "assessment": {
+    "status": "insufficient-landmarks",
+    "registrationEstablished": false,
+    "fitCount": 1,
+    "checkCount": 1,
+    "translationM": [
+      4.990024937656017,
+      0
+    ],
+    "translationConvention": "Add [east X, north Y] to image coordinates to compare with terrain coordinates; no correction applied.",
+    "fitResidual": {
+      "count": 1,
+      "rmseM": 0,
+      "maxM": 0
+    },
+    "heldOutResidual": {
+      "count": 1,
+      "rmseM": 9.980049875311579,
+      "maxM": 9.980049875311579
+    },
+    "fitSpanFraction": [
+      0,
+      0
+    ],
+    "heldOutSpanFraction": [
+      0,
+      0
+    ],
+    "residuals": [
+      {
+        "id": "f8f2a167-e81c-4a25-b574-b0544fa5e9eb",
+        "role": "fit",
+        "residualM": 0
+      },
+      {
+        "id": "aa476404-94a5-4a37-8d63-133c6e77b0de",
+        "role": "check",
+        "residualM": 9.980049875311579
+      }
+    ],
+    "scope": "Operator-selected landmarks; translation only, no affine/distortion fit. Held-out points never influence the fitted shift. Counts and residuals do not establish independent accuracy or operational suitability."
+  }
+}

@@ -1,0 +1,643 @@
+{
+  "sourceHTMLSha256": "586aef752114a651b5a056299fdf2d850b6dfbb418580f49b6c099dfe70e705f",
+  "sourceURL": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+  "cases": [
+    {
+      "id": "apollo-11",
+      "latitude": 0.67416,
+      "longitude": 23.47314,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "apollo-12",
+      "latitude": -3.0128,
+      "longitude": -23.4219,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "apollo-14",
+      "latitude": -3.64589,
+      "longitude": -17.47194,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "apollo-15",
+      "latitude": 26.13239,
+      "longitude": 3.6333,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "apollo-16",
+      "latitude": -8.9734,
+      "longitude": 15.5011,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "apollo-17",
+      "latitude": 20.1911,
+      "longitude": 30.7723,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "blue-ghost-1",
+      "latitude": 18.562,
+      "longitude": 61.81,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "im-1",
+      "latitude": -80.13,
+      "longitude": 1.44,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "im-2",
+      "latitude": -84.7906,
+      "longitude": 29.1957,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "hakuto-r-1",
+      "latitude": 47.581,
+      "longitude": 44.094,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "hakuto-r-2",
+      "latitude": 60.4445,
+      "longitude": -4.588,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "beresheet",
+      "latitude": 32.5956,
+      "longitude": 19.3496,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "change-3",
+      "latitude": 44.1214,
+      "longitude": -19.5117,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "change-4",
+      "latitude": -45.4561,
+      "longitude": 177.5885,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "change-5",
+      "latitude": 43.0576,
+      "longitude": -51.9161,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "change-6",
+      "latitude": -41.6385,
+      "longitude": -153.9852,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "chandrayaan-3",
+      "latitude": -69.3741,
+      "longitude": 32.32,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "slim",
+      "latitude": -13.316,
+      "longitude": 25.251,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "luna-16",
+      "latitude": -0.5137,
+      "longitude": 56.3638,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "luna-17",
+      "latitude": 38.23764,
+      "longitude": -35.00163,
+      "metadata": {
+        "status": "source-confirmed",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": null,
+        "latitudeConvention": "Planetocentric",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": true
+    },
+    {
+      "id": "im-3-target",
+      "latitude": 7.39,
+      "longitude": -58.96,
+      "metadata": {
+        "status": "control-network-matched",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": "LOLA 2011",
+        "latitudeConvention": "Planetographic on the lunar spherical datum",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://planetarynames.wr.usgs.gov/Feature/4987",
+          "https://planetarynames.wr.usgs.gov/TargetCoordinates",
+          "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/document/rdrsis.htm"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty.",
+          "Regional feature centre; no exact mission landing target is established."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "im-4-target",
+      "latitude": -84.6,
+      "longitude": 31,
+      "metadata": {
+        "status": "control-network-matched",
+        "sourceFrame": "MOON_ME_DE421",
+        "targetFrame": "MOON_ME_DE421",
+        "controlNetwork": "LOLA 2011",
+        "latitudeConvention": "Planetographic on the lunar spherical datum",
+        "longitudeConvention": "east-positive; wrapped to -180 to 180",
+        "transformation": "Identity in the stated DE421 mean Earth frame",
+        "frameDisplacementM": 0,
+        "verificationDate": "2026-11-14",
+        "evidence": [
+          "https://planetarynames.wr.usgs.gov/Feature/16070",
+          "https://planetarynames.wr.usgs.gov/TargetCoordinates",
+          "https://pds-geosciences.wustl.edu/lro/lro-l-lola-3-rdr-v1/lrolol_1xxx/document/rdrsis.htm"
+        ],
+        "limitations": [
+          "Frame identity does not establish coordinate measurement accuracy.",
+          "Displayed decimal precision is separate from geolocation uncertainty.",
+          "Regional feature centre; no exact mission landing target is established."
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "griffin-1-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://pgda.gsfc.nasa.gov/products/101"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "blue-ghost-2-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://fireflyspace.com/missions/blue-ghost-mission-2/"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "draper-series-2-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://www.nasa.gov/wp-content/uploads/2025/02/np-2025-02-005-jsc-clps-intuitive-machines-press-kit-508-2-25-25.pdf"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "blue-ghost-3-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://www.nasa.gov/wp-content/uploads/2025/02/np-2025-02-005-jsc-clps-intuitive-machines-press-kit-508-2-25-25.pdf"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "blue-moon-mk1-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://pgda.gsfc.nasa.gov/products/101"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "astrolab-flip-target",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://pgda.gsfc.nasa.gov/products/101"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    },
+    {
+      "id": "ispace-mission-3",
+      "latitude": null,
+      "longitude": null,
+      "metadata": {
+        "status": "unpublished",
+        "sourceFrame": null,
+        "targetFrame": "MOON_ME_DE421",
+        "evidence": [
+          "https://2022.ispace-inc.com/news-en/?p=8776"
+        ]
+      },
+      "nasaNumericCoordinatesMatched": null
+    }
+  ],
+  "limitations": [
+    "Identity frame transformation does not imply perfect coordinate geolocation.",
+    "USGS regional references use the selected LOLA 2011 control network.",
+    "Unpublished coordinates remain unavailable."
+  ]
+}

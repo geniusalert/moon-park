@@ -1,0 +1,17 @@
+[
+  {
+    "name": "localhost",
+    "status": 200,
+    "passed": true
+  },
+  {
+    "name": "foreign-origin",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "name": "foreign-host",
+    "status": 403,
+    "passed": true
+  }
+]

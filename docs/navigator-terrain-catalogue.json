@@ -1,0 +1,124 @@
+{
+  "frame": "MOON_ME_DE421",
+  "verticalReference": "Elevation in metres above the 1737400 m reference sphere",
+  "poleConvention": "Longitude zero fixes the tangent north/east azimuth basis",
+  "sourcePage": "https://pgda.gsfc.nasa.gov/products/90",
+  "sources": [
+    {
+      "id": "polar-20m",
+      "sha256": "cc564a488b1a718e0893c09dd06f3fafa4762e7fcec050652b8e9d7c64fb6513",
+      "resolutionM": [
+        20.0,
+        20.0
+      ],
+      "bounds": [
+        -170000.0,
+        -170000.0,
+        170000.0,
+        170000.0
+      ],
+      "shape": [
+        17000,
+        17000
+      ],
+      "nodata": "NaN",
+      "missingPixels": 0,
+      "totalPixels": 289000000,
+      "crsWKT": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "projectionProbes": [
+        {
+          "longitude": 0,
+          "latitude": -85,
+          "xy": [
+            0.0,
+            151713.04441849753
+          ]
+        },
+        {
+          "longitude": 90,
+          "latitude": -85,
+          "xy": [
+            151713.04441849753,
+            9.289744711800661e-12
+          ]
+        },
+        {
+          "longitude": 180,
+          "latitude": -85,
+          "xy": [
+            1.8579489423601322e-11,
+            -151713.04441849753
+          ]
+        },
+        {
+          "longitude": -90,
+          "latitude": -85,
+          "xy": [
+            -151713.04441849753,
+            9.289744711800661e-12
+          ]
+        }
+      ],
+      "verticalReference": "Elevation in metres above the 1737400 m reference sphere",
+      "frame": "MOON_ME_DE421"
+    },
+    {
+      "id": "polar-240m",
+      "sha256": "a8547c0c55c6ac8d84caf54109155a2ff60e6f310896a82ecc5cdc2f0a55af7a",
+      "resolutionM": [
+        240.0,
+        240.0
+      ],
+      "bounds": [
+        -350160.0,
+        -350160.0,
+        350160.0,
+        350160.0
+      ],
+      "shape": [
+        2918,
+        2918
+      ],
+      "nodata": "NaN",
+      "missingPixels": 0,
+      "totalPixels": 8514724,
+      "crsWKT": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "projectionProbes": [
+        {
+          "longitude": 0,
+          "latitude": -85,
+          "xy": [
+            0.0,
+            151713.04441849753
+          ]
+        },
+        {
+          "longitude": 90,
+          "latitude": -85,
+          "xy": [
+            151713.04441849753,
+            9.289744711800661e-12
+          ]
+        },
+        {
+          "longitude": 180,
+          "latitude": -85,
+          "xy": [
+            1.8579489423601322e-11,
+            -151713.04441849753
+          ]
+        },
+        {
+          "longitude": -90,
+          "latitude": -85,
+          "xy": [
+            -151713.04441849753,
+            9.289744711800661e-12
+          ]
+        }
+      ],
+      "verticalReference": "Elevation in metres above the 1737400 m reference sphere",
+      "frame": "MOON_ME_DE421"
+    }
+  ]
+}

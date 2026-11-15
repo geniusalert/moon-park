@@ -1,0 +1,226 @@
+{
+  "method": "Independent observations at one-minute cadence, evaluated against unchanged benchmark terrain at 1 and 10 minutes",
+  "cases": [
+    {
+      "siteId": "Site01",
+      "startUTC": "2027-03-20T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site01",
+      "startUTC": "2027-06-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site01",
+      "startUTC": "2027-09-22T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site01",
+      "startUTC": "2027-12-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2027-03-20T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2027-06-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2027-09-22T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2027-12-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2027-03-20T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": -0.11666666666666536,
+        "combined": -0.11666666666666536
+      },
+      "events": {
+        "fineSun": [
+          {
+            "from": "2027-03-20T14:29:00Z",
+            "to": "2027-03-20T14:30:00Z",
+            "visible": false
+          }
+        ],
+        "coarseSun": [
+          {
+            "from": "2027-03-20T14:20:00Z",
+            "to": "2027-03-20T14:30:00Z",
+            "visible": false
+          }
+        ],
+        "fineEarth": [
+          {
+            "from": "2027-03-20T08:02:00Z",
+            "to": "2027-03-20T08:03:00Z",
+            "visible": false
+          }
+        ],
+        "coarseEarth": [
+          {
+            "from": "2027-03-20T08:00:00Z",
+            "to": "2027-03-20T08:10:00Z",
+            "visible": false
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2027-06-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0.13333333333333286,
+        "combined": 0.13333333333333286
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [
+          {
+            "from": "2027-06-21T20:11:00Z",
+            "to": "2027-06-21T20:12:00Z",
+            "visible": true
+          }
+        ],
+        "coarseEarth": [
+          {
+            "from": "2027-06-21T20:10:00Z",
+            "to": "2027-06-21T20:20:00Z",
+            "visible": true
+          }
+        ]
+      }
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2027-09-22T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2027-12-21T00:00:00Z",
+      "metricDifferencesHours": {
+        "sun": 0,
+        "earth": 0,
+        "combined": 0
+      },
+      "events": {
+        "fineSun": [],
+        "coarseSun": [],
+        "fineEarth": [],
+        "coarseEarth": []
+      }
+    }
+  ],
+  "limitations": [
+    "Prepared benchmark horizons only. No new crater-floor or cap-boundary validation.",
+    "One-minute samples can still miss shorter windows.",
+    "Numerical agreement is separate from terrain source accuracy."
+  ]
+}

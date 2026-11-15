@@ -1,0 +1,22 @@
+import {comparisonVisual} from './planner-flow.js';
+import {analysisModelFor} from './mission-selection.js';
+import {comparePoint} from './navigator-model.js';
+import {operationalMetrics} from './navigator-operations.js';
+export function installSeasons({api,config,location,error,onInspect}){
+ const $=id=>document.getElementById(id);let epoch=0,ids=[],signature='';
+ const cancel=async()=>{++epoch;const old=ids;ids=[];await Promise.allSettled(old.map(id=>api('/api/jobs/'+id,{method:'DELETE'})));};
+ $('seasonCancel').onclick=async()=>{await cancel();$('seasonStatus').textContent='Seasonal calculation cancelled.';};
+ for(const id of ['seasonA','seasonB','arrival','delay','duration','height','dark','overlap','activity','mode','analysisModel'])$(id).addEventListener('input',()=>{cancel();$('seasonResults').replaceChildren();$('seasonStatus').textContent='Settings changed; calculate seasonal results again.';});
+ $('seasonRun').onclick=async()=>{
+  await cancel();const run=epoch;const point=location();$('seasonResults').replaceChildren();
+  try{if(!point)throw new Error('Inspect a location first.');signature=JSON.stringify({point:point.id,config:config(),activity:$('activity').value});const c=config(),activity=Number($('activity').value);const dates=[$('seasonA').value,$('seasonB').value];if(dates.some(d=>!/^2027-\d\d-\d\dT\d\d:\d\d$/.test(d)||Number(d.slice(-2))%10))throw new Error('Choose two 2027 UTC arrivals on the ten-minute grid.');
+   const records=await Promise.all(dates.map(async date=>{const job=await api('/api/jobs',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...c,startUTC:date+':00Z',delay:0,latitude:point.latitude,longitude:point.longitude,analysisModel:analysisModelFor(point,c.modelPreference??'auto')})});if(run!==epoch){await api('/api/jobs/'+job.id,{method:'DELETE'});return null;}ids.push(job.id);return {job,date};}));
+   while(run===epoch&&records.some(r=>r&&!r.done)){
+    for(const r of records.filter(r=>r&&!r.done)){r.job=await api('/api/jobs/'+r.job.id);if(run!==epoch)return;if(r.job.status==='completed'){const value=await api('/api/results/'+r.job.resultId);if(run!==epoch)return;r.site=value.site;r.site.resultReference={url:'/api/results/'+r.job.resultId,sha256:r.job.resultId};r.result=comparePoint(value.site,{...c,startUTC:r.date+':00Z',delay:0},activity);r.done=true;}else if(['failed','cancelled'].includes(r.job.status)){r.reason=r.job.error||r.job.status;r.done=true;}}
+    $('seasonStatus').textContent=`${point.name}: `+records.filter(Boolean).map(r=>`${r.date}: ${r.job.status} (${r.job.stage})`).join(' | ');if(records.some(r=>r&&!r.done))await new Promise(resolve=>setTimeout(resolve,750));
+   }
+   if(run!==epoch)return;for(const r of records){const article=document.createElement('article'),heading=document.createElement('h3');heading.textContent=`${point.name} — ${r.date} UTC`;article.append(heading);const text=document.createElement('p');text.textContent=r.reason??'';article.append(text);if(r.result){const table=document.createElement('table');for(const metric of operationalMetrics(r.result)){const row=document.createElement('tr'),label=document.createElement('th'),value=document.createElement('td');label.textContent=metric.label;label.scope='row';value.textContent=metric.revised.toFixed(2)+metric.unit;row.append(label,value);table.append(row);}article.append(table);}const status=document.createElement('p');status.textContent=r.result?(r.result.failures.join('; ')||'Entered model constraints pass.'): 'Unavailable';article.append(status);if(r.result){const inspect=document.createElement('button');inspect.textContent='Inspect this date';inspect.onclick=()=>onInspect({site:r.site,comparison:r.result,name:`${point.name} · ${r.date} UTC`});article.append(inspect);}comparisonVisual(article,point,r.result?.revised);$('seasonResults').append(article);}$('seasonStatus').textContent='Seasonal comparison complete. Inspect either date in the shared views; seasonal previews remain separate from the saved pinned comparison and delay ranking.';
+  }catch(e){if(run===epoch){await cancel();error(e);$('seasonStatus').textContent='Seasonal comparison unavailable.';}}
+ };
+ return {contextChanged(){if(!signature)return;let current;try{current=JSON.stringify({point:location()?.id,config:config(),activity:$('activity').value});}catch{current='invalid';}if(current!==signature){signature='';cancel();$('seasonResults').replaceChildren();$('seasonStatus').textContent='Location or settings changed; calculate seasons again.';}}};
+}

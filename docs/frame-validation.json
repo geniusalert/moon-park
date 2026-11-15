@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-11-10T20:06:10.912512+00:00",
+  "method": "SPICE spkcpo CN+S, DE421 MOON_ME; compare Horizons MEAN_ME/DE441 at identical reference coordinates and original altitude",
+  "interpretation": "Independent implementation-path cross-check, not independent observational truth. Differences include ephemeris/frame and aberration model differences; SPICE omits gravitational light deflection.",
+  "kernels": [
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "path": "data\\raw\\kernels\\naif0012.tls",
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/de421.bsp",
+      "path": "data\\raw\\kernels\\de421.bsp",
+      "sha256": "08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/moon_pa_de421_1900-2050.bpc",
+      "path": "data\\raw\\kernels\\moon_pa_de421_1900-2050.bpc",
+      "sha256": "656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites/moon_080317.tf",
+      "path": "data\\raw\\kernels\\moon_080317.tf",
+      "sha256": "78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993"
+    }
+  ],
+  "sites": [
+    {
+      "id": "Site01",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.503367648567291e-06,
+          "maxElDifferenceDeg": 1.3509739467121307e-05,
+          "rmsElDifferenceDeg": 8.170659377803802e-06
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 6.256474392785094e-06,
+          "maxElDifferenceDeg": 1.169246637289234e-05,
+          "rmsElDifferenceDeg": 8.658616834551653e-06
+        }
+      }
+    },
+    {
+      "id": "Site04",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.414963314047782e-06,
+          "maxElDifferenceDeg": 1.2850793788654613e-05,
+          "rmsElDifferenceDeg": 8.07953579017505e-06
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 6.043202944283621e-06,
+          "maxElDifferenceDeg": 1.1639518064043841e-05,
+          "rmsElDifferenceDeg": 8.53684708650014e-06
+        }
+      }
+    },
+    {
+      "id": "Site11",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.604162654686661e-06,
+          "maxElDifferenceDeg": 1.2892135639042124e-05,
+          "rmsElDifferenceDeg": 8.155430190092969e-06
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 5.861258671302494e-06,
+          "maxElDifferenceDeg": 1.1472698666636916e-05,
+          "rmsElDifferenceDeg": 8.540735588937546e-06
+        }
+      }
+    }
+  ]
+}

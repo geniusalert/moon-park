@@ -1,0 +1,241 @@
+{
+  "generatedUTC": "2026-11-14T07:24:59.812Z",
+  "method": "Uniform horizon-angle stress test at +/-0.1 degrees, three dates per prepared benchmark",
+  "interpretation": "Illustrative sensitivity only. Offsets are assumed and do not establish measured terrain error or statistical confidence.",
+  "cases": [
+    {
+      "siteId": "Site01",
+      "startUTC": "2026-11-14T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 11.333333333333336,
+        "longestCombined": 11.333333333333336,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 12.833333333333336,
+          "longestCombined": 12.833333333333336,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 9.666666666666664,
+          "longestCombined": 9.666666666666664,
+          "modelPass": true
+        }
+      ]
+    },
+    {
+      "siteId": "Site01",
+      "startUTC": "2026-11-19T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 72,
+        "longestCombined": 72,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 72,
+          "longestCombined": 72,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 72,
+          "longestCombined": 72,
+          "modelPass": true
+        }
+      ]
+    },
+    {
+      "siteId": "Site01",
+      "startUTC": "2026-11-29T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 30.5,
+        "longestCombined": 30.5,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 32,
+          "longestCombined": 32,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 29.166666666666668,
+          "longestCombined": 29.166666666666668,
+          "modelPass": true
+        }
+      ]
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2026-11-14T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 0,
+        "longestCombined": 0,
+        "modelPass": false
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        }
+      ]
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2026-11-19T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 0,
+        "longestCombined": 0,
+        "modelPass": false
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        }
+      ]
+    },
+    {
+      "siteId": "Site04",
+      "startUTC": "2026-11-29T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 0,
+        "earthHours": 0,
+        "longestCombined": 0,
+        "modelPass": false
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 0,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 0,
+          "earthHours": 0,
+          "longestCombined": 0,
+          "modelPass": false
+        }
+      ]
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2026-11-14T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 9,
+        "longestCombined": 9,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 10.5,
+          "longestCombined": 10.5,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 7.5,
+          "longestCombined": 7.5,
+          "modelPass": false
+        }
+      ]
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2026-11-19T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 72,
+        "longestCombined": 72,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 72,
+          "longestCombined": 72,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 72,
+          "longestCombined": 72,
+          "modelPass": true
+        }
+      ]
+    },
+    {
+      "siteId": "Site11",
+      "startUTC": "2026-11-29T00:00:00.000Z",
+      "nominal": {
+        "sunHours": 72,
+        "earthHours": 50.5,
+        "longestCombined": 50.5,
+        "modelPass": true
+      },
+      "perturbations": [
+        {
+          "horizonOffsetDeg": -0.1,
+          "sunHours": 72,
+          "earthHours": 52.166666666666664,
+          "longestCombined": 52.166666666666664,
+          "modelPass": true
+        },
+        {
+          "horizonOffsetDeg": 0.1,
+          "sunHours": 72,
+          "earthHours": 49,
+          "longestCombined": 49,
+          "modelPass": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {comparePoint,pinLocation,nextVisibilityEvent,alternatives} from '../src/navigator-model.js';
+const data=JSON.parse(readFileSync(new URL('../data/mission-data.json',import.meta.url)));
+const config={startUTC:'2026-11-14T00:00:00Z',delay:48,duration:72,height:2,maxDark:12,minOverlap:8};
+test('navigator retains recorded prepared-point regression',()=>{const r=comparePoint(data.sites[0],config,2);assert.ok(Math.abs(r.revised.overlap-59-1/3)<1e-8);assert.equal(r.baseline.sunHours,72);assert.ok(r.activity.length);});
+test('three pins are unique and a fourth is explicitly rejected',()=>{assert.deepEqual(pinLocation(['a'],'a'),['a']);assert.throws(()=>pinLocation(['a','b','c'],'d'),/three/);});
+test('event brackets distinguish hidden, permanent visibility and multiple transitions',()=>{const samples=[false,false,true,false].map((sun,i)=>({sun,earth:true,utc:String(i),hour:i/6}));assert.deepEqual(nextVisibilityEvent(samples,0,'sun'),{currentVisible:false,kind:'returns',fromUTC:'1',toUTC:'2',afterHours:1/6,byHours:2/6});assert.equal(nextVisibilityEvent(samples,2,'sun').kind,'is lost');assert.equal(nextVisibilityEvent(samples,0,'earth').kind,'not-found');assert.equal(nextVisibilityEvent(samples,3,'sun').currentVisible,false);});
+test('alternatives keep height fixed and preserve ties within a bounded search',()=>{const r=alternatives([data.sites[0],{...data.sites[0],id:'identical'}],config,2);assert.equal(r.tested,14);assert.ok(r.choices.every(c=>c.height===2&&c.tied));for(let i=1;i<r.choices.length;i++)assert.ok(r.choices[i].extraHours>=r.choices[i-1].extraHours);});
+test('continuous activity is separate from total overlap',()=>{const s=structuredClone(data.sites[0]);for(const h of ['2','5','10']){s.ephemeridesByHeight[h].sun=s.ephemeridesByHeight[h].sun.map((v,i)=>({...v,el:i%12<6?90:-90}));s.ephemeridesByHeight[h].earth=s.ephemeridesByHeight[h].earth.map(v=>({...v,el:90}));}const r=comparePoint(s,{...config,minOverlap:8,maxDark:12},2);assert.ok(r.revised.overlap>=8);assert.ok(r.failures.some(v=>v.includes('continuous')));});

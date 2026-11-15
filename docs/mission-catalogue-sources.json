@@ -1,0 +1,577 @@
+{
+  "verifiedAt": "2026-11-13",
+  "missions": [
+    {
+      "id": "apollo-11",
+      "name": "Apollo 11",
+      "latitude": 0.67416,
+      "longitude": 23.47314,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "apollo-12",
+      "name": "Apollo 12",
+      "latitude": -3.0128,
+      "longitude": -23.4219,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "apollo-14",
+      "name": "Apollo 14",
+      "latitude": -3.64589,
+      "longitude": -17.47194,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "apollo-15",
+      "name": "Apollo 15",
+      "latitude": 26.13239,
+      "longitude": 3.6333,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "apollo-16",
+      "name": "Apollo 16",
+      "latitude": -8.9734,
+      "longitude": 15.5011,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "apollo-17",
+      "name": "Apollo 17",
+      "latitude": 20.1911,
+      "longitude": 30.7723,
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "sourceDate": "2017-03-06",
+      "frame": "Planetocentric Mean Earth/Polar Axis, DE421",
+      "description": "NASA NSSDCA Lunar Module landing coordinate. Evaluate a hypothetical 2027 arrival here; reference-sphere results omit actual terrain.",
+      "groups": [
+        "apollo"
+      ],
+      "operator": "NASA · United States",
+      "status": "Historical landing",
+      "coordinateType": "landed",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_sites.html",
+      "lastVerified": "2026-11-13"
+    },
+    {
+      "id": "blue-ghost-1",
+      "name": "Blue Ghost Mission 1",
+      "latitude": 18.562,
+      "longitude": 61.81,
+      "groups": [
+        "clps",
+        "commercial"
+      ],
+      "operator": "Firefly Aerospace · United States",
+      "status": "Landed 2025",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "im-1",
+      "name": "IM-1 · Odysseus",
+      "latitude": -80.13,
+      "longitude": 1.44,
+      "groups": [
+        "clps",
+        "commercial"
+      ],
+      "operator": "Intuitive Machines · United States",
+      "status": "Landed 2024",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "im-2",
+      "name": "IM-2 · Athena",
+      "latitude": -84.7906,
+      "longitude": 29.1957,
+      "groups": [
+        "clps",
+        "commercial"
+      ],
+      "operator": "Intuitive Machines · United States",
+      "status": "Landed 2025",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "hakuto-r-1",
+      "name": "HAKUTO-R Mission 1",
+      "latitude": 47.581,
+      "longitude": 44.094,
+      "groups": [
+        "commercial",
+        "international"
+      ],
+      "operator": "ispace · Japan",
+      "status": "Impact 2023",
+      "coordinateType": "impact",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "hakuto-r-2",
+      "name": "HAKUTO-R Mission 2 · RESILIENCE",
+      "latitude": 60.4445,
+      "longitude": -4.588,
+      "groups": [
+        "commercial",
+        "international"
+      ],
+      "operator": "ispace · Japan",
+      "status": "Impact 2025",
+      "coordinateType": "impact",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "beresheet",
+      "name": "Beresheet",
+      "latitude": 32.5956,
+      "longitude": 19.3496,
+      "groups": [
+        "commercial",
+        "international"
+      ],
+      "operator": "SpaceIL / IAI · Israel",
+      "status": "Impact 2019",
+      "coordinateType": "impact",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "change-3",
+      "name": "Chang’e 3",
+      "latitude": 44.1214,
+      "longitude": -19.5117,
+      "groups": [
+        "international"
+      ],
+      "operator": "CNSA · China",
+      "status": "Landed 2013",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "change-4",
+      "name": "Chang’e 4",
+      "latitude": -45.4561,
+      "longitude": 177.5885,
+      "groups": [
+        "international"
+      ],
+      "operator": "CNSA · China",
+      "status": "Landed 2019",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "change-5",
+      "name": "Chang’e 5",
+      "latitude": 43.0576,
+      "longitude": -51.9161,
+      "groups": [
+        "international"
+      ],
+      "operator": "CNSA · China",
+      "status": "Landed 2020",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "change-6",
+      "name": "Chang’e 6",
+      "latitude": -41.6385,
+      "longitude": -153.9852,
+      "groups": [
+        "international"
+      ],
+      "operator": "CNSA · China",
+      "status": "Landed 2024",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "chandrayaan-3",
+      "name": "Chandrayaan-3 · Vikram",
+      "latitude": -69.3741,
+      "longitude": 32.32,
+      "groups": [
+        "international"
+      ],
+      "operator": "ISRO · India",
+      "status": "Landed 2023",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "slim",
+      "name": "SLIM",
+      "latitude": -13.316,
+      "longitude": 25.251,
+      "groups": [
+        "international"
+      ],
+      "operator": "JAXA · Japan",
+      "status": "Landed 2024",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "luna-16",
+      "name": "Luna 16",
+      "latitude": -0.5137,
+      "longitude": 56.3638,
+      "groups": [
+        "international"
+      ],
+      "operator": "Soviet lunar programme",
+      "status": "Landed 1970",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "luna-17",
+      "name": "Luna 17",
+      "latitude": 38.23764,
+      "longitude": -35.00163,
+      "groups": [
+        "international"
+      ],
+      "operator": "Soviet lunar programme",
+      "status": "Landed 1970",
+      "coordinateType": "landed",
+      "kind": "mission",
+      "source": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "coordinateSource": "https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "Source-specific reported location; evaluate a user-selected 2027 arrival rather than replaying the historical mission date."
+    },
+    {
+      "id": "im-3-target",
+      "name": "IM-3 · Reiner Gamma regional reference",
+      "latitude": 7.39,
+      "longitude": -58.96,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Intuitive Machines · United States",
+      "status": "Planned target region",
+      "coordinateType": "region-reference",
+      "kind": "mission",
+      "source": "https://www.nasa.gov/gallery/intuitive-machines-im-3/",
+      "coordinateSource": "https://planetarynames.wr.usgs.gov/Feature/4987",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "USGS centre of Reiner Gamma is a regional comparison reference. It is not a published exact IM-3 touchdown coordinate."
+    },
+    {
+      "id": "im-4-target",
+      "name": "IM-4 · Mons Mouton regional reference",
+      "latitude": -84.6,
+      "longitude": 31,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Intuitive Machines · United States",
+      "status": "Planned target region",
+      "coordinateType": "region-reference",
+      "kind": "mission",
+      "source": "https://pgda.gsfc.nasa.gov/products/101",
+      "coordinateSource": "https://planetarynames.wr.usgs.gov/Feature/16070",
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": "Reported N/E-positive lunar coordinates; calculation interprets them in MOON_ME/DE421. Cross-source frame offsets are unquantified.",
+      "description": "NASA PGDA lists Mons Mouton. The USGS feature centre is used as a regional reference, not an exact landing target."
+    },
+    {
+      "id": "griffin-1-target",
+      "name": "Griffin Mission 1 · Mons Mouton region",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Voyager / Astrobotic · United States",
+      "status": "Planned 2027 in source",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://pgda.gsfc.nasa.gov/products/101",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "Source names Mons Mouton but no exact touchdown coordinate. No marker or calculation is assigned; use the source or enter a custom study coordinate."
+    },
+    {
+      "id": "blue-ghost-2-target",
+      "name": "Blue Ghost Mission 2 · near Nassau crater",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Firefly Aerospace · United States",
+      "status": "Planned, no earlier than 2027",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://fireflyspace.com/missions/blue-ghost-mission-2/",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "Operator names a far-side region near Nassau crater. Exact touchdown coordinates are not supplied by this source; no marker is invented."
+    },
+    {
+      "id": "draper-series-2-target",
+      "name": "Draper SERIES-2 · Schrödinger basin",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Draper / ispace U.S. · United States",
+      "status": "Planned target region",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://www.nasa.gov/wp-content/uploads/2025/02/np-2025-02-005-jsc-clps-intuitive-machines-press-kit-508-2-25-25.pdf",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "NASA identifies Schrödinger basin. An exact landing coordinate is not supplied in this catalogue; no basin centre is substituted for the target."
+    },
+    {
+      "id": "blue-ghost-3-target",
+      "name": "Blue Ghost Mission 3 · Gruithuisen domes",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Firefly Aerospace · United States",
+      "status": "Planned target region",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://www.nasa.gov/wp-content/uploads/2025/02/np-2025-02-005-jsc-clps-intuitive-machines-press-kit-508-2-25-25.pdf",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "NASA identifies the Gruithuisen domes. No exact touchdown coordinate is supplied by the cited source."
+    },
+    {
+      "id": "blue-moon-mk1-target",
+      "name": "Blue Moon Mark 1 · south-pole region",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "future-clps",
+        "clps",
+        "commercial"
+      ],
+      "operator": "Blue Origin · United States",
+      "status": "Planned 2027 in source",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://pgda.gsfc.nasa.gov/products/101",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "NASA PGDA lists a south-pole regional destination without exact coordinates. No point marker or calculated target is invented."
+    },
+    {
+      "id": "astrolab-flip-target",
+      "name": "FLIP rover · Mons Mouton region",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "commercial"
+      ],
+      "operator": "Venturi Astrolab · United States",
+      "status": "Planned 2027 in source",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://pgda.gsfc.nasa.gov/products/101",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "NASA PGDA lists Mons Mouton for the rover. Exact deployment coordinates are unpublished in this source."
+    },
+    {
+      "id": "ispace-mission-3",
+      "name": "ispace Mission 3",
+      "latitude": null,
+      "longitude": null,
+      "groups": [
+        "commercial",
+        "international"
+      ],
+      "operator": "ispace · Japan",
+      "status": "Planned 2028 in source",
+      "coordinateType": "unpublished",
+      "kind": "mission",
+      "source": "https://2022.ispace-inc.com/news-en/?p=8776",
+      "coordinateSource": null,
+      "sourceDate": "Verified 2026-11-13",
+      "lastVerified": "2026-11-13",
+      "frame": null,
+      "description": "Operator’s 30 March 2026 update schedules Mission 3 in 2028. No exact target coordinate is supplied here. The navigator supports hypothetical arrivals during 2027 only."
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "productId": "NAC_DTM_ESALL_SR12_NACMOS_1M",
+  "kind": "Historical LROC orthomosaic",
+  "productPage": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_ESALL_SR12_NACMOS_1M",
+  "groupPage": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_ESALL_SR12",
+  "source": {
+    "url": "https://pds.mcp.nasa.gov/data/store/img/lunar_reconnaissance_orbiter/pds4/lroc/lro-l-lroc-5-rdr/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/ESALL_SR12/NAC_DTM_ESALL_SR12_NACMOS_1M.TIF",
+    "fullFileBytes": 25040636,
+    "fullFileSha256": null,
+    "identityETag": "\"299293b77a262324c1e1411621336e73\"",
+    "acquisition": "Exact TIFF metadata and compressed pixel blocks via verified HTTP 206 ranges; full source was not downloaded",
+    "networkBytesThisRun": 0,
+    "retainedUniqueBytes": 10485760,
+    "metadataProbe": {
+      "retainedSourceIdentity": "\"299293b77a262324c1e1411621336e73\""
+    },
+    "retainedRanges": [
+      {
+        "start": 0,
+        "end": 262143,
+        "sha256": "4988da177b4e859013d4851e7f578730f49cf4b5ac8c2cc18348a98012a3cdb1"
+      },
+      {
+        "start": 3932160,
+        "end": 4194303,
+        "sha256": "c579dd1dbad66669207a8c003d116d030ca87b97ff532b744bdb0e0bc152b19b"
+      },
+      {
+        "start": 4194304,
+        "end": 4456447,
+        "sha256": "a6205eca90066dd8b8d4727bab4f023bf3f7e641b9744a53a687c7bf9ccdb893"
+      },
+      {
+        "start": 4456448,
+        "end": 4718591,
+        "sha256": "31e13cc64c461cf883644121d3e93434ffc8039ee926706970bca74038d8283c"
+      },
+      {
+        "start": 4718592,
+        "end": 4980735,
+        "sha256": "6c14608b36c0b1ad6a99b8619de2bc3e3e5b6f481e1478ef6cabfb884905cf1e"
+      },
+      {
+        "start": 4980736,
+        "end": 5242879,
+        "sha256": "1107b7ab96ef2076ee59e07dfc28272dcbe9153a1efaf76fe9e736c37b5b0c97"
+      },
+      {
+        "start": 5242880,
+        "end": 5505023,
+        "sha256": "67b78317b2036000a0771e60f729465c59a92ec18e8c765ba5d3f884081984b5"
+      },
+      {
+        "start": 5505024,
+        "end": 5767167,
+        "sha256": "9bafda4b00e5f6d514670cf6bb0423f2b75c1f60b6ed2105fe609b1dc7af0336"
+      },
+      {
+        "start": 5767168,
+        "end": 6029311,
+        "sha256": "2fd4483949d963baf7e64c9354131c79d3e3f95963f08bdf847f1b71337e5e99"
+      },
+      {
+        "start": 6029312,
+        "end": 6291455,
+        "sha256": "5b78a5180450125be08820f134770a031b75c2beff5aae419cd3e0962b27562d"
+      },
+      {
+        "start": 6291456,
+        "end": 6553599,
+        "sha256": "171feb741f4ce84e634272d36f8905ca6dae05f0ac8b1b4fcd3d7f4bac7a9e88"
+      },
+      {
+        "start": 6553600,
+        "end": 6815743,
+        "sha256": "f52c11700082512beafe2fed5e5293b1d116e14b131b0ba7ad53d618b760ae7d"
+      },
+      {
+        "start": 6815744,
+        "end": 7077887,
+        "sha256": "8ef4aff72261a551a9e794c7a39c9590402cea0abf3c4efec2ae3ca9f71c3f7d"
+      },
+      {
+        "start": 7077888,
+        "end": 7340031,
+        "sha256": "bbf39056e475571f31a0d71b8872b38b013592ec6aa1cfd29437fa593929ace1"
+      },
+      {
+        "start": 7340032,
+        "end": 7602175,
+        "sha256": "3812b9af98c95b218b1ccfee1cfdcabee5f2321a6528c3e83ed1d2a5e84c88f8"
+      },
+      {
+        "start": 7602176,
+        "end": 7864319,
+        "sha256": "b6ae3dfcf80dc6cc3487f69bd002e37d501d0f8f5d0d408e0715b5cff2f22560"
+      },
+      {
+        "start": 7864320,
+        "end": 8126463,
+        "sha256": "9d85f41c55ff6ee8ebbb29ed4f68c53f88a5193108356208a6a5d600679d0d9b"
+      },
+      {
+        "start": 8126464,
+        "end": 8388607,
+        "sha256": "294d236ed7c6f3e2fff0348532600fd307ee074df5f7d4bbfced7145b82d0a40"
+      },
+      {
+        "start": 8388608,
+        "end": 8650751,
+        "sha256": "f7c453b4587acee1a28886a4e427a692eebfd74d0efcc55df75ed3c88097f0a3"
+      },
+      {
+        "start": 8650752,
+        "end": 8912895,
+        "sha256": "535d18490da6bd2366cbbaaf3d4773a8a085dc78153061c2dafff1c1fe64eed7"
+      },
+      {
+        "start": 8912896,
+        "end": 9175039,
+        "sha256": "7a43ebfeca2610c5a69efe7df92513df6434ac7f208ceb08ef0b7b1e29c75f93"
+      },
+      {
+        "start": 9175040,
+        "end": 9437183,
+        "sha256": "1eec3c07cb6a7fbeac7780e977d4cd1caf69b4188baa30fe00a7d3929cb3ab8b"
+      },
+      {
+        "start": 9437184,
+        "end": 9699327,
+        "sha256": "bc1cd199d46bbd8f3bd8a5135e744241e55380fb945617da7cb2e4938fd3d3e9"
+      },
+      {
+        "start": 9699328,
+        "end": 9961471,
+        "sha256": "f0f21d5b7f935c917dce405dcbf634af1cf8ccb3c03cd2e77b9bf9c4868090af"
+      },
+      {
+        "start": 9961472,
+        "end": 10223615,
+        "sha256": "9ca54cb88fecda8fdd649701032c50b079b05c0dfba10586e75b928c128ee558"
+      },
+      {
+        "start": 10223616,
+        "end": 10485759,
+        "sha256": "16514591a71cfc57692eb5b5db09ddcd856cc53d414c7602fbff071da74c92b3"
+      },
+      {
+        "start": 10485760,
+        "end": 10747903,
+        "sha256": "be8f876579fac69fa9003ed5d16407e0eb38e091945700d5be46c611d2e12688"
+      },
+      {
+        "start": 10747904,
+        "end": 11010047,
+        "sha256": "b5d8d8053015a099a439af68e84a84408c86f93d589fced2d3bc6b5554d06a87"
+      },
+      {
+        "start": 11010048,
+        "end": 11272191,
+        "sha256": "515127f3baa246336a0aaaf2547111026603db506828d1a25663eea17ca5b3ef"
+      },
+      {
+        "start": 11272192,
+        "end": 11534335,
+        "sha256": "3a70785afbafd94886c3c0997f79f0b4fca009eebe27cca45ef234592262eb39"
+      },
+      {
+        "start": 11534336,
+        "end": 11796479,
+        "sha256": "746d0427d3bbadf78c114bfd960bb77129e6fdd75ee845986383c091287daaa8"
+      },
+      {
+        "start": 11796480,
+        "end": 12058623,
+        "sha256": "48437e906b1a82c7d314e312b3c3c5aab8e5ef5ca8f9a1353a030341fead66e0"
+      },
+      {
+        "start": 12058624,
+        "end": 12320767,
+        "sha256": "483a4402ac111b1824989af8f4339e9535fd0cee56d170719b93cfcb51afe5e7"
+      },
+      {
+        "start": 12320768,
+        "end": 12582911,
+        "sha256": "1b725581f53cfd3afd2253f598926cd1018488414084de6f2c937ca0da84ee81"
+      },
+      {
+        "start": 12582912,
+        "end": 12845055,
+        "sha256": "99b7fdad575b613e8e1561967ce36901c37724e9595a63df405a28ae1f17a469"
+      },
+      {
+        "start": 12845056,
+        "end": 13107199,
+        "sha256": "105aef6792563ac8ce2a1795a6f099b7dacfae3a57f0203711059ca63a75aa34"
+      },
+      {
+        "start": 13107200,
+        "end": 13369343,
+        "sha256": "d7f478f651d82445dd06ba61abf8a997e1436293988c253fd65a538de8b3eeab"
+      },
+      {
+        "start": 13369344,
+        "end": 13631487,
+        "sha256": "bf61eb48d00afe25794d3d51f12f745d43a5a5a56eb126c5f4eefe12a54cf7aa"
+      },
+      {
+        "start": 13631488,
+        "end": 13893631,
+        "sha256": "fd663ebdb18d04197ca23a0aa20310951e2ecdb613b189765df92524c2d80889"
+      },
+      {
+        "start": 13893632,
+        "end": 14155775,
+        "sha256": "c696a41ffba78b4a669abe5e55bf1d96519dd00f5bd53181137c610a1b70645a"
+      }
+    ],
+    "selectedCompressedBlockGroups": [
+      [
+        4080636,
+        14085635
+      ]
+    ]
+  },
+  "processingCodeSha256": "196f6e7b29184750c679c75eeed2fd6d44308345dcbbc11e4ce6c4832f52893f",
+  "checks": {
+    "pointId": "Site04-roi-1-anchor",
+    "longitude": -157.1288994881818,
+    "latitude": -89.76135865069945,
+    "sourceShape": [
+      5000,
+      5000
+    ],
+    "sourceBounds": [
+      -5141.0,
+      -9859.0,
+      -141.0,
+      -4859.0
+    ],
+    "sourceNoData": 0.0,
+    "nativeDtype": "uint8",
+    "shape": [
+      2001,
+      2001
+    ],
+    "resolutionM": [
+      1.0,
+      1.0
+    ],
+    "crsWKT": "PROJCS[\"PolarStereographic Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+    "boundsXYM": [
+      -3813.0,
+      -7668.0,
+      -1812.0,
+      -5667.0
+    ],
+    "sourceWindow": {
+      "col": 1328,
+      "row": 808,
+      "width": 2001,
+      "height": 2001
+    },
+    "validContextFraction": 1.0,
+    "anchorPixelValid": true,
+    "anchorDN": 71,
+    "nativePixelRoundTripEqual": true,
+    "sourceAnchorPixelPreserved": true
+  },
+  "preview": {
+    "method": "Original 8-bit values; no contrast transform"
+  },
+  "registration": "Relative registration to current Site04 LOLA terrain not measured; no correction applied.",
+  "scope": "Historical context only. Rectangle inclusion alone does not prove valid pixel support. Source mask is preserved; image illumination is not simulated 2026 lighting. Not independently registered to the current mission DEM.",
+  "derivedAssets": {
+    "shackleton-context-native.tif": {
+      "path": "data/imagery/shackleton-context-native.tif",
+      "sha256": "ce106eccf6cf72de99e9683cddf37a38ee4ce7956fdef1ca97ee062d365913ef",
+      "bytes": 3591721
+    },
+    "shackleton-context.png": {
+      "path": "data/imagery/shackleton-context.png",
+      "sha256": "95e093d74d11ecdc7b8045add2a3869c4680f4190ba98fb62e22dc70e952602f",
+      "bytes": 2978163
+    }
+  },
+  "metadataCorrection": "Crop bounds corrected from the retained native GeoTIFF transform; pixel assets unchanged."
+}

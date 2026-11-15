@@ -1,0 +1,3 @@
+# Optional measured-surface benchmark dependencies.
+# Install outside the local navigator runtime.
+git+https://github.com/phayne/heat1d.git@5b73a6c1ba5047f59f6210185b37539e46e68136#subdirectory=python

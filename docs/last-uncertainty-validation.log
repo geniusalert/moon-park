@@ -1,0 +1,30 @@
+
+> moon-park@0.6.0 validate:uncertainty
+> node scripts/validate_uncertainty.mjs
+
+{
+  "summary": {
+    "scenarios": 12,
+    "siteCases": 36,
+    "sensitiveSiteCases": 0,
+    "stablePreferredScenarios": 6,
+    "tiedOrSensitivePreferredScenarios": 4,
+    "noPassingChoiceScenarios": 2,
+    "constructedThresholdProbes": 0,
+    "maxCloneSunlightSpreadHours": 0,
+    "maxNumericalSunlightSpreadHours": 0,
+    "maxCloneOverlapSpreadHours": 1.5,
+    "maxNumericalOverlapSpreadHours": 0.1666666666666714
+  },
+  "checks": 38,
+  "recovery": {
+    "nominalPassing": 42,
+    "passingAllTested": 42,
+    "evaluationMilliseconds": 210.98489999999993
+  },
+  "fineStudy": {
+    "cloneMinutes": 4.000000000000199,
+    "numericalMinutes": 3.0000000000000426,
+    "probePassing": 2
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "machine": {
+    "system": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel"
+  },
+  "cases": [
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -87.5,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "886bd1a304c1f3115ca45effc8cf81191e4fcb14c89182d1a75fd11aeb495f81",
+      "siteId": "custom-a5524074b3c18c86",
+      "groundResolutionM": 20,
+      "groundM": -3422.759567857837,
+      "horizonHash": "1276a1d2ac4d9682f745fc5bd4b54387572bfc88ea512a4832e2c7e8da2ef16d",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 20.083974200002558,
+        "peakWorkingSetBytes": 581615616,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 21.940628799995466
+    },
+    {
+      "request": {
+        "longitude": 90,
+        "latitude": -86.5,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "938bc9ad218753b079a650e78ae07c1443d4b7def9d34acb2d444b81dc8a1242",
+      "siteId": "custom-ae3458ce4e6cecad",
+      "groundResolutionM": 20,
+      "groundM": 434.29645544592336,
+      "horizonHash": "e7b208139f12793336372a842089206642392dc772a4c1a987875c050f59c429",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 20.23932960000093,
+        "peakWorkingSetBytes": 581349376,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 22.451986100000795
+    },
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -90,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "9daa233eacefc1d6a14aeb99badf19bf41ada54e6d77216e3fa452957a79b21e",
+      "siteId": "custom-1637f0e3a2e420c8",
+      "groundResolutionM": 5,
+      "groundM": 1289.3617858886719,
+      "horizonHash": "1656891de4ff54c17df695ece51f625652c9567ecb435a4b398738ce20c97e4e",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 25.10146459999669,
+        "peakWorkingSetBytes": 581160960,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 27.917672700001276
+    },
+    {
+      "request": {
+        "longitude": -180,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "eceb843281cc9f30ba749c9aa54037803b5cc0df55ff1b034006273e04e38e1a",
+      "siteId": "custom-84ce92e7fcf38fbd",
+      "groundResolutionM": 20,
+      "groundM": -4774.490131342553,
+      "horizonHash": "91577af749a637d28bfb0ccd5a0a0a994b025ea469592019803d9012ee500c48",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 20.02584879999631,
+        "peakWorkingSetBytes": 581263360,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 25.233674100003554
+    },
+    {
+      "request": {
+        "longitude": -135,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "0b3e0498bb8522212d118efd41e96a1c57d4afe53ae8f8aafeca9ee37b8a4371",
+      "siteId": "custom-65952d3c7c88ef66",
+      "groundResolutionM": 20,
+      "groundM": -2356.161644504791,
+      "horizonHash": "56067e18e9c93c0bed14954448fc7029d4b55381c91ae03451caba2da5f824a4",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 18.666523799998686,
+        "peakWorkingSetBytes": 581369856,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 20.715111999998044
+    },
+    {
+      "request": {
+        "longitude": -90,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "f02c91c61d60b848c7ac9e67399f31769f92afb2dca954e40801eb94ee1e7969",
+      "siteId": "custom-6491eca0dc20f657",
+      "groundResolutionM": 20,
+      "groundM": -2305.491222803163,
+      "horizonHash": "2d1c948bf5a420a868fede2b53b9cdd6b897653a8cc52c2ff7089aac07056048",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 18.706404399999883,
+        "peakWorkingSetBytes": 581451776,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 20.638857600002666
+    },
+    {
+      "request": {
+        "longitude": -45,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "90a163de29caf00c8e31b9c110bdde1fe963d2b0530d51ae2f10fa28b2a3847d",
+      "siteId": "custom-4b620e9bcc923321",
+      "groundResolutionM": 20,
+      "groundM": -3716.2296273170573,
+      "horizonHash": "943e71832e8fff9be4f16243354335007beafab047e92d355214ddf8f96eb3a6",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 21.606408399995416,
+        "peakWorkingSetBytes": 581369856,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 24.048496800001885
+    },
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "16fed5b259f01cc71d0fa1f4f1a0a1ca6b9be353a7caaa8ffb2c81cf244b82cd",
+      "siteId": "custom-07cc0e17f36fff86",
+      "groundResolutionM": 20,
+      "groundM": -675.5200582101995,
+      "horizonHash": "2bbb859c07a6c4b917b874f87f90530e81e52f2bc0826b5c9fe05cb9ab1f8462",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 30.20536659999925,
+        "peakWorkingSetBytes": 581255168,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 33.65331420000439
+    },
+    {
+      "request": {
+        "longitude": 45,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "a8db0a3583efeaad320744a3be2852a21bdfbbe0df26b873d22261096bde44a9",
+      "siteId": "custom-e05574cb98d72115",
+      "groundResolutionM": 20,
+      "groundM": 2425.6982236638855,
+      "horizonHash": "da5fc10335cdf0291178c1aab0f2f17963496d01d515e315f41a2ec3f96331cf",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 41.906800400000066,
+        "peakWorkingSetBytes": 581062656,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 50.30092480000167
+    },
+    {
+      "request": {
+        "longitude": 90,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "64e943f54a94d0909f4b7c1013a572e55e195debb7e9b7e41c12eb243608fefc",
+      "siteId": "custom-97f377d8c14dbc84",
+      "groundResolutionM": 20,
+      "groundM": -3722.963298405147,
+      "horizonHash": "858826c30abe505a946787b040d9e98bb32de79d35db304f726c8186d8a9a8b1",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 36.39950760000647,
+        "peakWorkingSetBytes": 581328896,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 45.75656750000053
+    },
+    {
+      "request": {
+        "longitude": 135,
+        "latitude": -85,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "cff0161ed85f59ef23b6484eaa05df59ba1c64bdd4a186bd40bcea107693fe81",
+      "siteId": "custom-ee1b1ab211998776",
+      "groundResolutionM": 20,
+      "groundM": -3283.9457705753607,
+      "horizonHash": "7e49f7e1e290d6cc4fa84ffcc8b7f71b1e48581d2f2f869e369d71306904a0fa",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 29.436830899998313,
+        "peakWorkingSetBytes": 581672960,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 34.068419799994444
+    },
+    {
+      "request": {
+        "longitude": -137.14401541244482,
+        "latitude": -89.4390257245831,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "ee23a2588ae22c73aeb874c1fb40e579a441a025081d786fe1bde03f553c6a1f",
+      "siteId": "custom-733030ffc2f62a99",
+      "groundResolutionM": 5,
+      "groundM": 1959.154479980481,
+      "horizonHash": "3df4c34454567ed8990c7bce3173ea8e1a0f573f6b3dde5e65a22dadb6f6bc7e",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 29.869069899999886,
+        "peakWorkingSetBytes": 581271552,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 44.896216100001766
+    },
+    {
+      "request": {
+        "longitude": -161.90779352654087,
+        "latitude": -89.7908003122825,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "39f7503386692de0a1112fc6392c4e66ba400874aada5014fd6dd38237aa66e5",
+      "siteId": "custom-1754231e0c12494b",
+      "groundResolutionM": 5,
+      "groundM": 1411.1348266593916,
+      "horizonHash": "0d2a9b6fb2d0f6be5dc9ef2605cd7ba95dd6c18797389b9a7c2902fb66fbf55a",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 134.61912110000412,
+        "peakWorkingSetBytes": 581091328,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 192.95945779999602
+    },
+    {
+      "request": {
+        "longitude": -68.39564496957904,
+        "latitude": -88.6646268225162,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "d67ed34b4e84cebc02853ae6a439b5ad14028e4df4a3ce9bb50589781d71de7f",
+      "siteId": "custom-181145c4f44309ef",
+      "groundResolutionM": 5,
+      "groundM": 1815.0805053709364,
+      "horizonHash": "a967495795f40e4c210b18e90e763552f198281f2a3f436329a6ebbdf88365be",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 11.339258400003018,
+        "peakWorkingSetBytes": 581431296,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 13.354959399999643
+    },
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -87.5,
+        "startUTC": "2027-06-21T12:00:00Z",
+        "duration": 72,
+        "delay": 48,
+        "height": 2
+      },
+      "resultId": "68eca705364b0479c67ba5290116548fe2b2130f7783736b92ef94086824e778",
+      "siteId": "custom-a5524074b3c18c86",
+      "groundResolutionM": 20,
+      "groundM": -3422.759567857837,
+      "horizonHash": "1276a1d2ac4d9682f745fc5bd4b54387572bfc88ea512a4832e2c7e8da2ef16d",
+      "observations": [
+        "2027-06-21T12:00:00Z",
+        "2027-06-29T12:10:00Z"
+      ],
+      "performance": {
+        "seconds": 1.6511281999992207,
+        "peakWorkingSetBytes": 161972224,
+        "horizonCacheHit": true,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 3.1407417000009445
+    },
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -87.5,
+        "startUTC": "2027-12-31T23:50:00Z",
+        "duration": 168,
+        "delay": 72,
+        "height": 2
+      },
+      "resultId": "e705d743628bf56cf8820dbc394f629c23dc7a235d6aabb48504794b7fff9903",
+      "siteId": "custom-a5524074b3c18c86",
+      "groundResolutionM": 20,
+      "groundM": -3422.759567857837,
+      "horizonHash": "1276a1d2ac4d9682f745fc5bd4b54387572bfc88ea512a4832e2c7e8da2ef16d",
+      "observations": [
+        "2027-12-31T23:50:00Z",
+        "2028-01-14T00:00:00Z"
+      ],
+      "performance": {
+        "seconds": 1.8403629999957047,
+        "peakWorkingSetBytes": 163549184,
+        "horizonCacheHit": true,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 3.189073699999426
+    }
+  ],
+  "status": "passed",
+  "cached": {
+    "request": {
+      "longitude": 0,
+      "latitude": -87.5,
+      "startUTC": "2027-01-01T00:00:00Z",
+      "duration": 1,
+      "delay": 0,
+      "height": 2
+    },
+    "resultId": "a45be3ae1c9258f217c8d85591c5d6da318705757e46638bb988a6a358d9cf3f",
+    "siteId": "custom-a5524074b3c18c86",
+    "groundResolutionM": 20,
+    "groundM": -3422.759567857837,
+    "horizonHash": "1276a1d2ac4d9682f745fc5bd4b54387572bfc88ea512a4832e2c7e8da2ef16d",
+    "observations": [
+      "2027-01-01T00:00:00Z",
+      "2027-01-04T01:10:00Z"
+    ],
+    "performance": {
+      "seconds": 1.2639150000031805,
+      "peakWorkingSetBytes": 159449088,
+      "horizonCacheHit": true,
+      "observationCacheHit": true
+    },
+    "wallSeconds": 2.6142748999991454
+  },
+  "cancelledJobVerified": true
+}

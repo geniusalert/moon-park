@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "source": "https://pds-geosciences.wustl.edu/lro/urn-nasa-pds-lro_diviner_derived1/data_derived_pcp/diurnal/ltim/pols/pcp_avg_tbol_pols_sum_ltim01_240.tab",
+    "byteRange": [
+      106230000,
+      106295535
+    ],
+    "sampleSha256": "2752a895d2d2ec71c58752b2e810a03f4b6e713cc593da862d65bba864a8a15a",
+    "labelSha256": "17d9d1a8bac3963543aa59446d818253caa912b4dcf4edb4d9f45f51f1363538",
+    "measuredQuantity": "Diviner bolometric brightness temperature; 240 m bins; local time [0,0.25) h; south summer; accumulated 2009-07-05 through 2019-02-17"
+  },
+  "referenceModel": {
+    "repository": "https://github.com/phayne/heat1d",
+    "commit": "5b73a6c1ba5047f59f6210185b37539e46e68136",
+    "paper": "https://doi.org/10.1002/2017JE005387",
+    "configuration": {
+      "solver": "implicit",
+      "equilibrationYears": 1,
+      "outputSamplesPerLunarDay": 192,
+      "outputLunarDays": 13,
+      "adaptiveToleranceK": 0.25
+    },
+    "physicalTarget": "flat lunar regolith; default published thermophysical properties"
+  },
+  "cases": [
+    {
+      "latitude": -85.21306695999999,
+      "longitudeRangeDeg": [
+        -177.878657,
+        -2.1525
+      ],
+      "measuredSamples": 50,
+      "predictedSamples": 12,
+      "measuredMeanK": 56.14547584000001,
+      "measuredStdK": 8.447973623394542,
+      "referenceModelMeanK": 64.51011047951509,
+      "residualK": 8.364634639515081
+    },
+    {
+      "latitude": -86.9814394893617,
+      "longitudeRangeDeg": [
+        -176.650242,
+        -3.349758
+      ],
+      "measuredSamples": 47,
+      "predictedSamples": 12,
+      "measuredMeanK": 53.13912131914894,
+      "measuredStdK": 11.335968050751163,
+      "referenceModelMeanK": 60.940373597826486,
+      "residualK": 7.801252278677545
+    },
+    {
+      "latitude": -89.01122058928571,
+      "longitudeRangeDeg": [
+        -170.603489,
+        -9.396511
+      ],
+      "measuredSamples": 56,
+      "predictedSamples": 12,
+      "measuredMeanK": 53.882559464285706,
+      "measuredStdK": 10.330418756566901,
+      "referenceModelMeanK": 65.0543788462701,
+      "residualK": 11.171819381984392
+    }
+  ],
+  "rmseLatitudeMeansK": 9.231038187763232,
+  "status": "measured surface comparison completed; hardware validation remains unestablished",
+  "limitations": [
+    "Partial byte-range sample, three latitude bands and one local-time bin only.",
+    "Reference model averages one modeled year of southern summer; measurements aggregate ten years and real rough/sloped/rocky surfaces.",
+    "No pixel-specific terrain, albedo, rocks or observation weighting is matched. Residuals are exploratory diagnostics.",
+    "This benchmark checks a published regolith model, not Moon Park spacecraft temperatures. It supplies no spacecraft thermal-survival validation."
+  ]
+}

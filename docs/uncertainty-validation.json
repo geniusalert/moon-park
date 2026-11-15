@@ -1,0 +1,6729 @@
+{
+  "generatedAt": "2026-11-11T05:39:25.392Z",
+  "scope": {
+    "cloneRadiusM": 2000,
+    "fullPerturbationRadiusM": 1800,
+    "taper": "Cosine weight from one to zero between 1.8 and 2.0 km to avoid an artificial crop-edge step",
+    "cloneIds": [
+      1,
+      26,
+      51,
+      76
+    ],
+    "interpretation": "Four fixed published clone-minus-nominal perturbations, full inside 1.8 km and tapered to zero by 2 km; outer local/regional terrain is held nominal. Frequencies are conditional sample counts, not probabilities.",
+    "numericalInterpretation": "Numerical variants are a separate family; they are not added to the clone sample count."
+  },
+  "checks": [
+    {
+      "name": "Terrain variant artifact hash and context",
+      "pass": true
+    },
+    {
+      "name": "Site01 four clone and four numerical cases",
+      "pass": true
+    },
+    {
+      "name": "Site01 clone-0001 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 clone-0026 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 clone-0051 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 clone-0076 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site01 variant heights preserve monotone horizons",
+      "pass": true
+    },
+    {
+      "name": "Site01 finer radial grid retains every nominal sampled obstruction",
+      "pass": true
+    },
+    {
+      "name": "Site04 four clone and four numerical cases",
+      "pass": true
+    },
+    {
+      "name": "Site04 clone-0001 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 clone-0026 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 clone-0051 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 clone-0076 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site04 variant heights preserve monotone horizons",
+      "pass": true
+    },
+    {
+      "name": "Site04 finer radial grid retains every nominal sampled obstruction",
+      "pass": true
+    },
+    {
+      "name": "Site11 four clone and four numerical cases",
+      "pass": true
+    },
+    {
+      "name": "Site11 clone-0001 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 clone-0026 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 clone-0051 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 clone-0076 derived crop hash",
+      "pass": true
+    },
+    {
+      "name": "Site11 variant heights preserve monotone horizons",
+      "pass": true
+    },
+    {
+      "name": "Site11 finer radial grid retains every nominal sampled obstruction",
+      "pass": true
+    },
+    {
+      "name": "Observer correction cross-checks",
+      "pass": true
+    },
+    {
+      "name": "Scenario 14/2/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 14/2/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 14/10/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 14/10/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 21/2/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 21/2/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 21/10/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 21/10/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 29/2/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 29/2/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 29/10/0 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Scenario 29/10/48 has complete families",
+      "pass": true
+    },
+    {
+      "name": "Fine observations match the nominal location and ground",
+      "pass": true
+    },
+    {
+      "name": "One-minute source cadence",
+      "pass": true
+    },
+    {
+      "name": "One-minute realization families complete",
+      "pass": true
+    }
+  ],
+  "observerCorrection": {
+    "method": "Translate the nominal apparent topocentric vector along the local radial axis, using its actual target range; validate against direct SPICE at start/middle/end for each variant, target and height.",
+    "checks": [
+      {
+        "siteId": "Site01",
+        "maxElevationResidualDeg": 3.888001032237298e-12,
+        "checks": 144
+      },
+      {
+        "siteId": "Site04",
+        "maxElevationResidualDeg": 1.3649525953951525e-11,
+        "checks": 144
+      },
+      {
+        "siteId": "Site11",
+        "maxElevationResidualDeg": 8.822498287486269e-12,
+        "checks": 144
+      }
+    ]
+  },
+  "scenarios": [
+    {
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 11.333333333333336,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 11.333333333333336
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.166666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.166666666666664
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 11.333333333333336,
+                  "max": 11.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 11.166666666666664,
+                  "max": 11.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              60.833333333333336,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 11.166666666666664,
+              "max": 11.333333333333336
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 9,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 9
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 9,
+                  "max": 9
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 9,
+                  "max": 9
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              63,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 9,
+              "max": 9
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site01"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 59.333333333333336,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 59.333333333333336
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.166666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.166666666666664
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 59.333333333333336,
+                  "max": 59.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 59.166666666666664,
+                  "max": 59.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              12.833333333333334,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 59.166666666666664,
+              "max": 59.333333333333336
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 57,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 57
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 57,
+                  "max": 57
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 57,
+                  "max": 57
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              15,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 57,
+              "max": 57
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site01"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 11.333333333333336,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 11.333333333333336
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 11.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 11.333333333333336
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 11.333333333333336,
+                  "max": 11.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 11.333333333333336,
+                  "max": 11.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              60.666666666666664,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 11.333333333333336,
+              "max": 11.333333333333336
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 9,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 9
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9.166666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9.166666666666664
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 9,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 9
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 9,
+                  "max": 9
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 9,
+                  "max": 9.166666666666664
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              63,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 9,
+              "max": 9.166666666666664
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site01"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 59.333333333333336,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 59.333333333333336
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 59.333333333333336,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 59.333333333333336
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 59.333333333333336,
+                  "max": 59.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 59.333333333333336,
+                  "max": 59.333333333333336
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              12.666666666666666,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 59.333333333333336,
+              "max": 59.333333333333336
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 57,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 57
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57.166666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57.166666666666664
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 57,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 57
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 57,
+                  "max": 57
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 57,
+                  "max": 57.166666666666664
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              15,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 57,
+              "max": 57.166666666666664
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site01"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 68.33333333333333,
+            "longestDark": 3.6666666666666714,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 68.33333333333333,
+              "longestDark": 3.6666666666666714,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 68.33333333333333,
+                  "max": 68.33333333333333
+                },
+                "longestDark": {
+                  "min": 3.6666666666666714,
+                  "max": 3.6666666666666714
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 68.33333333333333,
+                  "max": 68.33333333333333
+                },
+                "longestDark": {
+                  "min": 3.6666666666666714,
+                  "max": 3.6666666666666714
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 68.33333333333333,
+              "max": 68.33333333333333
+            },
+            "longestDark": {
+              "min": 3.6666666666666714,
+              "max": 3.6666666666666714
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "sensitive-or-tied",
+        "possiblePreferredSites": [
+          "Site01",
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 20.333333333333332,
+            "longestDark": 51.66666666666667,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 20.333333333333332,
+              "longestDark": 51.66666666666667,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 20.333333333333332,
+                  "max": 20.333333333333332
+                },
+                "longestDark": {
+                  "min": 51.66666666666667,
+                  "max": 51.66666666666667
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 20.333333333333332,
+                  "max": 20.333333333333332
+                },
+                "longestDark": {
+                  "min": 51.66666666666667,
+                  "max": 51.66666666666667
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 20.333333333333332,
+              "max": 20.333333333333332
+            },
+            "longestDark": {
+              "min": 51.66666666666667,
+              "max": 51.66666666666667
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "sensitive-or-tied",
+        "possiblePreferredSites": [
+          "Site01",
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 3.6666666666666714,
+            "sunHours": 69,
+            "longestDark": 3,
+            "longestCombined": 3.6666666666666714
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 3.3333333333333286,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.3333333333333286
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 3.1666666666666714,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.1666666666666714
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 1.8333333333333286,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 1.8333333333333286
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.3333333333333286,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 2.3333333333333286
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.6666666666666714,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.6666666666666714
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.6666666666666714,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.6666666666666714
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.6666666666666714,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.6666666666666714
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.8333333333333286,
+              "sunHours": 69,
+              "longestDark": 3,
+              "longestCombined": 3.8333333333333286
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 1.8333333333333286,
+                  "max": 3.3333333333333286
+                },
+                "sunHours": {
+                  "min": 69,
+                  "max": 69
+                },
+                "longestDark": {
+                  "min": 3,
+                  "max": 3
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 3.6666666666666714,
+                  "max": 3.8333333333333286
+                },
+                "sunHours": {
+                  "min": 69,
+                  "max": 69
+                },
+                "longestDark": {
+                  "min": 3,
+                  "max": 3
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              67.16666666666667,
+              69
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 1.8333333333333286,
+              "max": 3.8333333333333286
+            },
+            "sunHours": {
+              "min": 69,
+              "max": 69
+            },
+            "longestDark": {
+              "min": 3,
+              "max": 3
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "sensitive-or-tied",
+        "possiblePreferredSites": [
+          "Site01",
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 3.666666666666668,
+            "sunHours": 21,
+            "longestDark": 51,
+            "longestCombined": 3.666666666666668
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 3.333333333333332,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.333333333333332
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 3.166666666666668,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.166666666666668
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 1.8333333333333321,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 1.8333333333333321
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.333333333333332,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 2.333333333333332
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.666666666666668,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.666666666666668
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.666666666666668,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.666666666666668
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.666666666666668,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.666666666666668
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 3.833333333333332,
+              "sunHours": 21,
+              "longestDark": 51,
+              "longestCombined": 3.833333333333332
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 1.8333333333333321,
+                  "max": 3.333333333333332
+                },
+                "sunHours": {
+                  "min": 21,
+                  "max": 21
+                },
+                "longestDark": {
+                  "min": 51,
+                  "max": 51
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 3.666666666666668,
+                  "max": 3.833333333333332
+                },
+                "sunHours": {
+                  "min": 21,
+                  "max": 21
+                },
+                "longestDark": {
+                  "min": 51,
+                  "max": 51
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              19.166666666666668,
+              21
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 1.8333333333333321,
+              "max": 3.833333333333332
+            },
+            "sunHours": {
+              "min": 21,
+              "max": 21
+            },
+            "longestDark": {
+              "min": 51,
+              "max": 51
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 72,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 72
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 72,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 72
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 72,
+                  "max": 72
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              72
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 72,
+              "max": 72
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "sensitive-or-tied",
+        "possiblePreferredSites": [
+          "Site01",
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 30.5,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 30.5
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 30.5,
+                  "max": 30.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 30.5,
+                  "max": 30.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              30.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 30.5,
+              "max": 30.5
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 0,
+            "longestDark": 72,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 0,
+              "max": 0
+            },
+            "longestDark": {
+              "min": 72,
+              "max": 72
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 50.5,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 50.5
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 50.5,
+                  "max": 50.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 50.5,
+                  "max": 50.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              50.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 50.5,
+              "max": 50.5
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "duration": 72,
+        "height": 2,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 0,
+            "longestDark": 72,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 0,
+              "max": 0
+            },
+            "longestDark": {
+              "min": 72,
+              "max": 72
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 2.5,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 2.5
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 2.5,
+                  "max": 2.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 2.5,
+                  "max": 2.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              2.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 2.5,
+              "max": 2.5
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "no-passing-choice",
+        "possiblePreferredSites": [],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": false,
+            "allTestedPass": false
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 0,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 30.5,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 30.5
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 30.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 30.5
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 30.5,
+                  "max": 30.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 30.5,
+                  "max": 30.5
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              30.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 30.5,
+              "max": 30.5
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 0,
+            "longestDark": 72,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 0,
+              "max": 0
+            },
+            "longestDark": {
+              "min": 72,
+              "max": 72
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": true,
+            "overlap": 50.666666666666664,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 50.666666666666664
+          },
+          "status": "passes-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": true,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": true,
+              "overlap": 50.666666666666664,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 50.666666666666664
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 50.666666666666664,
+                  "max": 50.666666666666664
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 4,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 50.5,
+                  "max": 50.666666666666664
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              50.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 50.5,
+              "max": 50.666666666666664
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "stable-tested-preference",
+        "possiblePreferredSites": [
+          "Site11"
+        ],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": true,
+            "allTestedPass": true
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 3,
+            "bestRank": 3,
+            "worstRank": 3,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": true,
+            "allTestedPass": true
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    },
+    {
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "duration": 72,
+        "height": 10,
+        "delay": 48,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "analyses": [
+        {
+          "siteId": "Site01",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        },
+        {
+          "siteId": "Site04",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 0,
+            "longestDark": 72,
+            "longestCombined": 0
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 0,
+              "sunHours": 0,
+              "longestDark": 72,
+              "longestCombined": 0
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 0,
+                  "max": 0
+                },
+                "sunHours": {
+                  "min": 0,
+                  "max": 0
+                },
+                "longestDark": {
+                  "min": 72,
+                  "max": 72
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [],
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 0,
+              "max": 0
+            },
+            "longestDark": {
+              "min": 72,
+              "max": 72
+            }
+          }
+        },
+        {
+          "siteId": "Site11",
+          "nominal": {
+            "modelPass": false,
+            "overlap": 2.6666666666666665,
+            "sunHours": 72,
+            "longestDark": 0,
+            "longestCombined": 2.6666666666666665
+          },
+          "status": "fails-all-tested",
+          "nearSamplingLimit": false,
+          "allTestedPass": false,
+          "cases": [
+            {
+              "id": "clone-0001",
+              "label": "Near-field clone 001",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "clone-0026",
+              "label": "Near-field clone 026",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "clone-0051",
+              "label": "Near-field clone 051",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "clone-0076",
+              "label": "Near-field clone 076",
+              "family": "clone",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "angular-coarse",
+              "label": "0.5° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "angular-fine",
+              "label": "0.125° azimuth rays",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.5,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.5
+            },
+            {
+              "id": "radial-fine",
+              "label": "Finer radial sampling",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            },
+            {
+              "id": "grid-20m",
+              "label": "20 m local terrain",
+              "family": "numerical",
+              "modelPass": false,
+              "overlap": 2.6666666666666665,
+              "sunHours": 72,
+              "longestDark": 0,
+              "longestCombined": 2.6666666666666665
+            }
+          ],
+          "families": {
+            "clone": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 2.6666666666666665,
+                  "max": 2.6666666666666665
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            },
+            "numerical": {
+              "tested": 4,
+              "expected": 4,
+              "passing": 0,
+              "complete": true,
+              "ranges": {
+                "overlap": {
+                  "min": 2.5,
+                  "max": 2.6666666666666665
+                },
+                "sunHours": {
+                  "min": 72,
+                  "max": 72
+                },
+                "longestDark": {
+                  "min": 0,
+                  "max": 0
+                }
+              }
+            }
+          },
+          "errors": [],
+          "commonWindows": [
+            [
+              0,
+              2.5
+            ]
+          ],
+          "ranges": {
+            "overlap": {
+              "min": 2.5,
+              "max": 2.6666666666666665
+            },
+            "sunHours": {
+              "min": 72,
+              "max": 72
+            },
+            "longestDark": {
+              "min": 0,
+              "max": 0
+            }
+          }
+        }
+      ],
+      "ranking": {
+        "status": "no-passing-choice",
+        "possiblePreferredSites": [],
+        "rows": [
+          {
+            "siteId": "Site01",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site04",
+            "nominalRank": 2,
+            "bestRank": 2,
+            "worstRank": 2,
+            "anyPassing": false,
+            "allTestedPass": false
+          },
+          {
+            "siteId": "Site11",
+            "nominalRank": 1,
+            "bestRank": 1,
+            "worstRank": 1,
+            "anyPassing": false,
+            "allTestedPass": false
+          }
+        ],
+        "toleranceHours": 0.16666666666666666,
+        "method": "Requirements first, then greater combined availability; ties within one observation bin. Rank spans use best/worst tested outcomes independently by site; they are conservative possibilities, not probabilities or matched global clone worlds."
+      }
+    }
+  ],
+  "thresholdProbes": [],
+  "summary": {
+    "scenarios": 12,
+    "siteCases": 36,
+    "sensitiveSiteCases": 0,
+    "stablePreferredScenarios": 6,
+    "tiedOrSensitivePreferredScenarios": 4,
+    "noPassingChoiceScenarios": 2,
+    "constructedThresholdProbes": 0,
+    "maxCloneSunlightSpreadHours": 0,
+    "maxNumericalSunlightSpreadHours": 0,
+    "maxCloneOverlapSpreadHours": 1.5,
+    "maxNumericalOverlapSpreadHours": 0.1666666666666714
+  },
+  "defaultRecovery": {
+    "nominalPassing": 42,
+    "passingAllTested": 42,
+    "evaluationMilliseconds": 210.98489999999993
+  },
+  "fineStudy": {
+    "description": "Separate direct one-minute Shackleton study, not an automatic refinement of the current app inputs.",
+    "siteId": "Site04",
+    "config": {
+      "startUTC": "2026-11-21T00:00:00Z",
+      "delay": 48,
+      "duration": 72,
+      "height": 2,
+      "maxDark": 12,
+      "minOverlap": 8,
+      "stepMinutes": 1
+    },
+    "analysis": {
+      "siteId": "Site04",
+      "nominal": {
+        "modelPass": false,
+        "overlap": 0,
+        "sunHours": 20.283333333333335,
+        "longestDark": 51.71666666666667,
+        "longestCombined": 0
+      },
+      "status": "fails-all-tested",
+      "nearSamplingLimit": false,
+      "allTestedPass": false,
+      "cases": [
+        {
+          "id": "clone-0001",
+          "label": "Near-field clone 001",
+          "family": "clone",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.283333333333335,
+          "longestDark": 51.71666666666667,
+          "longestCombined": 0
+        },
+        {
+          "id": "clone-0026",
+          "label": "Near-field clone 026",
+          "family": "clone",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.266666666666666,
+          "longestDark": 51.733333333333334,
+          "longestCombined": 0
+        },
+        {
+          "id": "clone-0051",
+          "label": "Near-field clone 051",
+          "family": "clone",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.216666666666665,
+          "longestDark": 51.78333333333333,
+          "longestCombined": 0
+        },
+        {
+          "id": "clone-0076",
+          "label": "Near-field clone 076",
+          "family": "clone",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.233333333333334,
+          "longestDark": 51.766666666666666,
+          "longestCombined": 0
+        },
+        {
+          "id": "angular-coarse",
+          "label": "0.5° azimuth rays",
+          "family": "numerical",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.316666666666666,
+          "longestDark": 51.68333333333334,
+          "longestCombined": 0
+        },
+        {
+          "id": "angular-fine",
+          "label": "0.125° azimuth rays",
+          "family": "numerical",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.3,
+          "longestDark": 51.7,
+          "longestCombined": 0
+        },
+        {
+          "id": "radial-fine",
+          "label": "Finer radial sampling",
+          "family": "numerical",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.266666666666666,
+          "longestDark": 51.733333333333334,
+          "longestCombined": 0
+        },
+        {
+          "id": "grid-20m",
+          "label": "20 m local terrain",
+          "family": "numerical",
+          "modelPass": false,
+          "overlap": 0,
+          "sunHours": 20.316666666666666,
+          "longestDark": 51.68333333333334,
+          "longestCombined": 0
+        }
+      ],
+      "families": {
+        "clone": {
+          "tested": 4,
+          "expected": 4,
+          "passing": 0,
+          "complete": true,
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 20.216666666666665,
+              "max": 20.283333333333335
+            },
+            "longestDark": {
+              "min": 51.71666666666667,
+              "max": 51.78333333333333
+            }
+          }
+        },
+        "numerical": {
+          "tested": 4,
+          "expected": 4,
+          "passing": 0,
+          "complete": true,
+          "ranges": {
+            "overlap": {
+              "min": 0,
+              "max": 0
+            },
+            "sunHours": {
+              "min": 20.266666666666666,
+              "max": 20.316666666666666
+            },
+            "longestDark": {
+              "min": 51.68333333333334,
+              "max": 51.733333333333334
+            }
+          }
+        }
+      },
+      "errors": [],
+      "commonWindows": [],
+      "ranges": {
+        "overlap": {
+          "min": 0,
+          "max": 0
+        },
+        "sunHours": {
+          "min": 20.216666666666665,
+          "max": 20.316666666666666
+        },
+        "longestDark": {
+          "min": 51.68333333333334,
+          "max": 51.78333333333333
+        }
+      }
+    },
+    "constructedThresholdProbe": {
+      "description": "Hypothetical limit chosen between sampled clone extremes; zero required Earth overlap isolates the darkness constraint. Not a real mission requirement.",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 51.75,
+        "minOverlap": 0,
+        "stepMinutes": 1
+      },
+      "analysis": {
+        "siteId": "Site04",
+        "nominal": {
+          "modelPass": true,
+          "overlap": 0,
+          "sunHours": 20.283333333333335,
+          "longestDark": 51.71666666666667,
+          "longestCombined": 0
+        },
+        "status": "sensitive",
+        "nearSamplingLimit": true,
+        "allTestedPass": false,
+        "cases": [
+          {
+            "id": "clone-0001",
+            "label": "Near-field clone 001",
+            "family": "clone",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.283333333333335,
+            "longestDark": 51.71666666666667,
+            "longestCombined": 0
+          },
+          {
+            "id": "clone-0026",
+            "label": "Near-field clone 026",
+            "family": "clone",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.266666666666666,
+            "longestDark": 51.733333333333334,
+            "longestCombined": 0
+          },
+          {
+            "id": "clone-0051",
+            "label": "Near-field clone 051",
+            "family": "clone",
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 20.216666666666665,
+            "longestDark": 51.78333333333333,
+            "longestCombined": 0
+          },
+          {
+            "id": "clone-0076",
+            "label": "Near-field clone 076",
+            "family": "clone",
+            "modelPass": false,
+            "overlap": 0,
+            "sunHours": 20.233333333333334,
+            "longestDark": 51.766666666666666,
+            "longestCombined": 0
+          },
+          {
+            "id": "angular-coarse",
+            "label": "0.5° azimuth rays",
+            "family": "numerical",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.316666666666666,
+            "longestDark": 51.68333333333334,
+            "longestCombined": 0
+          },
+          {
+            "id": "angular-fine",
+            "label": "0.125° azimuth rays",
+            "family": "numerical",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.3,
+            "longestDark": 51.7,
+            "longestCombined": 0
+          },
+          {
+            "id": "radial-fine",
+            "label": "Finer radial sampling",
+            "family": "numerical",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.266666666666666,
+            "longestDark": 51.733333333333334,
+            "longestCombined": 0
+          },
+          {
+            "id": "grid-20m",
+            "label": "20 m local terrain",
+            "family": "numerical",
+            "modelPass": true,
+            "overlap": 0,
+            "sunHours": 20.316666666666666,
+            "longestDark": 51.68333333333334,
+            "longestCombined": 0
+          }
+        ],
+        "families": {
+          "clone": {
+            "tested": 4,
+            "expected": 4,
+            "passing": 2,
+            "complete": true,
+            "ranges": {
+              "overlap": {
+                "min": 0,
+                "max": 0
+              },
+              "sunHours": {
+                "min": 20.216666666666665,
+                "max": 20.283333333333335
+              },
+              "longestDark": {
+                "min": 51.71666666666667,
+                "max": 51.78333333333333
+              }
+            }
+          },
+          "numerical": {
+            "tested": 4,
+            "expected": 4,
+            "passing": 4,
+            "complete": true,
+            "ranges": {
+              "overlap": {
+                "min": 0,
+                "max": 0
+              },
+              "sunHours": {
+                "min": 20.266666666666666,
+                "max": 20.316666666666666
+              },
+              "longestDark": {
+                "min": 51.68333333333334,
+                "max": 51.733333333333334
+              }
+            }
+          }
+        },
+        "errors": [],
+        "commonWindows": [],
+        "ranges": {
+          "overlap": {
+            "min": 0,
+            "max": 0
+          },
+          "sunHours": {
+            "min": 20.216666666666665,
+            "max": 20.316666666666666
+          },
+          "longestDark": {
+            "min": 51.68333333333334,
+            "max": 51.78333333333333
+          }
+        }
+      }
+    },
+    "source": {
+      "url": "/data/uncertainty-fine-case.json",
+      "sha256": "86562faf83227bc3136c2a6b4a4a0dbd4ac6d3d3aac82082d2dd71dc3ed32663"
+    },
+    "cloneSunlightSpreadMinutes": 4.000000000000199,
+    "numericalSunlightSpreadMinutes": 3.0000000000000426
+  },
+  "benchmarkDefinition": "The summary covers 12 fixed 10-minute scenarios and 36 per-site cases; the separate one-minute study and its constructed threshold probe are reported under fineStudy."
+}

@@ -1,0 +1,55 @@
+const $=id=>document.getElementById(id);
+const ns='http://www.w3.org/2000/svg';
+function svg(tag,attrs,text){const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v);if(text!==undefined)e.textContent=text;return e;}
+const rad=Math.PI/180;
+const coordinateText=(p,d=4)=>`${Math.abs(p.latitude).toFixed(d)}° ${p.latitude<0?'S':'N'} · ${Math.abs(p.longitude).toFixed(d)}° ${p.longitude<0?'W':'E'}`;
+export function drawLocationMap(map,center,points,pins,selected,onPick){
+ map.replaceChildren();center=center??{latitude:0,longitude:0};
+ const lat=center.latitude*rad,lon=center.longitude*rad,R=1737.4,range=500,scale=174/range;
+ map.append(svg('circle',{cx:200,cy:200,r:180,fill:'#101913',stroke:'#465d49'}));
+ for(const km of [100,250,500]){map.append(svg('circle',{cx:200,cy:200,r:km*scale,fill:'none',stroke:'#526752','stroke-dasharray':km===100?'3 5':'none'}),svg('text',{x:204,y:200-km*scale+13,fill:'#b7c8ae','font-size':10},`${km} km`));}
+ for(const [x,y,t] of [[200,17,'N'],[383,204,'E'],[198,395,'S'],[9,204,'W']])map.append(svg('text',{x,y,fill:'#edcc8b','font-size':11},t));
+ map.append(svg('path',{d:'M200 26V374 M26 200H374',stroke:'#3e5141',fill:'none'}));
+ const project=p=>{const b=p.latitude*rad,d=p.longitude*rad-lon;const c=Math.acos(Math.max(-1,Math.min(1,Math.sin(lat)*Math.sin(b)+Math.cos(lat)*Math.cos(b)*Math.cos(d))));const bearing=Math.atan2(Math.sin(d)*Math.cos(b),Math.cos(lat)*Math.sin(b)-Math.sin(lat)*Math.cos(b)*Math.cos(d));return [200+R*c*Math.sin(bearing)*scale,200-R*c*Math.cos(bearing)*scale,R*c];};
+ for(const p of points.filter(p=>Number.isFinite(p.latitude)&&Number.isFinite(p.longitude))){const [x,y,d]=project(p);if(d>range)continue;const dot=svg('circle',{cx:x,cy:y,r:p.id===selected?7:pins.includes(p.id)?5:3,fill:pins.includes(p.id)?'#edcc8b':'#9cb99a',tabindex:0,role:'button','aria-label':`Choose ${p.name}`});dot.append(svg('title',{},p.name));dot.onclick=e=>{e.stopPropagation();onPick(p);};dot.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onPick(p);}};map.append(dot);}
+ map.append(svg('circle',{cx:200,cy:200,r:9,fill:'none',stroke:'#edcc8b','stroke-width':2}),svg('circle',{cx:200,cy:200,r:2,fill:'#fff'}));
+ const text=svg('text',{x:200,y:419,'text-anchor':'middle',fill:'#c1cfbb','font-size':11},coordinateText(center));map.setAttribute('viewBox','0 0 400 430');map.append(text);
+ map.onclick=e=>{if(e.target.closest('[role="button"]'))return;const pt=map.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const m=map.getScreenCTM();if(!m)return;const q=pt.matrixTransform(m.inverse()),x=(q.x-200)/scale,y=(200-q.y)/scale,d=Math.hypot(x,y);if(d>range)return;const c=d/R,bearing=Math.atan2(x,y),b=Math.asin(Math.max(-1,Math.min(1,Math.sin(lat)*Math.cos(c)+Math.cos(lat)*Math.sin(c)*Math.cos(bearing))));const l=lon+Math.atan2(Math.sin(bearing)*Math.sin(c)*Math.cos(lat),Math.cos(c)-Math.sin(lat)*Math.sin(b));onPick({latitude:b/rad,longitude:((l/rad+540)%360)-180,name:'Selected coordinate',kind:'custom'});};
+}
+export function drawHorizonScene(profile,sample,isSphere){
+ const scene=$('horizonScene');scene.replaceChildren();if(!sample)return;
+ const low=Math.min(-2,...profile.map(p=>p.el),sample.sunEl,sample.earthEl)-2,high=Math.max(3,...profile.map(p=>p.el),sample.sunEl,sample.earthEl)+3;
+ const y=e=>280-(e-low)/(high-low)*235,x=az=>32+az/360*836;
+ const defs=svg('defs',{}),g=svg('linearGradient',{id:'skyGradient',x2:0,y2:1});g.append(svg('stop',{offset:0,'stop-color':'#0c130f'}),svg('stop',{offset:1,'stop-color':'#35483b'}));defs.append(g);scene.append(defs,svg('rect',{width:900,height:330,rx:12,fill:'url(#skyGradient)'}));
+ const path=profile.map((p,i)=>`${i?'L':'M'}${x(p.az)},${y(p.el)}`).join(' ');scene.append(svg('path',{d:`${path} L868 300 L32 300Z`,fill:'#70816a',opacity:.65}),svg('path',{d:path,fill:'none',stroke:'#c1d0b0','stroke-width':2}));
+ scene.append(svg('path',{d:`M32 ${y(0)}H868`,stroke:'#a7b69d','stroke-dasharray':'6 6'}),svg('text',{x:32,y:22,fill:'#d4dfcb','font-size':12},isSphere?'REFERENCE-SPHERE HORIZON · terrain omitted':'CALCULATED TERRAIN SKYLINE · elevation scale adapts'));
+ for(const [name,az,el,color,visible] of [['Sun',sample.az,sample.sunEl,'#edcc8b',sample.sun],['Earth',sample.earthAz,sample.earthEl,'#c1d5b8',sample.earth]]){scene.append(svg('circle',{cx:x(az),cy:y(el),r:25,fill:color,opacity:.08}),svg('circle',{cx:x(az),cy:y(el),r:name==='Sun'?11:8,fill:color,opacity:visible?1:.35}),svg('text',{x:Math.max(32,Math.min(715,x(az)+17)),y:Math.max(44,y(el)-10),fill:color,'font-size':13},`${name} ${el.toFixed(2)}° · ${visible?'visible':'hidden'}`));}
+ for(const az of [0,90,180,270,360])scene.append(svg('text',{x:x(az),y:318,'text-anchor':'middle',fill:'#bccab5','font-size':11},`${az}°`));
+ scene.append(svg('text',{x:32,y:298,fill:'#d4dfcb','font-size':11},`Elevation ${low.toFixed(1)}° to ${high.toFixed(1)}° · no atmospheric refraction · object sizes illustrative`));
+}
+export function comparisonVisual(card,point,result){
+ const panel=document.createElement('div');panel.className='comparison-visual';const map=document.createElementNS(ns,'svg');map.setAttribute('viewBox','0 0 400 430');drawLocationMap(map,point,[point],[point.id],point.id,()=>{});map.style.pointerEvents='none';for(const dot of map.querySelectorAll('[role=button]')){dot.removeAttribute('role');dot.removeAttribute('tabindex');}map.removeAttribute('role');map.setAttribute('aria-label',`Map centered on ${point.name}`);panel.append(map);
+ if(result){const chart=document.createElementNS(ns,'svg');chart.setAttribute('viewBox','0 0 400 110');chart.setAttribute('role','img');chart.setAttribute('aria-label','Sunlight, Earth visibility, and overlap across the mission');for(const [row,key,label,color] of [[0,'sun','Sun','#edcc8b'],[1,'earth','Earth','#b9ccb0'],[2,'both','Both','#89ad81']]){chart.append(svg('text',{x:6,y:row*29+19,fill:'#bac9b2','font-size':12},label));result.samples.forEach((s,i)=>{if(s[key])chart.append(svg('rect',{x:62+330*i/result.samples.length,y:row*29+5,width:Math.max(.5,330/result.samples.length),height:17,fill:color}));});}panel.append(chart);}card.insertBefore(panel,card.children[1]);
+}
+export function installPlannerFlow({locations,pin,custom,globe,preview,remove}){
+ let candidate=null,source='catalogue';
+ function openStep(n){const step=$(`setupStep${n}`);step.open=true;if(n>1)step.scrollIntoView({block:'nearest'});}
+ function entry(target){openStep(1);const e=$(target);if(e.tagName==='DETAILS')e.open=true;e.scrollIntoView({block:'nearest'});(e.querySelector('input,select')??e).focus();}
+ $('chooseCatalogue').onclick=()=>{openStep(1);$('location').scrollIntoView({block:'nearest'});$('location').focus();};
+ $('chooseCustomCoordinates').onclick=()=>entry('customCoordinatePanel');
+ $('chooseMissionProgramme').onclick=()=>{const e=document.querySelector('.mission-programs');openStep(1);e.open=true;e.scrollIntoView({block:'nearest'});$('missionGroup').focus();};
+ function review(){const p=$('scenarioReview');p.textContent=candidate?`${candidate.name??'Exact coordinate'} · ${$('arrival').value.replace('T',' ')} UTC · ${$('duration').value} h stay · ${$('height').value} m observer`:'Choose a location to build your scenario.';$('writeScenario').disabled=!candidate||$('writeScenario').dataset.busy==='true';}
+ const choose=(point,type='globe')=>{candidate=Number.isFinite(point?.latitude)&&Number.isFinite(point?.longitude)?point:null;source=type;review();openStep(2);$('activeLocationName').textContent=point?.name??'Coordinate preview';$('activeLocationCoords').textContent=Number.isFinite(point?.latitude)&&Number.isFinite(point?.longitude)?coordinateText(point,5):'Coordinate unpublished';$('activeTimeBadge').textContent='LOCATION PREVIEW';if(candidate){document.querySelector('[data-view=globe]').click();preview(point);}};
+ $('location').addEventListener('change',()=>choose(locations().find(p=>p.id===$('location').value),'catalogue'));
+ $('pin').onclick=()=>{const p=locations().find(p=>p.id===$('location').value);if(p)choose(p,'catalogue');};
+ $('custom').onclick=()=>{const latitude=Number($('latitude').value),longitude=Number($('longitude').value);if(!$('latitude').value||!$('longitude').value||!Number.isFinite(latitude)||!Number.isFinite(longitude)||Math.abs(latitude)>90){$('error').textContent='Enter latitude from −90 to 90 and a finite longitude.';return;}choose({latitude,longitude,name:'Exact coordinate'},'custom');};
+ $('globePin').onclick=()=>openStep(2);
+ $('nextReview').onclick=()=>{review();openStep(3);$('writeScenario').focus();};
+ $('writeScenario').onclick=async()=>{if(!candidate)return;$('writeScenario').disabled=true;try{if(source==='catalogue'||candidate.kind==='mission')await pin(candidate.id);else{$('latitude').value=candidate.latitude;$('longitude').value=candidate.longitude;await custom();}}finally{review();document.querySelector('[data-view=globe]').click();}};
+ $('addAnotherSite').onclick=()=>{openStep(1);$('location').focus();};
+ document.querySelectorAll('[data-delay]').forEach(b=>b.onclick=()=>{$('delay').value=b.dataset.delay;$('delay').dispatchEvent(new Event('input',{bubbles:true}));review();});
+ for(const id of ['arrival','duration','height','delay'])$(id).addEventListener('input',review);
+ const tabs=[...document.querySelectorAll('[data-view]')];function view(name){for(const b of tabs){const active=b.dataset.view===name;b.setAttribute('aria-selected',active);b.tabIndex=active?0:-1;$('view-'+b.dataset.view).hidden=!active;}window.dispatchEvent(new Event('resize'));}
+ tabs.forEach((b,i)=>{b.onclick=()=>view(b.dataset.view);b.onkeydown=e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();const j=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;tabs[j].click();tabs[j].focus();};b.setAttribute('aria-controls','view-'+b.dataset.view);b.id='tab-'+b.dataset.view;$('view-'+b.dataset.view).setAttribute('aria-labelledby',b.id);});view('globe');
+ return {choose,busy(value){$('writeScenario').dataset.busy=String(value);review();},refresh(points,point){$('activeLocationName').textContent=point?.name??'Explore the Moon';$('activeLocationCoords').textContent=point?coordinateText(point,5):'Choose a location to begin';$('selectedLocations').replaceChildren();points.forEach((p,i)=>{const row=document.createElement('div');row.className='site-chip';const t=document.createElement('span');t.textContent=`${String.fromCharCode(65+i)} · ${p.name}`;const b=document.createElement('button');b.textContent='×';b.setAttribute('aria-label','Remove '+p.name);b.onclick=()=>remove(p.id);row.append(t,b);$('selectedLocations').append(row);});$('addAnotherSite').hidden=!points.length||points.length>=3;},sample(sample){$('sharedReplay').hidden=!sample;$('activeTimeBadge').textContent=sample?.utc??'2027 · UTC';for(const e of document.querySelectorAll('.view-empty'))e.hidden=!!sample;if(!sample)$('horizonScene').replaceChildren();}};
+}

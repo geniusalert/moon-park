@@ -1,0 +1,6 @@
+numpy>=2.2,<3
+rasterio>=1.5,<2
+pyproj>=3.8,<4
+spiceypy>=8.3,<9
+tifffile>=2025.1
+pyshp>=3.1,<4

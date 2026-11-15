@@ -1,0 +1,32 @@
+{
+  "name": "moon-park",
+  "version": "0.16.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.js",
+    "fetch:ephemeris": "python scripts/fetch_ephemeris.py",
+    "prepare:terrain": "python scripts/prepare_terrain.py",
+    "prepare:observations": "python scripts/prepare_ephemerides.py",
+    "prepare:science": "python scripts/build_science.py",
+    "prepare:uncertainty": "python scripts/build_uncertainty.py",
+    "validate:uncertainty": "node scripts/validate_uncertainty.mjs",
+    "validate:data": "node scripts/validate_data.mjs",
+    "validate:time": "python scripts/validate_convergence.py",
+    "validate:terrain": "node scripts/compare_terrain.mjs",
+    "prepare:spatial": "python scripts/prepare_spatial.py",
+    "validate:spatial": "node scripts/validate_spatial.mjs",
+    "vendor:three": "node scripts/vendor_three.mjs",
+    "prepare:candidates": "python scripts/prepare_candidates.py",
+    "validate:candidates": "node scripts/validate_candidates.mjs",
+    "validate:candidate-science": "python scripts/validate_candidate_science.py",
+    "validate:trace": "node scripts/validate_trace.mjs",
+    "prepare:image-requests": "node scripts/export_image_requests.mjs",
+    "prepare:imagery-catalog": "python scripts/prepare_imagery_catalog.py",
+    "setup:navigator": "python scripts/setup_navigator_terrain.py"
+  },
+  "dependencies": {
+    "three": "0.187.0"
+  }
+}

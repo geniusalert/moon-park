@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "build": "0.12",
+  "softwareHashes": 79,
+  "guideHashes": 3,
+  "pointReferences": 2,
+  "browserOrigin": "http://127.0.0.1:4174",
+  "browserSource": "Freshly extracted release",
+  "checks": [
+    "Main app 0.12 loaded",
+    "Recorded interior example and active Earth trace at sample 113",
+    "Main receipt exported with all current source hashes",
+    "Main entry link opened guide",
+    "Guide recomputed 5.17 to 53.17 h",
+    "Guide export includes current 79 software hashes",
+    "No horizontal overflow at 1280 px"
+  ],
+  "humanParticipants": 0,
+  "mobileBrowserVerified": false
+}

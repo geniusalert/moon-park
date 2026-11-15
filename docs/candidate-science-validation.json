@@ -1,0 +1,64 @@
+{
+  "checks": 519,
+  "passed": true,
+  "sites": [
+    {
+      "id": "Site01-roi-1-anchor",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.439200722572423e-06,
+          "maxElDifferenceDeg": 1.3508474114409807e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.07132034007583%2C-89.43870191388767%2C1.9600943603515626%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "38eb45a762cc1d60a9eff5ec7c132f9a38f8236f675a1e69af3b535cdb693e1f"
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 6.076413228583988e-06,
+          "maxElDifferenceDeg": 1.1316516634884977e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.07132034007583%2C-89.43870191388767%2C1.9600943603515626%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "c6d51d8ab7448c7353dae1f9fffe85a3b230ead2e65ea846c0014ccf767b1f7f"
+        }
+      }
+    },
+    {
+      "id": "Site04-roi-1-anchor",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.5772080170536356e-06,
+          "maxElDifferenceDeg": 1.3022718746258377e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-157.1288994881818%2C-89.76135865069945%2C1.729984130859375%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "4004213e535643e96b391c8c9155dcce11230aec333b2edf6225acda1ae02c1e"
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 5.919699106016196e-06,
+          "maxElDifferenceDeg": 1.174695136629822e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-157.1288994881818%2C-89.76135865069945%2C1.729984130859375%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "2bb444a0f8f1a23fe8c45dbf73ac9979cde33e31b3b85d874fb7629cd92389e8"
+        }
+      }
+    },
+    {
+      "id": "Site11-roi-1-anchor",
+      "residuals": {
+        "sun": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 4.586606621614919e-06,
+          "maxElDifferenceDeg": 1.3525645196299507e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.40338440329703%2C-88.66797855953496%2C1.8157066650390625%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "c9347e9703436bc42a2ac84bb120ae0552371130dd9fcf81973ef7504cc8b15b"
+        },
+        "earth": {
+          "samples": 31,
+          "maxAzDifferenceDeg": 5.8472639921092195e-06,
+          "maxElDifferenceDeg": 1.1678512574775368e-05,
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.40338440329703%2C-88.66797855953496%2C1.8157066650390625%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-12-14%27&STEP_SIZE=%271+d%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "fc1f24bc608914d6845bbec6bac323098ea5a7a7dc05dc9ccb76509d9cf24da1"
+        }
+      }
+    }
+  ],
+  "scope": "Native point-height and direct SPICE serialization checks for all 27 points. Separate daily Horizons cross-check at three anchors only; same NASA/JPL lineage, not independent observational truth."
+}

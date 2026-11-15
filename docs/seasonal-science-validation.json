@@ -1,0 +1,2248 @@
+{
+  "generatedUTC": "2026-11-14T08:05:22.995809+00:00",
+  "kernels": [
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/lsk/naif0012.tls",
+      "path": "data\\raw\\kernels\\naif0012.tls",
+      "sha256": "678e32bdb5a744117a467cd9601cd6b373f0e9bc9bbde1371d5eee39600a039b"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/a_old_versions/de421.bsp",
+      "path": "data\\raw\\kernels\\de421.bsp",
+      "sha256": "08b20db2ae22488650641c5a9033e5bfda4b1c4b440cfeaf20f621cfa18ecdb3"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/pck/moon_pa_de421_1900-2050.bpc",
+      "path": "data\\raw\\kernels\\moon_pa_de421_1900-2050.bpc",
+      "sha256": "656f90616403d75a75f0cd6c8830fc5b44f8cb4facb5ccb8915e752b397520cf"
+    },
+    {
+      "url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/fk/satellites/moon_080317.tf",
+      "path": "data\\raw\\kernels\\moon_080317.tf",
+      "sha256": "78732477b96f9863e7b0d65bcee3c22b8707ca5ed0db56d1173319cb2e8c7993"
+    }
+  ],
+  "cases": [
+    {
+      "siteId": "Site01",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "groundM": 1959.1544799804688,
+      "startUTC": "2027-03-20T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "9717507482318b7f67064f6dab7017042419d39d7b9944e24f953dd3eedc0ecd",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -3.8135526096994e-06,
+              "elevationResidualDeg": 4.219523751736176e-06,
+              "spiceElevationDeg": -1.5540727804762482,
+              "horizonsElevationDeg": -1.554077
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -3.576503843305545e-06,
+              "elevationResidualDeg": 4.49988032791282e-06,
+              "spiceElevationDeg": -1.554163500119672,
+              "horizonsElevationDeg": -1.554168
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -4.180752313232006e-06,
+              "elevationResidualDeg": 3.990792094343831e-06,
+              "spiceElevationDeg": -1.5542530092079057,
+              "horizonsElevationDeg": -1.554257
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -3.626689732527666e-06,
+              "elevationResidualDeg": 4.692220129998148e-06,
+              "spiceElevationDeg": -1.55434130777987,
+              "horizonsElevationDeg": -1.554346
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -3.914807109595131e-06,
+              "elevationResidualDeg": 4.604123036378027e-06,
+              "spiceElevationDeg": -1.5544283958769636,
+              "horizonsElevationDeg": -1.554433
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -4.045496808657845e-06,
+              "elevationResidualDeg": 4.7264569640326215e-06,
+              "spiceElevationDeg": -1.554514273543036,
+              "horizonsElevationDeg": -1.554519
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -4.0193024517520826e-06,
+              "elevationResidualDeg": 4.059175679138605e-06,
+              "spiceElevationDeg": -1.5545989408243208,
+              "horizonsElevationDeg": -1.554603
+            }
+          ],
+          "maxElevationResidualDeg": 4.7264569640326215e-06,
+          "maxAzimuthResidualDeg": 4.180752313232006e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "672d48d6751b7eecb3a52bef6931283ee6850bfd0ce265c0f6a47f892dc029f6",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -4.474929568232255e-06,
+              "elevationResidualDeg": 9.96478401882328e-06,
+              "spiceElevationDeg": -1.510558035215981,
+              "horizonsElevationDeg": -1.510568
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -4.816975661015022e-06,
+              "elevationResidualDeg": 1.0118293479743912e-05,
+              "spiceElevationDeg": -1.5223128817065203,
+              "horizonsElevationDeg": -1.522323
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -4.893813837725247e-06,
+              "elevationResidualDeg": 1.0223872484393937e-05,
+              "spiceElevationDeg": -1.5340647761275157,
+              "horizonsElevationDeg": -1.534075
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -4.727794873815583e-06,
+              "elevationResidualDeg": 1.0320991363776955e-05,
+              "spiceElevationDeg": -1.5458136790086363,
+              "horizonsElevationDeg": -1.545824
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -4.343716426546962e-06,
+              "elevationResidualDeg": 1.0449197189954518e-05,
+              "spiceElevationDeg": -1.55755955080281,
+              "horizonsElevationDeg": -1.55757
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -4.765427831898705e-06,
+              "elevationResidualDeg": 1.0647992238821402e-05,
+              "spiceElevationDeg": -1.5693023520077611,
+              "horizonsElevationDeg": -1.569313
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -5.016404344360126e-06,
+              "elevationResidualDeg": 9.95683622351251e-06,
+              "spiceElevationDeg": -1.5810420431637764,
+              "horizonsElevationDeg": -1.581052
+            }
+          ],
+          "maxElevationResidualDeg": 1.0647992238821402e-05,
+          "maxAzimuthResidualDeg": 5.016404344360126e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site01",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "groundM": 1959.1544799804688,
+      "startUTC": "2027-06-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "3b8e136479bccb856127b1c958ac7293a09191b5bb2e42e980157a636a77fe0b",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -5.936457313282517e-06,
+              "elevationResidualDeg": 7.955671732506886e-06,
+              "spiceElevationDeg": -1.3469180443282676,
+              "horizonsElevationDeg": -1.346926
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -6.585397215985722e-06,
+              "elevationResidualDeg": 7.577767807909197e-06,
+              "spiceElevationDeg": -1.3460334222321921,
+              "horizonsElevationDeg": -1.346041
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -6.3141247892417596e-06,
+              "elevationResidualDeg": 7.794571002639472e-06,
+              "spiceElevationDeg": -1.3451482054289974,
+              "horizonsElevationDeg": -1.345156
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -6.122872292735337e-06,
+              "elevationResidualDeg": 7.604384908210804e-06,
+              "spiceElevationDeg": -1.3442623956150919,
+              "horizonsElevationDeg": -1.34427
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -6.012022424783936e-06,
+              "elevationResidualDeg": 8.005513258302344e-06,
+              "spiceElevationDeg": -1.3433759944867416,
+              "horizonsElevationDeg": -1.343384
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -5.981858606673995e-06,
+              "elevationResidualDeg": 7.996257579412358e-06,
+              "spiceElevationDeg": -1.3424890037424206,
+              "horizonsElevationDeg": -1.342497
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -6.032815974776895e-06,
+              "elevationResidualDeg": 7.574919564490301e-06,
+              "spiceElevationDeg": -1.3416014250804356,
+              "horizonsElevationDeg": -1.341609
+            }
+          ],
+          "maxElevationResidualDeg": 8.005513258302344e-06,
+          "maxAzimuthResidualDeg": 6.585397215985722e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "5a6c5b7b024b74961daafdebdf59f13c558680ddede95496d3c9e58b4c00f0b0",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -6.898012912870399e-06,
+              "elevationResidualDeg": 6.314515328842418e-06,
+              "spiceElevationDeg": -3.114466685484671,
+              "horizonsElevationDeg": -3.114473
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -6.742220108435504e-06,
+              "elevationResidualDeg": 5.71111967317961e-06,
+              "spiceElevationDeg": -3.1054032888803267,
+              "horizonsElevationDeg": -3.105409
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -7.148425765990396e-06,
+              "elevationResidualDeg": 5.8972835890180875e-06,
+              "spiceElevationDeg": -3.0963351027164108,
+              "horizonsElevationDeg": -3.096341
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -7.101029183331775e-06,
+              "elevationResidualDeg": 5.8548623784737686e-06,
+              "spiceElevationDeg": -3.0872621451376214,
+              "horizonsElevationDeg": -3.087268
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -6.584495508832333e-06,
+              "elevationResidualDeg": 6.565711067274549e-06,
+              "spiceElevationDeg": -3.0781844342889326,
+              "horizonsElevationDeg": -3.078191
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -6.58322375102216e-06,
+              "elevationResidualDeg": 6.0116919864405816e-06,
+              "spiceElevationDeg": -3.0691019883080135,
+              "horizonsElevationDeg": -3.069108
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -7.081687783738744e-06,
+              "elevationResidualDeg": 6.174660488689199e-06,
+              "spiceElevationDeg": -3.060014825339511,
+              "horizonsElevationDeg": -3.060021
+            }
+          ],
+          "maxElevationResidualDeg": 6.565711067274549e-06,
+          "maxAzimuthResidualDeg": 7.148425765990396e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site01",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "groundM": 1959.1544799804688,
+      "startUTC": "2027-09-22T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "914a62fa2b9df4b64d0ef46ee2551aa59ef7d9db6f610834b712646eba68e089",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -6.957390212392056e-06,
+              "elevationResidualDeg": 6.758343367607722e-06,
+              "spiceElevationDeg": 1.4491937583433676,
+              "horizonsElevationDeg": 1.449187
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -6.952945796001586e-06,
+              "elevationResidualDeg": 7.015051601166888e-06,
+              "spiceElevationDeg": 1.4500060150516012,
+              "horizonsElevationDeg": 1.449999
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.254605435491612e-06,
+              "elevationResidualDeg": 6.661749428316099e-06,
+              "spiceElevationDeg": 1.4508176617494284,
+              "horizonsElevationDeg": 1.450811
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -6.862662729645308e-06,
+              "elevationResidualDeg": 6.697000888955529e-06,
+              "spiceElevationDeg": 1.451628697000889,
+              "horizonsElevationDeg": 1.451622
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -7.77725782086236e-06,
+              "elevationResidualDeg": 7.119369972885536e-06,
+              "spiceElevationDeg": 1.4524391193699728,
+              "horizonsElevationDeg": 1.452432
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -6.998581710604412e-06,
+              "elevationResidualDeg": 6.927422351976631e-06,
+              "spiceElevationDeg": 1.453248927422352,
+              "horizonsElevationDeg": 1.453242
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.526976446570188e-06,
+              "elevationResidualDeg": 7.1197262676570006e-06,
+              "spiceElevationDeg": 1.4540581197262676,
+              "horizonsElevationDeg": 1.454051
+            }
+          ],
+          "maxElevationResidualDeg": 7.1197262676570006e-06,
+          "maxAzimuthResidualDeg": 7.77725782086236e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "9c2c06be50a4a0ba37e161a7cdb09548ae4cd6738198fcf631a91aec22af13e2",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -7.758556108683479e-06,
+              "elevationResidualDeg": 1.0945926260497174e-05,
+              "spiceElevationDeg": 5.1189869459262605,
+              "horizonsElevationDeg": 5.118976
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -7.494144796282853e-06,
+              "elevationResidualDeg": 1.0976181716415567e-05,
+              "spiceElevationDeg": 5.113367976181716,
+              "horizonsElevationDeg": 5.113357
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.727886071506873e-06,
+              "elevationResidualDeg": 1.0722413641417461e-05,
+              "spiceElevationDeg": 5.107732722413641,
+              "horizonsElevationDeg": 5.107722
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -7.458038879804008e-06,
+              "elevationResidualDeg": 1.0193904351751826e-05,
+              "spiceElevationDeg": 5.102081193904351,
+              "horizonsElevationDeg": 5.102071
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -7.682049783852563e-06,
+              "elevationResidualDeg": 1.0399826063434148e-05,
+              "spiceElevationDeg": 5.096413399826063,
+              "horizonsElevationDeg": 5.096403
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -7.398100052569134e-06,
+              "elevationResidualDeg": 1.0349563950740048e-05,
+              "spiceElevationDeg": 5.090729349563951,
+              "horizonsElevationDeg": 5.090719
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.603786968957138e-06,
+              "elevationResidualDeg": 1.0052388513592803e-05,
+              "spiceElevationDeg": 5.0850290523885135,
+              "horizonsElevationDeg": 5.085019
+            }
+          ],
+          "maxElevationResidualDeg": 1.0976181716415567e-05,
+          "maxAzimuthResidualDeg": 7.758556108683479e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site01",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "groundM": 1959.1544799804688,
+      "startUTC": "2027-12-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "e7fa1b2d41ed8ad8a992f34a2212f62781d3a139ce8aafc62eba5991973cb03e",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -6.1436100509126845e-06,
+              "elevationResidualDeg": 6.7138680854839095e-06,
+              "spiceElevationDeg": 1.2549467138680854,
+              "horizonsElevationDeg": 1.25494
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -6.503064355456445e-06,
+              "elevationResidualDeg": 6.659029419431306e-06,
+              "spiceElevationDeg": 1.2553456590294194,
+              "horizonsElevationDeg": 1.255339
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -6.222078354767291e-06,
+              "elevationResidualDeg": 6.81620497711144e-06,
+              "spiceElevationDeg": 1.2557438162049772,
+              "horizonsElevationDeg": 1.255737
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -6.300568571759868e-06,
+              "elevationResidualDeg": 7.184093542278447e-06,
+              "spiceElevationDeg": 1.2561411840935424,
+              "horizonsElevationDeg": 1.256134
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -6.73835168640835e-06,
+              "elevationResidualDeg": 6.7613949272793405e-06,
+              "spiceElevationDeg": 1.2565377613949273,
+              "horizonsElevationDeg": 1.256531
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -6.5352964497833455e-06,
+              "elevationResidualDeg": 6.546810879637377e-06,
+              "spiceElevationDeg": 1.2569335468108795,
+              "horizonsElevationDeg": 1.256927
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -6.691267685710045e-06,
+              "elevationResidualDeg": 6.539044590025966e-06,
+              "spiceElevationDeg": 1.25732853904459,
+              "horizonsElevationDeg": 1.257322
+            }
+          ],
+          "maxElevationResidualDeg": 7.184093542278447e-06,
+          "maxAzimuthResidualDeg": 6.73835168640835e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-137.14401541244482%2C-89.4390257245831%2C1.9611544799804688%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "3b7fdaf5c153768ff3c9fa72a5bb92bf4f353dc76736986f2e82d7cf9c48de10",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-137.14401541244482,-89.4390257245831,1.9611544799804688'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1961.1544799804688,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -7.72810079752162e-06,
+              "elevationResidualDeg": 8.226311770442862e-06,
+              "spiceElevationDeg": -6.7451497736882295,
+              "horizonsElevationDeg": -6.745158
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -8.596515471026578e-06,
+              "elevationResidualDeg": 8.032690950621202e-06,
+              "spiceElevationDeg": -6.75015296730905,
+              "horizonsElevationDeg": -6.750161
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -7.909139213779781e-06,
+              "elevationResidualDeg": 8.406107093961168e-06,
+              "spiceElevationDeg": -6.755138593892906,
+              "horizonsElevationDeg": -6.755147
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -7.66795724871372e-06,
+              "elevationResidualDeg": 8.35439388247039e-06,
+              "spiceElevationDeg": -6.760106645606117,
+              "horizonsElevationDeg": -6.760115
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -7.874685024944483e-06,
+              "elevationResidualDeg": 7.885181572575561e-06,
+              "spiceElevationDeg": -6.765057114818427,
+              "horizonsElevationDeg": -6.765065
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -8.531147528856309e-06,
+              "elevationResidualDeg": 8.006094929235985e-06,
+              "spiceElevationDeg": -6.769989993905071,
+              "horizonsElevationDeg": -6.769998
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -7.639116745394858e-06,
+              "elevationResidualDeg": 7.72469863452585e-06,
+              "spiceElevationDeg": -6.774905275301365,
+              "horizonsElevationDeg": -6.774913
+            }
+          ],
+          "maxElevationResidualDeg": 8.406107093961168e-06,
+          "maxAzimuthResidualDeg": 8.596515471026578e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site04",
+      "longitude": -161.90779352654087,
+      "latitude": -89.7908003122825,
+      "groundM": 1411.1348266601562,
+      "startUTC": "2027-03-20T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "fda0ca4ea005c23aca39c22f5ec45ccc4d9d9c9c98ef6d0ac4f24f3a7df403b5",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -3.6740971722792892e-06,
+              "elevationResidualDeg": 4.5727414486052e-06,
+              "spiceElevationDeg": -1.2011914272585513,
+              "horizonsElevationDeg": -1.201196
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -3.4450710586497735e-06,
+              "elevationResidualDeg": 3.9649595378055125e-06,
+              "spiceElevationDeg": -1.2014950350404623,
+              "horizonsElevationDeg": -1.201499
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -4.063441679136304e-06,
+              "elevationResidualDeg": 4.802580382934352e-06,
+              "spiceElevationDeg": -1.201798197419617,
+              "horizonsElevationDeg": -1.201803
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -3.5296540374929464e-06,
+              "elevationResidualDeg": 4.086031990979677e-06,
+              "spiceElevationDeg": -1.202100913968009,
+              "horizonsElevationDeg": -1.202105
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -3.844252290718941e-06,
+              "elevationResidualDeg": 4.815741277086616e-06,
+              "spiceElevationDeg": -1.2024031842587228,
+              "horizonsElevationDeg": -1.202408
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -4.007682150586334e-06,
+              "elevationResidualDeg": 3.9921345937887764e-06,
+              "spiceElevationDeg": -1.2027050078654062,
+              "horizonsElevationDeg": -1.202709
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -4.020540416149743e-06,
+              "elevationResidualDeg": 4.615637160476638e-06,
+              "spiceElevationDeg": -1.2030063843628396,
+              "horizonsElevationDeg": -1.203011
+            }
+          ],
+          "maxElevationResidualDeg": 4.815741277086616e-06,
+          "maxAzimuthResidualDeg": 4.063441679136304e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "1f3c3a05bf90c3dc1b55bbb09d71e75a83c5ed26ad20a90ad99c931c76f8b379",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -4.247320788408615e-06,
+              "elevationResidualDeg": 1.0446277783904279e-05,
+              "spiceElevationDeg": -1.290182553722216,
+              "horizonsElevationDeg": -1.290193
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -4.465321239877085e-06,
+              "elevationResidualDeg": 1.0696053331038513e-05,
+              "spiceElevationDeg": -1.301892303946669,
+              "horizonsElevationDeg": -1.301903
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -4.44550695988255e-06,
+              "elevationResidualDeg": 1.0883656917259898e-05,
+              "spiceElevationDeg": -1.3135991163430827,
+              "horizonsElevationDeg": -1.31361
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -5.2123360489986226e-06,
+              "elevationResidualDeg": 1.0048509616389367e-05,
+              "spiceElevationDeg": -1.3253029514903836,
+              "horizonsElevationDeg": -1.325313
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -4.7893805685816915e-06,
+              "elevationResidualDeg": 1.0229973914643864e-05,
+              "spiceElevationDeg": -1.3370037700260853,
+              "horizonsElevationDeg": -1.337014
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -5.200687269280024e-06,
+              "elevationResidualDeg": 1.04674251675263e-05,
+              "spiceElevationDeg": -1.3487015325748324,
+              "horizonsElevationDeg": -1.348712
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -4.470883396834324e-06,
+              "elevationResidualDeg": 1.0800232728147563e-05,
+              "spiceElevationDeg": -1.3603961997672718,
+              "horizonsElevationDeg": -1.360407
+            }
+          ],
+          "maxElevationResidualDeg": 1.0883656917259898e-05,
+          "maxAzimuthResidualDeg": 5.2123360489986226e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site04",
+      "longitude": -161.90779352654087,
+      "latitude": -89.7908003122825,
+      "groundM": 1411.1348266601562,
+      "startUTC": "2027-06-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "6a5d7e6f241e528d39275c2d39320895ab8389cb9c81bf94734306f35e6710ad",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -6.301370689243413e-06,
+              "elevationResidualDeg": 8.100237741448524e-06,
+              "spiceElevationDeg": -1.2623608997622586,
+              "horizonsElevationDeg": -1.262369
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -6.0740829042060795e-06,
+              "elevationResidualDeg": 8.122814300515202e-06,
+              "spiceElevationDeg": -1.2620258771856996,
+              "horizonsElevationDeg": -1.262034
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -5.950975577206918e-06,
+              "elevationResidualDeg": 7.555918991375421e-06,
+              "spiceElevationDeg": -1.2616904440810086,
+              "horizonsElevationDeg": -1.261698
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -5.932257352014858e-06,
+              "elevationResidualDeg": 8.399054814978157e-06,
+              "spiceElevationDeg": -1.261354600945185,
+              "horizonsElevationDeg": -1.261363
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -6.018287223241714e-06,
+              "elevationResidualDeg": 7.651724371671165e-06,
+              "spiceElevationDeg": -1.2610183482756283,
+              "horizonsElevationDeg": -1.261026
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -6.209324624251167e-06,
+              "elevationResidualDeg": 8.313429072925871e-06,
+              "spiceElevationDeg": -1.2606816865709272,
+              "horizonsElevationDeg": -1.26069
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -6.505780817178675e-06,
+              "elevationResidualDeg": 8.383669896527834e-06,
+              "spiceElevationDeg": -1.2603446163301035,
+              "horizonsElevationDeg": -1.260353
+            }
+          ],
+          "maxElevationResidualDeg": 8.399054814978157e-06,
+          "maxAzimuthResidualDeg": 6.505780817178675e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "b4f95a5c1225113fc6ea7a325495a50cac75d187fcf8db85da78932cd51a44c8",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -7.506407513346858e-06,
+              "elevationResidualDeg": 6.032615011530851e-06,
+              "spiceElevationDeg": -2.8985879673849886,
+              "horizonsElevationDeg": -2.898594
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -7.338022726344207e-06,
+              "elevationResidualDeg": 5.5975710346878316e-06,
+              "spiceElevationDeg": -2.8895754024289655,
+              "horizonsElevationDeg": -2.889581
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -6.767859275669252e-06,
+              "elevationResidualDeg": 5.921291112542804e-06,
+              "spiceElevationDeg": -2.8805580787088876,
+              "horizonsElevationDeg": -2.880564
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -6.780237441716963e-06,
+              "elevationResidualDeg": 5.985709207845247e-06,
+              "spiceElevationDeg": -2.871536014290792,
+              "horizonsElevationDeg": -2.871542
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -7.359540262541486e-06,
+              "elevationResidualDeg": 5.77276172775143e-06,
+              "spiceElevationDeg": -2.8625092272382724,
+              "horizonsElevationDeg": -2.862515
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -7.490085295103199e-06,
+              "elevationResidualDeg": 6.26438988460265e-06,
+              "spiceElevationDeg": -2.8534777356101153,
+              "horizonsElevationDeg": -2.853484
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -7.155805377578872e-06,
+              "elevationResidualDeg": 6.442538393436337e-06,
+              "spiceElevationDeg": -2.8444415574616064,
+              "horizonsElevationDeg": -2.844448
+            }
+          ],
+          "maxElevationResidualDeg": 6.442538393436337e-06,
+          "maxAzimuthResidualDeg": 7.506407513346858e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site04",
+      "longitude": -161.90779352654087,
+      "latitude": -89.7908003122825,
+      "groundM": 1411.1348266601562,
+      "startUTC": "2027-09-22T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "d1c97aec628bb555e34e2a11a619c897b3fd8808d1dad3ebe5d2c96b56958ef4",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -6.893887615433414e-06,
+              "elevationResidualDeg": 7.324092053506703e-06,
+              "spiceElevationDeg": 1.1884653240920535,
+              "horizonsElevationDeg": 1.188458
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -6.953351032734645e-06,
+              "elevationResidualDeg": 6.963987101427094e-06,
+              "spiceElevationDeg": 1.1888669639871015,
+              "horizonsElevationDeg": 1.18886
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.295162589571191e-06,
+              "elevationResidualDeg": 6.562473731319685e-06,
+              "spiceElevationDeg": 1.1892685624737314,
+              "horizonsElevationDeg": 1.189262
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -6.91961770371563e-06,
+              "elevationResidualDeg": 7.119015560164144e-06,
+              "spiceElevationDeg": 1.18967011901556,
+              "horizonsElevationDeg": 1.189663
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -7.826858364978762e-06,
+              "elevationResidualDeg": 6.633075676498734e-06,
+              "spiceElevationDeg": 1.1900716330756764,
+              "horizonsElevationDeg": 1.190065
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -7.017077621185308e-06,
+              "elevationResidualDeg": 7.104117380585251e-06,
+              "spiceElevationDeg": 1.1904731041173806,
+              "horizonsElevationDeg": 1.190466
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.4906196516622e-06,
+              "elevationResidualDeg": 6.531604585413575e-06,
+              "spiceElevationDeg": 1.1908745316045855,
+              "horizonsElevationDeg": 1.190868
+            }
+          ],
+          "maxElevationResidualDeg": 7.324092053506703e-06,
+          "maxAzimuthResidualDeg": 7.826858364978762e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "21f3cbf44ec337b825bbf9368c6a7ef73d1b8481cee4feb907b9475c957f8f5a",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -7.318183349980245e-06,
+              "elevationResidualDeg": 1.0211204992671696e-05,
+              "spiceElevationDeg": 5.301704211204993,
+              "horizonsElevationDeg": 5.301694
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -7.329691385393744e-06,
+              "elevationResidualDeg": 1.088002409854738e-05,
+              "spiceElevationDeg": 5.296099880024099,
+              "horizonsElevationDeg": 5.296089
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.74251034840745e-06,
+              "elevationResidualDeg": 1.0325856249160381e-05,
+              "spiceElevationDeg": 5.290479325856249,
+              "horizonsElevationDeg": 5.290469
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -7.554979021051622e-06,
+              "elevationResidualDeg": 1.0557988765036441e-05,
+              "spiceElevationDeg": 5.284842557988765,
+              "horizonsElevationDeg": 5.284832
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -7.764623092043621e-06,
+              "elevationResidualDeg": 1.0585604216295508e-05,
+              "spiceElevationDeg": 5.279189585604216,
+              "horizonsElevationDeg": 5.279179
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -7.3696874096640386e-06,
+              "elevationResidualDeg": 1.0418093673969508e-05,
+              "spiceElevationDeg": 5.273520418093674,
+              "horizonsElevationDeg": 5.27351
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.367861599050229e-06,
+              "elevationResidualDeg": 1.0064736497561455e-05,
+              "spiceElevationDeg": 5.267835064736498,
+              "horizonsElevationDeg": 5.267825
+            }
+          ],
+          "maxElevationResidualDeg": 1.088002409854738e-05,
+          "maxAzimuthResidualDeg": 7.764623092043621e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site04",
+      "longitude": -161.90779352654087,
+      "latitude": -89.7908003122825,
+      "groundM": 1411.1348266601562,
+      "startUTC": "2027-12-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "61a224f642309c00eb6c1019af34230e1f96e6ebf6b24e3c37990453326d758c",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -6.31043832299838e-06,
+              "elevationResidualDeg": 7.110867461856962e-06,
+              "spiceElevationDeg": 0.9284741108674619,
+              "horizonsElevationDeg": 0.928467
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -6.360231850521814e-06,
+              "elevationResidualDeg": 6.258078967258385e-06,
+              "spiceElevationDeg": 0.9285832580789672,
+              "horizonsElevationDeg": 0.928577
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -6.7556533167589805e-06,
+              "elevationResidualDeg": 6.3261366662903384e-06,
+              "spiceElevationDeg": 0.9286923261366663,
+              "horizonsElevationDeg": 0.928686
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -6.4966411059685925e-06,
+              "elevationResidualDeg": 6.314376635008223e-06,
+              "spiceElevationDeg": 0.928801314376635,
+              "horizonsElevationDeg": 0.928795
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -6.58303366662949e-06,
+              "elevationResidualDeg": 6.222134786959543e-06,
+              "spiceElevationDeg": 0.9289102221347869,
+              "horizonsElevationDeg": 0.928904
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -6.0147218334805075e-06,
+              "elevationResidualDeg": 7.048747254434495e-06,
+              "spiceElevationDeg": 0.9290190487472544,
+              "horizonsElevationDeg": 0.929012
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -6.79159239780347e-06,
+              "elevationResidualDeg": 6.793550119899017e-06,
+              "spiceElevationDeg": 0.9291277935501199,
+              "horizonsElevationDeg": 0.929121
+            }
+          ],
+          "maxElevationResidualDeg": 7.110867461856962e-06,
+          "maxAzimuthResidualDeg": 6.79159239780347e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-161.90779352654087%2C-89.7908003122825%2C1.4131348266601562%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "c325dae33fdf76da6b56633b3ec6751d466eb52b3e6f6c981659611010d01797",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-161.90779352654087,-89.7908003122825,1.4131348266601562'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1413.1348266601562,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -8.246682284607232e-06,
+              "elevationResidualDeg": 8.064149299435996e-06,
+              "spiceElevationDeg": -6.5064969358507,
+              "horizonsElevationDeg": -6.506505
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -7.806487019479391e-06,
+              "elevationResidualDeg": 8.270571019153294e-06,
+              "spiceElevationDeg": -6.5114777294289805,
+              "horizonsElevationDeg": -6.511486
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -7.90079835155666e-06,
+              "elevationResidualDeg": 7.98871134666257e-06,
+              "spiceElevationDeg": -6.516441011288653,
+              "horizonsElevationDeg": -6.516449
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -8.531386242793815e-06,
+              "elevationResidualDeg": 8.226260933774654e-06,
+              "spiceElevationDeg": -6.521386773739066,
+              "horizonsElevationDeg": -6.521395
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -7.700058262116727e-06,
+              "elevationResidualDeg": 7.990900090959485e-06,
+              "spiceElevationDeg": -6.526315009099909,
+              "horizonsElevationDeg": -6.526323
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -8.408657407699138e-06,
+              "elevationResidualDeg": 8.290252647036311e-06,
+              "spiceElevationDeg": -6.531225709747353,
+              "horizonsElevationDeg": -6.531234
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -7.658965529344641e-06,
+              "elevationResidualDeg": 8.131884785100851e-06,
+              "spiceElevationDeg": -6.5361188681152145,
+              "horizonsElevationDeg": -6.536127
+            }
+          ],
+          "maxElevationResidualDeg": 8.290252647036311e-06,
+          "maxAzimuthResidualDeg": 8.531386242793815e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site11",
+      "longitude": -68.39564496957904,
+      "latitude": -88.6646268225162,
+      "groundM": 1815.0805053710938,
+      "startUTC": "2027-03-20T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "606b857923cd4c77b027835d430c78ad0bd99c8528fa8a0dbad1f9e3a405e842",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -4.118833601296501e-06,
+              "elevationResidualDeg": 3.998168208507735e-06,
+              "spiceElevationDeg": -1.2843270018317914,
+              "horizonsElevationDeg": -1.284331
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -3.87913655686134e-06,
+              "elevationResidualDeg": 4.538406392695649e-06,
+              "spiceElevationDeg": -1.2826244615936073,
+              "horizonsElevationDeg": -1.282629
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -3.407244150821498e-06,
+              "elevationResidualDeg": 4.695577645597027e-06,
+              "spiceElevationDeg": -1.2809213044223544,
+              "horizonsElevationDeg": -1.280926
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -3.703742947891442e-06,
+              "elevationResidualDeg": 4.465766054728704e-06,
+              "spiceElevationDeg": -1.2792175342339454,
+              "horizonsElevationDeg": -1.279222
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -3.7693188801313227e-06,
+              "elevationResidualDeg": 4.845056662317049e-06,
+              "spiceElevationDeg": -1.2775131549433376,
+              "horizonsElevationDeg": -1.277518
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -3.6045599358658365e-06,
+              "elevationResidualDeg": 4.829531314420876e-06,
+              "spiceElevationDeg": -1.2758081704686857,
+              "horizonsElevationDeg": -1.275813
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -3.210205363757268e-06,
+              "elevationResidualDeg": 4.41527402861297e-06,
+              "spiceElevationDeg": -1.2741025847259715,
+              "horizonsElevationDeg": -1.274107
+            }
+          ],
+          "maxElevationResidualDeg": 4.845056662317049e-06,
+          "maxAzimuthResidualDeg": 4.118833601296501e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-03-20+00%3A00%3A00%27&STOP_TIME=%272027-03-20+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "2c0deabe30f6aa56b9705fca01c0c40f6bf2d2913020c218c60197a9f7a60a61",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-03-20 00:00:00'",
+              "STOP_TIME": "'2027-03-20 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-03-20T00:00:00Z",
+              "azimuthResidualDeg": -4.714909721315053e-06,
+              "elevationResidualDeg": 1.0538775164659064e-05,
+              "spiceElevationDeg": -0.6296664612248354,
+              "horizonsElevationDeg": -0.629677
+            },
+            {
+              "utc": "2027-03-20T00:10:00Z",
+              "azimuthResidualDeg": -4.0095060285239015e-06,
+              "elevationResidualDeg": 1.0189107384594998e-05,
+              "spiceElevationDeg": -0.6415488108926154,
+              "horizonsElevationDeg": -0.641559
+            },
+            {
+              "utc": "2027-03-20T00:20:00Z",
+              "azimuthResidualDeg": -4.046276558256068e-06,
+              "elevationResidualDeg": 1.0800633141072602e-05,
+              "spiceElevationDeg": -0.6534281993668589,
+              "horizonsElevationDeg": -0.653439
+            },
+            {
+              "utc": "2027-03-20T00:30:00Z",
+              "azimuthResidualDeg": -4.848351210284818e-06,
+              "elevationResidualDeg": 1.041326183248703e-05,
+              "spiceElevationDeg": -0.6653045867381675,
+              "horizonsElevationDeg": -0.665315
+            },
+            {
+              "utc": "2027-03-20T00:40:00Z",
+              "azimuthResidualDeg": -4.43845340214466e-06,
+              "elevationResidualDeg": 1.0066852578649588e-05,
+              "spiceElevationDeg": -0.6771779331474214,
+              "horizonsElevationDeg": -0.677188
+            },
+            {
+              "utc": "2027-03-20T00:50:00Z",
+              "azimuthResidualDeg": -4.83977913745548e-06,
+              "elevationResidualDeg": 1.0801287653738889e-05,
+              "spiceElevationDeg": -0.6890481987123462,
+              "horizonsElevationDeg": -0.689059
+            },
+            {
+              "utc": "2027-03-20T01:00:00Z",
+              "azimuthResidualDeg": -4.076104403338832e-06,
+              "elevationResidualDeg": 1.0656456237656542e-05,
+              "spiceElevationDeg": -0.7009153435437624,
+              "horizonsElevationDeg": -0.700926
+            }
+          ],
+          "maxElevationResidualDeg": 1.0801287653738889e-05,
+          "maxAzimuthResidualDeg": 4.848351210284818e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site11",
+      "longitude": -68.39564496957904,
+      "latitude": -88.6646268225162,
+      "groundM": 1815.0805053710938,
+      "startUTC": "2027-06-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "b42b759cf25659a4604abaa68b02150a4da0d2b408d029873e1df961e4b72113",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -6.254928223370371e-06,
+              "elevationResidualDeg": 8.08886502601247e-06,
+              "spiceElevationDeg": -0.195430911134974,
+              "horizonsElevationDeg": -0.195439
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -5.7086031972630735e-06,
+              "elevationResidualDeg": 8.526793133289967e-06,
+              "spiceElevationDeg": -0.1938404732068667,
+              "horizonsElevationDeg": -0.193849
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -6.307135322458635e-06,
+              "elevationResidualDeg": 8.0436213696633e-06,
+              "spiceElevationDeg": -0.19225195637863032,
+              "horizonsElevationDeg": -0.19226
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -6.050835281712352e-06,
+              "elevationResidualDeg": 7.636110138986574e-06,
+              "spiceElevationDeg": -0.19066536388986102,
+              "horizonsElevationDeg": -0.190673
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -5.9401634189271135e-06,
+              "elevationResidualDeg": 8.301026706153403e-06,
+              "spiceElevationDeg": -0.18908069897329385,
+              "horizonsElevationDeg": -0.189089
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -5.975480291908752e-06,
+              "elevationResidualDeg": 8.035140735607182e-06,
+              "spiceElevationDeg": -0.1874979648592644,
+              "horizonsElevationDeg": -0.187506
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -6.15729732089676e-06,
+              "elevationResidualDeg": 7.835228746339018e-06,
+              "spiceElevationDeg": -0.18591716477125367,
+              "horizonsElevationDeg": -0.185925
+            }
+          ],
+          "maxElevationResidualDeg": 8.526793133289967e-06,
+          "maxAzimuthResidualDeg": 6.307135322458635e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-06-21+00%3A00%3A00%27&STOP_TIME=%272027-06-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "16561103df4f119a8b0301ea6371f5aea49729f3b9dd0e50366e3020ca58487e",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-06-21 00:00:00'",
+              "STOP_TIME": "'2027-06-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-06-21T00:00:00Z",
+              "azimuthResidualDeg": -6.711309026741219e-06,
+              "elevationResidualDeg": 6.353657409974289e-06,
+              "spiceElevationDeg": -2.22091064634259,
+              "horizonsElevationDeg": -2.220917
+            },
+            {
+              "utc": "2027-06-21T00:10:00Z",
+              "azimuthResidualDeg": -6.674668611594825e-06,
+              "elevationResidualDeg": 5.951265518167048e-06,
+              "spiceElevationDeg": -2.211707048734482,
+              "horizonsElevationDeg": -2.211713
+            },
+            {
+              "utc": "2027-06-21T00:20:00Z",
+              "azimuthResidualDeg": -7.1704128572491754e-06,
+              "elevationResidualDeg": 6.384849024154704e-06,
+              "spiceElevationDeg": -2.202498615150976,
+              "horizonsElevationDeg": -2.202505
+            },
+            {
+              "utc": "2027-06-21T00:30:00Z",
+              "azimuthResidualDeg": -7.1833017614153505e-06,
+              "elevationResidualDeg": 6.635984001857054e-06,
+              "spiceElevationDeg": -2.193285364015998,
+              "horizonsElevationDeg": -2.193292
+            },
+            {
+              "utc": "2027-06-21T00:40:00Z",
+              "azimuthResidualDeg": -6.698162934526408e-06,
+              "elevationResidualDeg": 5.686262328108427e-06,
+              "spiceElevationDeg": -2.184067313737672,
+              "horizonsElevationDeg": -2.184073
+            },
+            {
+              "utc": "2027-06-21T00:50:00Z",
+              "azimuthResidualDeg": -6.699759438788533e-06,
+              "elevationResidualDeg": 6.517273671846624e-06,
+              "spiceElevationDeg": -2.174844482726328,
+              "horizonsElevationDeg": -2.174851
+            },
+            {
+              "utc": "2027-06-21T01:00:00Z",
+              "azimuthResidualDeg": -7.1729227215655555e-06,
+              "elevationResidualDeg": 6.110595820008058e-06,
+              "spiceElevationDeg": -2.16561688940418,
+              "horizonsElevationDeg": -2.165623
+            }
+          ],
+          "maxElevationResidualDeg": 6.635984001857054e-06,
+          "maxAzimuthResidualDeg": 7.1833017614153505e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site11",
+      "longitude": -68.39564496957904,
+      "latitude": -88.6646268225162,
+      "groundM": 1815.0805053710938,
+      "startUTC": "2027-09-22T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "8972508fa22ef3b1ae5c62dee205a11cfbc668c8229750a2654ce9c362f920cf",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -7.475967549908091e-06,
+              "elevationResidualDeg": 6.771673883854135e-06,
+              "spiceElevationDeg": 2.490136771673884,
+              "horizonsElevationDeg": 2.49013
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -7.034796681182343e-06,
+              "elevationResidualDeg": 7.304341255398583e-06,
+              "spiceElevationDeg": 2.4899333043412555,
+              "horizonsElevationDeg": 2.489926
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.843482535463409e-06,
+              "elevationResidualDeg": 6.951956664114078e-06,
+              "spiceElevationDeg": 2.4897269519566643,
+              "horizonsElevationDeg": 2.48972
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -7.90203426959124e-06,
+              "elevationResidualDeg": 6.715282800495714e-06,
+              "spiceElevationDeg": 2.4895177152828003,
+              "horizonsElevationDeg": 2.489511
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -7.210307785499026e-06,
+              "elevationResidualDeg": 6.595089137473309e-06,
+              "spiceElevationDeg": 2.4893055950891374,
+              "horizonsElevationDeg": 2.489299
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -7.768210082303995e-06,
+              "elevationResidualDeg": 6.592151212014841e-06,
+              "spiceElevationDeg": 2.489090592151212,
+              "horizonsElevationDeg": 2.489084
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.575799770620506e-06,
+              "elevationResidualDeg": 6.707250280513222e-06,
+              "spiceElevationDeg": 2.4888727072502803,
+              "horizonsElevationDeg": 2.488866
+            }
+          ],
+          "maxElevationResidualDeg": 7.304341255398583e-06,
+          "maxAzimuthResidualDeg": 7.90203426959124e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-09-22+00%3A00%3A00%27&STOP_TIME=%272027-09-22+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "a012fd3c50a136c7f661ed89f971707b070038f48b381a17959863050be7396e",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-09-22 00:00:00'",
+              "STOP_TIME": "'2027-09-22 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-09-22T00:00:00Z",
+              "azimuthResidualDeg": -7.062727092943533e-06,
+              "elevationResidualDeg": 1.1074073650974015e-05,
+              "spiceElevationDeg": 6.096351074073651,
+              "horizonsElevationDeg": 6.09634
+            },
+            {
+              "utc": "2027-09-22T00:10:00Z",
+              "azimuthResidualDeg": -7.230408300529234e-06,
+              "elevationResidualDeg": 1.0356244209752674e-05,
+              "spiceElevationDeg": 6.09069835624421,
+              "horizonsElevationDeg": 6.090688
+            },
+            {
+              "utc": "2027-09-22T00:20:00Z",
+              "azimuthResidualDeg": -7.108774809694296e-06,
+              "elevationResidualDeg": 1.0210686761880083e-05,
+              "spiceElevationDeg": 6.085029210686762,
+              "horizonsElevationDeg": 6.085019
+            },
+            {
+              "utc": "2027-09-22T00:30:00Z",
+              "azimuthResidualDeg": -7.695366804227888e-06,
+              "elevationResidualDeg": 1.064646635562383e-05,
+              "spiceElevationDeg": 6.079343646466356,
+              "horizonsElevationDeg": 6.079333
+            },
+            {
+              "utc": "2027-09-22T00:40:00Z",
+              "azimuthResidualDeg": -6.988252408746121e-06,
+              "elevationResidualDeg": 1.0672869074745961e-05,
+              "spiceElevationDeg": 6.0736416728690745,
+              "horizonsElevationDeg": 6.073631
+            },
+            {
+              "utc": "2027-09-22T00:50:00Z",
+              "azimuthResidualDeg": -6.984882645610924e-06,
+              "elevationResidualDeg": 1.029906172611561e-05,
+              "spiceElevationDeg": 6.067923299061726,
+              "horizonsElevationDeg": 6.067913
+            },
+            {
+              "utc": "2027-09-22T01:00:00Z",
+              "azimuthResidualDeg": -7.68349499935539e-06,
+              "elevationResidualDeg": 1.0534430578523768e-05,
+              "spiceElevationDeg": 6.062188534430579,
+              "horizonsElevationDeg": 6.062178
+            }
+          ],
+          "maxElevationResidualDeg": 1.1074073650974015e-05,
+          "maxAzimuthResidualDeg": 7.695366804227888e-06
+        }
+      }
+    },
+    {
+      "siteId": "Site11",
+      "longitude": -68.39564496957904,
+      "latitude": -88.6646268225162,
+      "groundM": 1815.0805053710938,
+      "startUTC": "2027-12-21T00:00:00Z",
+      "targets": {
+        "sun": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "fc5855ba51c639e505ac300661d86ddaca908c4916d8af8ce31f556425df343c",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'10'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -6.354007552999974e-06,
+              "elevationResidualDeg": 7.11858495616724e-06,
+              "spiceElevationDeg": 2.0702221185849563,
+              "horizonsElevationDeg": 2.070215
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -6.687349014100619e-06,
+              "elevationResidualDeg": 7.090748951110726e-06,
+              "spiceElevationDeg": 2.069229090748951,
+              "horizonsElevationDeg": 2.069222
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -6.280618720211351e-06,
+              "elevationResidualDeg": 6.50030717164185e-06,
+              "spiceElevationDeg": 2.0682335003071715,
+              "horizonsElevationDeg": 2.068227
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -6.133587078238634e-06,
+              "elevationResidualDeg": 6.348971002712034e-06,
+              "spiceElevationDeg": 2.067235348971003,
+              "horizonsElevationDeg": 2.067229
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -6.245925192160939e-06,
+              "elevationResidualDeg": 6.638458382113299e-06,
+              "spiceElevationDeg": 2.0662346384583823,
+              "horizonsElevationDeg": 2.066228
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -6.617357030336279e-06,
+              "elevationResidualDeg": 6.370492256824178e-06,
+              "spiceElevationDeg": 2.0652313704922567,
+              "horizonsElevationDeg": 2.065225
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -6.247603039355454e-06,
+              "elevationResidualDeg": 6.546800981777068e-06,
+              "spiceElevationDeg": 2.064225546800982,
+              "horizonsElevationDeg": 2.064219
+            }
+          ],
+          "maxElevationResidualDeg": 7.11858495616724e-06,
+          "maxAzimuthResidualDeg": 6.687349014100619e-06
+        },
+        "earth": {
+          "source": {
+            "engine": "JPL Horizons",
+            "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%27-68.39564496957904%2C-88.6646268225162%2C1.8170805053710937%27&START_TIME=%272027-12-21+00%3A00%3A00%27&STOP_TIME=%272027-12-21+01%3A00%3A00%27&STEP_SIZE=%2710+m%27&QUANTITIES=%274%2C20%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CAL_FORMAT=%27CAL%27&TIME_DIGITS=%27SECONDS%27",
+            "sha256": "e8b81eb49928c580168fcae9a89a6972963ea3239a63821098e224897007aeb0",
+            "parameters": {
+              "format": "json",
+              "COMMAND": "'399'",
+              "OBJ_DATA": "'NO'",
+              "MAKE_EPHEM": "'YES'",
+              "EPHEM_TYPE": "'OBSERVER'",
+              "CENTER": "'coord@301'",
+              "COORD_TYPE": "'GEODETIC'",
+              "SITE_COORD": "'-68.39564496957904,-88.6646268225162,1.8170805053710937'",
+              "START_TIME": "'2027-12-21 00:00:00'",
+              "STOP_TIME": "'2027-12-21 01:00:00'",
+              "STEP_SIZE": "'10 m'",
+              "QUANTITIES": "'4,20'",
+              "CSV_FORMAT": "'YES'",
+              "ELEV_CUT": "'-90'",
+              "APPARENT": "'AIRLESS'",
+              "TIME_TYPE": "'UT'",
+              "CAL_FORMAT": "'CAL'",
+              "TIME_DIGITS": "'SECONDS'"
+            },
+            "coordinateSpecific": true,
+            "frame": "MOON_ME_DE421",
+            "reportedFrame": "Horizons MEAN_ME",
+            "refraction": "none",
+            "observerAltitudeM": 1817.0805053710938,
+            "frameValidation": "Response confirms high-precision lunar mean-Earth orientation, 1737.4 km spherical datum and AIRLESS; Horizons maps DE440 orientation to standard DE421 ME",
+            "cacheHit": false,
+            "apparentCorrections": "Horizons light time, stellar aberration and gravitational light deflection; no atmospheric refraction"
+          },
+          "comparisons": [
+            {
+              "utc": "2027-12-21T00:00:00Z",
+              "azimuthResidualDeg": -7.788053210333601e-06,
+              "elevationResidualDeg": 7.786016935185103e-06,
+              "spiceElevationDeg": -5.918562213983065,
+              "horizonsElevationDeg": -5.91857
+            },
+            {
+              "utc": "2027-12-21T00:10:00Z",
+              "azimuthResidualDeg": -7.554030844403314e-06,
+              "elevationResidualDeg": 8.586580806380084e-06,
+              "spiceElevationDeg": -5.923635413419194,
+              "horizonsElevationDeg": -5.923644
+            },
+            {
+              "utc": "2027-12-21T00:20:00Z",
+              "azimuthResidualDeg": -7.469653070302229e-06,
+              "elevationResidualDeg": 8.118535608225841e-06,
+              "spiceElevationDeg": -5.928690881464392,
+              "horizonsElevationDeg": -5.928699
+            },
+            {
+              "utc": "2027-12-21T00:30:00Z",
+              "azimuthResidualDeg": -7.536490670645435e-06,
+              "elevationResidualDeg": 8.389686680487785e-06,
+              "spiceElevationDeg": -5.933728610313319,
+              "horizonsElevationDeg": -5.933737
+            },
+            {
+              "utc": "2027-12-21T00:40:00Z",
+              "azimuthResidualDeg": -7.756107351042374e-06,
+              "elevationResidualDeg": 8.407769276352894e-06,
+              "spiceElevationDeg": -5.9387485922307235,
+              "horizonsElevationDeg": -5.938757
+            },
+            {
+              "utc": "2027-12-21T00:50:00Z",
+              "azimuthResidualDeg": -8.130083585911052e-06,
+              "elevationResidualDeg": 8.180472164553976e-06,
+              "spiceElevationDeg": -5.9437508195278355,
+              "horizonsElevationDeg": -5.943759
+            },
+            {
+              "utc": "2027-12-21T01:00:00Z",
+              "azimuthResidualDeg": -7.659964751383086e-06,
+              "elevationResidualDeg": 7.715415043740848e-06,
+              "spiceElevationDeg": -5.948735284584957,
+              "horizonsElevationDeg": -5.948743
+            }
+          ],
+          "maxElevationResidualDeg": 8.586580806380084e-06,
+          "maxAzimuthResidualDeg": 8.130083585911052e-06
+        }
+      }
+    }
+  ],
+  "scope": "Three prepared terrain coordinates, four seasons; SPICE CN+S compared against airless Horizons apparent angles. Agreement is a cross-method check, not observational truth."
+}

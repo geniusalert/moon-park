@@ -1,0 +1,41 @@
+{
+  "checks": 53,
+  "passed": true,
+  "points": [
+    {
+      "id": "Site01",
+      "containingOutlines": [
+        "Site01-roi-1"
+      ]
+    },
+    {
+      "id": "Site04",
+      "containingOutlines": []
+    },
+    {
+      "id": "Site11",
+      "containingOutlines": [
+        "Site11-roi-1"
+      ]
+    }
+  ],
+  "attributeFlags": [
+    {
+      "id": "Site04-roi-2",
+      "status": "outside"
+    },
+    {
+      "id": "Site04-roi-3",
+      "status": "outside"
+    },
+    {
+      "id": "Site11-roi-3",
+      "status": "outside"
+    },
+    {
+      "id": "Site11-roi-4",
+      "status": "missing"
+    }
+  ],
+  "scope": "Published illumination study regions, not certified landing zones. Only the existing research-point markers have cached mission calculations. Display terrain is downsampled and is not the horizon calculation mesh."
+}

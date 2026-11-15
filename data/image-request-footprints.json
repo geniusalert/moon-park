@@ -1,0 +1,184 @@
+{
+  "body": "Moon",
+  "frame": "MOON_ME_DE421",
+  "referenceSphereRadiusM": 1737400,
+  "xyProjection": "South polar stereographic, central meridian 0 degrees, true scale at south pole, meters",
+  "coordinateOrder": "Longitude east, latitude in degrees; lunar coordinates, not Earth WGS84",
+  "purpose": "Optional original-image requests for contextual visual presentation; these boxes are not calculated landing regions",
+  "areas": [
+    {
+      "name": "Connecting Ridge",
+      "sourceSiteId": "Site01",
+      "center": {
+        "latitude": -89.43870191388767,
+        "longitudeEast": -137.07132034007583,
+        "xyM": [
+          -11592.5,
+          -12462.5
+        ]
+      },
+      "requestedContextWidthM": 2000,
+      "footprintXYM": [
+        [
+          -12592.5,
+          -13462.5
+        ],
+        [
+          -10592.5,
+          -13462.5
+        ],
+        [
+          -10592.5,
+          -11462.5
+        ],
+        [
+          -12592.5,
+          -11462.5
+        ],
+        [
+          -12592.5,
+          -13462.5
+        ]
+      ],
+      "footprintLonLat": [
+        [
+          -136.91244731373456,
+          -89.392093489242
+        ],
+        [
+          -141.80379254452885,
+          -89.4350904375219
+        ],
+        [
+          -137.2589660966097,
+          -89.48530542702895
+        ],
+        [
+          -132.31046893396834,
+          -89.43845009742851
+        ],
+        [
+          -136.91244731373456,
+          -89.392093489242
+        ]
+      ],
+      "source": "https://pgda.gsfc.nasa.gov/products/78"
+    },
+    {
+      "name": "Shackleton rim",
+      "sourceSiteId": "Site04",
+      "center": {
+        "latitude": -89.76135865069945,
+        "longitudeEast": -157.1288994881818,
+        "xyM": [
+          -2812.5,
+          -6667.5
+        ]
+      },
+      "requestedContextWidthM": 2000,
+      "footprintXYM": [
+        [
+          -3812.5,
+          -7667.5
+        ],
+        [
+          -1812.5,
+          -7667.5
+        ],
+        [
+          -1812.5,
+          -5667.5
+        ],
+        [
+          -3812.5,
+          -5667.5
+        ],
+        [
+          -3812.5,
+          -7667.5
+        ]
+      ],
+      "footprintLonLat": [
+        [
+          -153.5621229516796,
+          -89.71760950028573
+        ],
+        [
+          -166.70014291908177,
+          -89.7401738085198
+        ],
+        [
+          -162.26541646727011,
+          -89.80377286636941
+        ],
+        [
+          -146.07146801396175,
+          -89.77474488117859
+        ],
+        [
+          -153.5621229516796,
+          -89.71760950028573
+        ]
+      ],
+      "source": "https://pgda.gsfc.nasa.gov/products/78"
+    },
+    {
+      "name": "de Gerlache rim",
+      "sourceSiteId": "Site11",
+      "center": {
+        "latitude": -88.66797855953496,
+        "longitudeEast": -68.40338440329703,
+        "xyM": [
+          -37557.5,
+          14867.5
+        ]
+      },
+      "requestedContextWidthM": 2000,
+      "footprintXYM": [
+        [
+          -38557.5,
+          13867.5
+        ],
+        [
+          -36557.5,
+          13867.5
+        ],
+        [
+          -36557.5,
+          15867.5
+        ],
+        [
+          -38557.5,
+          15867.5
+        ],
+        [
+          -38557.5,
+          13867.5
+        ]
+      ],
+      "footprintLonLat": [
+        [
+          -70.21849006888947,
+          -88.6487785554791
+        ],
+        [
+          -69.22656416624632,
+          -88.71064084008722
+        ],
+        [
+          -66.53711887366934,
+          -88.6858036767242
+        ],
+        [
+          -67.63145042283462,
+          -88.62505881857516
+        ],
+        [
+          -70.21849006888947,
+          -88.6487785554791
+        ]
+      ],
+      "source": "https://pgda.gsfc.nasa.gov/products/78"
+    }
+  ]
+}

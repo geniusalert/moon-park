@@ -1,0 +1,624 @@
+{
+  "baselineDatasetSha256": "644514776b09e5bbb7359a4266ed9657fd5ad7974cd60b362e835a7b8da100c3",
+  "method": "v0.2→corrected local includes native-grid ground correction, interpolation, angular/radial refinement, and frame-matched ephemerides. Corrected local→regional isolates extended terrain on the same fine rays and geometry.",
+  "cases": [
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 30.833333333333336,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 33.333333333333336,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 11.333333333333336,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -22,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 59.333333333333336,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -12.666666666666664,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 64.33333333333333,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 67.16666666666667,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 9,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -58.16666666666667,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 57,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -15,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 68,
+        "overlap": 0,
+        "longestDark": 4,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 68.33333333333333,
+        "overlap": 0,
+        "longestDark": 3.6666666666666714,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 68.33333333333333,
+        "overlap": 0,
+        "longestDark": 3.6666666666666714,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 20,
+        "overlap": 0,
+        "longestDark": 52,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 20.333333333333332,
+        "overlap": 0,
+        "longestDark": 51.66666666666667,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 20.333333333333332,
+        "overlap": 0,
+        "longestDark": 51.66666666666667,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 56,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 56.833333333333336,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 30.5,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -26.333333333333336,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 8,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 8.833333333333334,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 0,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -8.833333333333334,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "correctedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "regional": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 72,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": 0,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 72,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 50.5,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -21.5,
+        "longestDark": 0
+      }
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "v02": {
+        "sunHours": 72,
+        "overlap": 37.666666666666664,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "correctedLocal": {
+        "sunHours": 72,
+        "overlap": 35.666666666666664,
+        "longestDark": 0,
+        "modelPass": true
+      },
+      "regional": {
+        "sunHours": 72,
+        "overlap": 2.5,
+        "longestDark": 0,
+        "modelPass": false
+      },
+      "regionalMinusCorrectedLocal": {
+        "sunHours": 0,
+        "overlap": -33.166666666666664,
+        "longestDark": 0
+      }
+    }
+  ],
+  "summary": {
+    "cases": 18,
+    "casesWithChangedOverlapFromRegional": 8,
+    "maxOverlapReductionHours": 58.16666666666667,
+    "maxSunReductionHours": 0
+  }
+}

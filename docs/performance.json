@@ -1,0 +1,25 @@
+{
+  "runtime": "v22.14.0",
+  "platform": "win32",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+  "logicalCores": 12,
+  "method": "12 in-process cached calculations; first two warm-up runs excluded. Each run: baseline plus nominal/all eight variants for three benchmark points and 63-combination robust recovery. Excludes network, JSON decode, browser drawing and source preparation.",
+  "milliseconds": [
+    164.4535,
+    143.15479999999997,
+    159.54870000000005,
+    147.75070000000005,
+    150.1325999999999,
+    193.35199999999986,
+    166.4375,
+    159.0987,
+    147.02780000000007,
+    147.90359999999987,
+    125.2228,
+    142.05420000000004
+  ],
+  "warmMedianMs": 149.0180999999999,
+  "warmP95Ms": 193.35199999999986,
+  "targetMs": 1000,
+  "targetMet": true
+}

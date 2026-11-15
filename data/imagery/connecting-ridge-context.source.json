@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "productId": "NAC_DTM_SHACKRDGE02_M139797542_120CM",
+  "source": {
+    "requestedURL": "https://pds.lroc.im-ldi.com/data/LRO-L-LROC-5-RDR-V1.0/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/SHACKRDGE02/NAC_DTM_SHACKRDGE02_M139797542_120CM.TIF",
+    "resolvedURL": "https://pds.mcp.nasa.gov/data/store/img/lunar_reconnaissance_orbiter/pds4/lroc/lro-l-lroc-5-rdr/LROLRC_2001/EXTRAS/BROWSE/NAC_DTM/SHACKRDGE02/NAC_DTM_SHACKRDGE02_M139797542_120CM.TIF",
+    "bytes": 21434528,
+    "sha256": "1cde95b94ee1937ef67d357ea2e04b725b1c5dc2bdfa2d04adc03a240b4687c2"
+  },
+  "productPage": "https://data.lroc.im-ldi.com/lroc/view_rdr_product/NAC_DTM_SHACKRDGE02_M139797542_120CM",
+  "groupPage": "https://data.lroc.im-ldi.com/lroc/view_rdr/NAC_DTM_SHACKRDGE02",
+  "readmeSha256": "47934d934b7f7df18b81e681e919ba14c69e4bca19199bd51a275793a7799969",
+  "kind": "Historical LROC orthophoto; image values preserved without contrast changes",
+  "acquisitionDate": "2010-09-22 per product-group metadata",
+  "derivedAssets": {
+    "connecting-ridge-context-1p2m.tif": {
+      "path": "data/imagery/connecting-ridge-context-1p2m.tif",
+      "sha256": "a68f7ff406a0e5a613f9765540c81c25669c345384a15b5267134a0fd267a7ad",
+      "bytes": 997716
+    },
+    "connecting-ridge-context.png": {
+      "path": "data/imagery/connecting-ridge-context.png",
+      "sha256": "e67bef02e53d527474bbf689e044b227e4618ac64536215a01ae2ab2c092b467",
+      "bytes": 983505
+    }
+  },
+  "checks": {
+    "shape": [
+      1667,
+      1667
+    ],
+    "validContextFraction": 0.4073149377323096,
+    "boundsXYM": [
+      -12592.65,
+      -13462.849999999999,
+      -10592.25,
+      -11462.45
+    ],
+    "centerLongitude": -137.07132034007583,
+    "centerLatitude": -89.43870191388767,
+    "resolutionM": [
+      1.2,
+      1.2
+    ],
+    "crsWKT": "PROJCS[\"PolarStereographic Moon\",GEOGCS[\"GCS_Moon\",DATUM[\"D_Moon\",SPHEROID[\"Moon\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+    "pointCoverage": [
+      {
+        "pointId": "Site01-roi-1-anchor",
+        "withinRasterBounds": true,
+        "validImageAtPoint": true,
+        "value": 69.0
+      },
+      {
+        "pointId": "Site04-roi-1-anchor",
+        "withinRasterBounds": false,
+        "validImageAtPoint": false,
+        "value": null
+      },
+      {
+        "pointId": "Site11-roi-1-anchor",
+        "withinRasterBounds": false,
+        "validImageAtPoint": false,
+        "value": null
+      }
+    ]
+  },
+  "alignmentStatus": "Projection sphere and source coordinate support checked. Independent image-to-current-LOLA registration has not been measured. Original README reports DTM-to-Site01 adjusted-LOLA average X/Y offsets -2.88/-6.47 m; these have not been applied as an image correction.",
+  "scope": "Connecting Ridge context only; no coverage at the selected Shackleton or de Gerlache anchors. Transparent/zero-nodata pixels outside source coverage are preserved. Historical image illumination must not be used as simulated mission lighting.",
+  "verification": {
+    "sourcePixelEqualityInOverlap": true,
+    "pixelComparisons": 2453824,
+    "anchorPixelPreserved": true,
+    "derivedGeoTIFFRetainsSourceCRS": true,
+    "historicalContextOnly": true
+  }
+}

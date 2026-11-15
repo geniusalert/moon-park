@@ -1,0 +1,33 @@
+{
+  "models": [
+    {
+      "file": "apollo-lunar-module.glb",
+      "originalName": "Apollo Lunar Module.glb",
+      "bytes": 716840,
+      "sha256": "379101dfcee399267addf771709107c35e826b0b9e5233272f123e4c8a585c4e",
+      "origin": "User-provided local GLB; geographic registration and redistribution license not supplied"
+    },
+    {
+      "file": "moon.glb",
+      "originalName": "moon.glb",
+      "bytes": 53884300,
+      "sha256": "f026a938cf8eda574ab3e7aa0c645c9f506d2b0f2e06d2f25ab1fb1dc417bb7c",
+      "origin": "User-provided local GLB; geographic registration and redistribution license not supplied"
+    },
+    {
+      "file": "earth.glb",
+      "originalName": "Earth_1_12756.glb",
+      "bytes": 12916400,
+      "sha256": "05a5aea99db8ab472487a06debc3b5d0b2cae7636a1a6b9ecfa40b7d1722ba23",
+      "origin": "User-provided local GLB; texture orientation and redistribution license not supplied"
+    },
+    {
+      "file": "sun.glb",
+      "originalName": "Sun_1_1391000.glb",
+      "bytes": 4343656,
+      "sha256": "a178f5c43c2c9a6ee6c011c315149a7ab5a2594fd5aa9119ee219625a18da1dd",
+      "origin": "User-provided local GLB; texture orientation and redistribution license not supplied"
+    }
+  ],
+  "scope": "Illustrative landing scene; not a registered lunar DEM or flight dynamics model"
+}

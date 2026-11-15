@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "format": "moon-park-hardware-thermal-test",
+  "physicalTarget": "spacecraft-component",
+  "temperatureUnit": "K",
+  "evidenceType": "synthetic",
+  "hardwareId": "SYNTHETIC analytical cooling body",
+  "sensorId": "synthetic-node",
+  "sensorLocation": "uniform simulated body",
+  "sensorCalibrationReference": "Analytic radiative-cooling solution; no physical sensor",
+  "sensorUncertaintyK": 0.1,
+  "parameters": {
+    "areaM2": 0.1,
+    "absorptivity": 0.8,
+    "emissivity": 0.8,
+    "radiatingAreaM2": 0.2,
+    "conductanceWK": 0,
+    "groundViewFactor": 0,
+    "heatCapacityJK": 1000
+  },
+  "criteria": {
+    "maxRMSEK": 0.25,
+    "maxAbsErrorK": 0.5
+  },
+  "fitGrids": {
+    "heatCapacityJK": [
+      500,
+      1000,
+      2000
+    ]
+  },
+  "runs": [
+    {
+      "runId": "analytic-training",
+      "role": "calibration",
+      "sourceReference": "Mathematical cooling solution at 320 K",
+      "rows": [
+        {
+          "elapsedSeconds": 0,
+          "temperatureK": 319.9999999999999,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 120,
+          "temperatureK": 309.33628838279515,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 240,
+          "temperatureK": 299.96541444557863,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 360,
+          "temperatureK": 291.635848893618,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 480,
+          "temperatureK": 284.160612364531,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 600,
+          "temperatureK": 277.3972741753245,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 720,
+          "temperatureK": 271.2350715105882,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 840,
+          "temperatureK": 265.58632663921685,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 960,
+          "temperatureK": 260.3805590760211,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 1080,
+          "temperatureK": 255.56034353860954,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 1200,
+          "temperatureK": 251.07833128380972,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        }
+      ]
+    },
+    {
+      "runId": "analytic-held-out",
+      "role": "validation",
+      "sourceReference": "Mathematical cooling solution at 280 K",
+      "rows": [
+        {
+          "elapsedSeconds": 0,
+          "temperatureK": 279.9999999999999,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 120,
+          "temperatureK": 273.6111949974238,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 240,
+          "temperatureK": 267.76825514562444,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 360,
+          "temperatureK": 262.3944616213988,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 480,
+          "temperatureK": 257.42762663323555,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 600,
+          "temperatureK": 252.8167073046543,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 720,
+          "temperatureK": 248.51934127620393,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 840,
+          "temperatureK": 244.50002051751642,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 960,
+          "temperatureK": 240.72871614794838,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 1080,
+          "temperatureK": 237.17982783706356,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        },
+        {
+          "elapsedSeconds": 1200,
+          "temperatureK": 233.83137065774537,
+          "irradianceWm2": 0,
+          "internalHeatW": 0,
+          "electricalW": 0,
+          "groundTemperatureK": 0,
+          "skyTemperatureK": 0
+        }
+      ]
+    }
+  ]
+}

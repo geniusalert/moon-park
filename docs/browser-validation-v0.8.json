@@ -1,0 +1,56 @@
+{
+  "build": "0.8.0",
+  "reviewType": "Agent-operated browser verification; not human study evidence",
+  "passed": true,
+  "recordedExample": {
+    "point": "Site01-roi-1-grid-south",
+    "baselineCombinedHours": 5.17,
+    "delayedCombinedHours": 53.17,
+    "baselinePass": false,
+    "delayedPass": true,
+    "traceTarget": "earth",
+    "firstCombinedSampleIndex": 113
+  },
+  "checks": [
+    "Recorded example restores settings and selected south probe",
+    "Top summary follows selected point and distinguishes nominal candidate scope",
+    "Recovery shortcut opens selected interior search",
+    "Three historical image sources display with date and alignment limits",
+    "Connecting Ridge south probe identifies source nodata",
+    "de Gerlache outline-4 anchor identifies outside-crop status",
+    "de Gerlache partial acquisition explicitly disclosed",
+    "Image remains unchanged when mission replay advances",
+    "Point switch clears previous horizon trace",
+    "Image/native/metadata and current software identities verified in both receipts"
+  ],
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 375,
+    "horizontalOverflow": false,
+    "imageNaturalWidth": 2001
+  },
+  "consoleWarningsAndErrors": [],
+  "receipts": [
+    {
+      "path": "data/sample-decision-receipt.json",
+      "version": "0.8.0",
+      "softwareHashes": 62,
+      "site": "Site01-roi-1-grid-south",
+      "mode": "sky",
+      "verified": true
+    },
+    {
+      "path": "docs/partial-imagery-receipt-v0.8.json",
+      "version": "0.8.0",
+      "softwareHashes": 62,
+      "site": "Site11-roi-1-anchor",
+      "mode": "image",
+      "verified": true
+    }
+  ],
+  "limitations": [
+    "No actual human participants",
+    "No image-to-current-DEM registration assessment",
+    "de Gerlache acquisition incomplete"
+  ]
+}

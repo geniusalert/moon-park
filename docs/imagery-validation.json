@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "checks": 97,
+  "entries": [
+    {
+      "siteId": "Site01",
+      "productId": "NAC_DTM_SHACKRDGE02_M139797542_120CM",
+      "validContextFraction": 0.4073149377323096,
+      "states": {
+        "valid-source-pixel": 8,
+        "source-nodata": 3,
+        "outside-crop": 1
+      }
+    },
+    {
+      "siteId": "Site04",
+      "productId": "NAC_DTM_ESALL_SR12_NACMOS_1M",
+      "validContextFraction": 1.0,
+      "states": {
+        "valid-source-pixel": 9
+      }
+    },
+    {
+      "siteId": "Site11",
+      "productId": "NAC_ROI_DEGERRIMLO1_P885S2933",
+      "validContextFraction": 1.0,
+      "states": {
+        "valid-source-pixel": 8,
+        "outside-crop": 1
+      }
+    }
+  ],
+  "scope": "Checks source identities, retained pixels, masks, lunar projection and point-specific crop support. Does not measure image-to-DEM registration or independent scientific accuracy."
+}

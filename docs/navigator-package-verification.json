@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "package": "Final 0.13 code verified from fresh extraction; final archive identity is in release/package-evidence.json",
+  "freshExtraction": true,
+  "manifestVerified": true,
+  "preparedDemo": "grid-south 5.17 / 53.17 hours reproduced in browser",
+  "optionalData": "Verified regional crops and kernels copied from acquired sources; setup command rechecked hashes. No fine terrain or generated cache copied.",
+  "custom": {
+    "latitude": -86.5,
+    "longitude": 90.0,
+    "terrainSources": 2,
+    "performance": {
+      "seconds": 15.71165309999924,
+      "peakWorkingSetBytes": 268853248,
+      "horizonCacheHit": false,
+      "observationCacheHit": false
+    }
+  },
+  "exports": "JSON and Markdown downloaded; prepared comparison restored after reset",
+  "tests": {
+    "javascript": 54,
+    "python": 30
+  },
+  "limitations": [
+    "No clean-machine dependency installation was simulated; existing Python/Node runtimes used.",
+    "Optional raw data were provisioned from verified local acquisitions instead of repeating network downloads."
+  ],
+  "finalCustom": {
+    "latitude": -86.5,
+    "longitude": 90.0,
+    "cold": {
+      "seconds": 12.544313599995803,
+      "peakWorkingSetBytes": 268140544,
+      "horizonCacheHit": false,
+      "observationCacheHit": false
+    },
+    "cached": {
+      "seconds": 1.064876299999014,
+      "peakWorkingSetBytes": 161316864,
+      "horizonCacheHit": true,
+      "observationCacheHit": true
+    },
+    "restored": true
+  }
+}

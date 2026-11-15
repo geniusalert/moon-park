@@ -1,0 +1,10 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {horizonAt,discFraction,summarize,simulate,sites} from '../src/engine.js';
+test('periodic horizon interpolates across north',()=>{assert.equal(horizonAt([{az:10,el:2},{az:350,el:0}],0),1);assert.equal(horizonAt([{az:0,el:3}],200),3);});
+test('solar disc boundary and symmetry',()=>{assert.equal(discFraction(-1),0);assert.equal(discFraction(1),1);assert.equal(discFraction(0),0.5);assert.ok(Math.abs(discFraction(.1)+discFraction(-.1)-1)<1e-12);});
+test('longest darkness includes leading and trailing bins',()=>{const s=[{hour:0,sun:false,earth:true,both:false},{hour:1,sun:true,earth:true,both:true},{hour:2,sun:false,earth:false,both:false}];const r=summarize(s,5,2,1);assert.equal(r.longestDark,3);assert.equal(r.overlap,1);assert.equal(r.feasible,false);});
+test('all dark and all light exact durations',()=>{assert.equal(summarize([{hour:0,sun:false}],72).longestDark,72);assert.equal(summarize([{hour:0,sun:true,earth:true,both:true}],72).sunHours,72);});
+test('reject invalid samples and missing terrain',()=>{assert.throws(()=>summarize([],72));assert.throws(()=>horizonAt([],0));assert.throws(()=>summarize([{hour:1}],72));});
+test('more obstruction cannot increase availability',()=>{for(const s of sites){assert.ok(simulate(s,{offset:.5}).sunHours<=simulate(s).sunHours);assert.ok(simulate(s,{offset:.5}).earthHours<=simulate(s).earthHours);}});
+test('delay zero reproduces baseline; delay changes actual signals',()=>{assert.deepEqual(simulate(sites[0]),simulate(sites[0],{delay:0}));assert.notEqual(simulate(sites[0]).samples[0].sunEl,simulate(sites[0],{delay:48}).samples[0].sunEl);});

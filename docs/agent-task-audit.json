@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "reviewKind": "agent-operated-browser-task-walkthrough",
+  "reviewedAt": "2026-11-11T05:51:35.662Z",
+  "applicationBuild": "0.6",
+  "humanParticipants": 0,
+  "independentHumanStudy": false,
+  "reviewerHasImplementationKnowledge": true,
+  "config": {
+    "dark": "12",
+    "delay": "48",
+    "height": "2",
+    "overlap": "8",
+    "start": "2026-11-14"
+  },
+  "tasks": [
+    {
+      "id": 1,
+      "task": "Identify the original Shackleton failure",
+      "answer": "Minimum combined Sun + Earth availability: 0.0 h is below 8 h",
+      "passed": true,
+      "evidence": "Shackleton rim · research point ↗\nMODEL FAILS\nSun available\n72.0 → 72.0 h\nCombined availability\n0.0 → 0.0 h\nLongest darkness\n0.0 → 0.0 h\n\nCombined availability 0.0 h is below 8 h\nFull feasibility remains unknown.\nAdding regional terrain: overlap 0.0 → 0.0 h; sunlight 72.0 → 72.0 h."
+    },
+    {
+      "id": 2,
+      "task": "Identify direction of delay effect at original Connecting Ridge",
+      "answer": "Combined availability increases from 11.3 h to 59.3 h",
+      "passed": true,
+      "evidence": "Connecting ridge · research point ↗\nMODEL PASSES\nSun available\n72.0 → 72.0 h\nCombined availability\n11.3 → 59.3 h\nLongest darkness\n0.0 → 0.0 h\n\nConfigured limits pass in the terrain model.\nFull feasibility remains unknown.\nAdding regional terrain: overlap 72.0 → 59.3 h; sunlight 72.0 → 72.0 h."
+    },
+    {
+      "id": 3,
+      "task": "Find the first shared two-hour activity start",
+      "answer": "16 November 2026, 12:50 UTC",
+      "passed": true,
+      "evidence": "Nominal schedule: 1 available interval(s). Common to nominal + all eight tested variants: 1 interval(s). The near-field scope and fixed outer terrain still apply.\n\n2026-11-16 12:50:00 UTC · 2 h fits within 59.2 h shared by every tested case."
+    },
+    {
+      "id": 4,
+      "task": "Identify the spatial coverage of interior results",
+      "answer": "Calculated sample points only; the polygon is not continuously evaluated",
+      "passed": true,
+      "evidence": {
+        "details": "Terrain and horizon above now show Site01 published study region 1 / anchor. Native ground 1958.09 m; -89.438702°, -137.071320° E. 1 nominal interval(s) can fit the requested activity. Terrain-clone support and whole-region feasibility remain unknown.",
+        "rows": 5,
+        "status": "5 calculated interior points. Nominal terrain only; no clone ensemble has been calculated here. The surrounding polygon is not continuously evaluated."
+      }
+    },
+    {
+      "id": 5,
+      "task": "Interpret a model pass",
+      "answer": "Configured limits pass under the stated model; full feasibility remains unknown",
+      "passed": true,
+      "evidence": "Explain the decision. Preserve the evidence.\nEducational research prototype · No operational certification"
+    }
+  ],
+  "guards": [
+    {
+      "name": "Missing mission limit blocks scientific export",
+      "passed": true,
+      "evidence": {
+        "errorVisible": true,
+        "exportDisabled": true,
+        "message": "Enter both mission limits"
+      }
+    },
+    {
+      "name": "Restoring a valid mission limit restores export",
+      "passed": true,
+      "evidence": {
+        "errorHidden": true,
+        "exportEnabled": true
+      }
+    }
+  ],
+  "passed": true,
+  "scope": "Verifies answers can be found and controls work; does not estimate novice comprehension, human success rates, workload, accessibility compliance or independent scientific validity."
+}

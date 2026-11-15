@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "siteId": "Site04",
+  "date": "2026-11-12",
+  "sources": {
+    "/data/registration/reference/catalog-9846904df18e.json": "9846904df18e985c511b95facfa04d013ec51cd31a01ee2e7b30462bbaee142d",
+    "/data/registration/catalog-ed58bddfdcf8.json": "ed58bddfdcf8ccc0032d32497b202b2b6be7a9162797f15e6c74ddef0550a601",
+    "/data/registration/reference/shackleton-comparison-grid.tif": "a7c80f35ce74397608acb975e72e776096ab9a18f247afec397918c0047dc9b5",
+    "/data/registration/Site04-image.png": "8ec06244af9f3726ed984186733fa58bea044ef865b70bad8e654565a3937776",
+    "/data/registration/Site04-shade45.png": "d4e4afcd37799cd6ee586b52424ed6ecb6592cf25a13454d1cc615e692d3df8d"
+  },
+  "generatorSha256": "740ea40c1f673e17d2cd676a04a189af33afb6955b6e88b43260449e4144b469",
+  "plotSha256": "be213edb9f56872fb555d70158b3b06bab0df5cd6975e3966112c65e89f9cc7d",
+  "csvSha256": "76deabd05c5023c7424a773dfbe60dc72b8dd1482a0dbf7b869a36ff9762513d",
+  "method": "Three prespecified full-width common-grid rows, 80/200/320; no smoothing, shift, brightness matching or fitted correction.",
+  "limitations": [
+    "Heights share LOLA control heritage; agreement is not independent validation.",
+    "A height maximum along a line is not necessarily a ridge crest or a physical photo landmark.",
+    "The within-one-metre envelope is a descriptive height band, not horizontal uncertainty; gaps can occur.",
+    "Photo brightness depends on illumination and reflectance and is not compared numerically with height."
+  ],
+  "transects": [
+    {
+      "row": 80,
+      "yM": -6068.697007481297,
+      "supportedCells": 380,
+      "models": {
+        "mission": {
+          "maximumXM": -2657.809226932668,
+          "maximumHeightM": 1736.858642578125,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2702.7194513715713,
+            -2642.839152119701
+          ],
+          "withinOneMetreOfMaxCellCount": 13
+        },
+        "stereoSupported": {
+          "maximumXM": -2657.809226932668,
+          "maximumHeightM": 1737.4990234375,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2702.7194513715713,
+            -2637.849127182045
+          ],
+          "withinOneMetreOfMaxCellCount": 14
+        }
+      }
+    },
+    {
+      "row": 200,
+      "yM": -6667.5,
+      "supportedCells": 392,
+      "models": {
+        "mission": {
+          "maximumXM": -2812.5,
+          "maximumHeightM": 1727.984130859375,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2827.4700748129676,
+            -2802.519950124688
+          ],
+          "withinOneMetreOfMaxCellCount": 6
+        },
+        "stereoSupported": {
+          "maximumXM": -2807.509975062344,
+          "maximumHeightM": 1728.6484375,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2822.4800498753116,
+            -2797.5299251870324
+          ],
+          "withinOneMetreOfMaxCellCount": 6
+        }
+      }
+    },
+    {
+      "row": 320,
+      "yM": -7266.302992518704,
+      "supportedCells": 392,
+      "models": {
+        "mission": {
+          "maximumXM": -2807.509975062344,
+          "maximumHeightM": 1701.62255859375,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2822.4800498753116,
+            -2802.519950124688
+          ],
+          "withinOneMetreOfMaxCellCount": 5
+        },
+        "stereoSupported": {
+          "maximumXM": -2807.509975062344,
+          "maximumHeightM": 1702.6583251953125,
+          "maximumAtCropEdge": false,
+          "withinOneMetreOfMaxXEnvelopeM": [
+            -2827.4700748129676,
+            -2797.5299251870324
+          ],
+          "withinOneMetreOfMaxCellCount": 7
+        }
+      }
+    }
+  ],
+  "acceptedPairs": 0,
+  "registrationEstablished": false
+}

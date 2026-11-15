@@ -1,0 +1,276 @@
+{
+  "datasetSha256": "644514776b09e5bbb7359a4266ed9657fd5ad7974cd60b362e835a7b8da100c3",
+  "description": "Original v0.2 dataset: 20 m analysis, 1 degree rays, local coverage, Horizons at coarser-grid ground elevation",
+  "cases": [
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 30.833333333333336,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 0,
+      "longestDark": 0,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 0,
+      "longestDark": 0,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 64.33333333333333,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-14T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 68,
+      "overlap": 0,
+      "longestDark": 4,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 20,
+      "overlap": 0,
+      "longestDark": 52,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-21T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 56,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site01",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 8,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 0,
+      "overlap": 0,
+      "longestDark": 72,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site04",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 0,
+      "overlap": 0,
+      "longestDark": 72,
+      "modelPass": false
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 0,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 72,
+      "longestDark": 0,
+      "modelPass": true
+    },
+    {
+      "siteId": "Site11",
+      "config": {
+        "startUTC": "2026-11-29T00:00:00Z",
+        "delay": 48,
+        "duration": 72,
+        "height": 2,
+        "maxDark": 12,
+        "minOverlap": 8
+      },
+      "sunHours": 72,
+      "overlap": 37.666666666666664,
+      "longestDark": 0,
+      "modelPass": true
+    }
+  ]
+}

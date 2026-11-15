@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-13",
+  "status": "passed",
+  "version": "0.16.0",
+  "tests": {
+    "javascript": 81,
+    "python": 51,
+    "freshExtractionJavascript": 81,
+    "freshExtractionPython": 51
+  },
+  "sourceIdentities": 107,
+  "candidatePackageFiles": 375,
+  "browser": {
+    "threeSites": [
+      "Apollo 11",
+      "IM-3 Reiner Gamma regional reference",
+      "Change 4"
+    ],
+    "tableParity": true,
+    "sequentialPreviousUpdatesInspector": true,
+    "unpublishedTargetPinDisabled": true,
+    "globalCustom": {
+      "latitude": 22.5,
+      "longitude": 121.25,
+      "completed": true,
+      "sunlitHours": 17.166666666666668,
+      "earthHours": 0
+    },
+    "forcedTerrainRejectsGlobalSites": true,
+    "staleAlternativeGuard": true,
+    "exportRestore": "Workspace restored; saved result summaries were recalculated.",
+    "mobile": {
+      "viewportWidth": 390,
+      "clientWidth": 375,
+      "scrollWidth": 375
+    },
+    "consoleErrors": [],
+    "screenshot": "mission-comparison-desktop.jpg"
+  },
+  "evidence": [
+    "mission-global-verification.json",
+    "mission-polar-integration.json",
+    "mission-catalogue-tests.tap"
+  ],
+  "humanParticipants": 0,
+  "limits": [
+    "Global model is a smooth reference sphere, not measured terrain.",
+    "Cross-method checks share JPL inputs.",
+    "First uncached JPL observations require network.",
+    "Human usability and independent scientific review remain uncompleted."
+  ],
+  "freshExtractionHTTP": 200,
+  "freshExtractionDemoAsset": true
+}

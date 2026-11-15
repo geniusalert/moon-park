@@ -1,0 +1,6 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+import {comparePoint} from '../src/navigator-model.js';
+const report=JSON.parse(readFileSync('docs/mission-global-verification.json'));
+for(const c of report.cases){const result=await (await fetch((process.env.MOON_PARK_TEST_URL??'http://127.0.0.1:4173')+'/api/results/'+c.resultId)).json();const comparison=comparePoint(result.site,{...c.request,maxDark:12,minOverlap:8},2);c.metrics={baseline:{sun:comparison.baseline.sunHours,earth:comparison.baseline.earthHours,overlap:comparison.baseline.overlap},revised:{sun:comparison.revised.sunHours,earth:comparison.revised.earthHours,overlap:comparison.revised.overlap,longestShared:comparison.revised.longestCombined},decisionStatus:comparison.revised.decisionStatus};assert.equal(comparison.revised.decisionStatus,'reference-sphere-screening');if(c.name==='Apollo 11')assert.equal(comparison.revised.earthHours,72);if(c.name.includes('4'))assert.equal(comparison.revised.earthHours,0);assert.ok(comparison.revised.limitations.some(t=>t.includes('no measured terrain')));}
+report.metricChecksPassed=true;writeFileSync('docs/mission-global-verification.json',JSON.stringify(report,null,2));console.log(report.cases.map(c=>({name:c.name,metrics:c.metrics})));

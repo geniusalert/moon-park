@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-13",
+  "version": "0.15.0",
+  "milestone": "N15",
+  "status": "passed",
+  "tests": {
+    "javascript": 67,
+    "python": 30
+  },
+  "browserChecks": {
+    "historicalApolloContext": true,
+    "unsupportedContextCalculationDisabled": true,
+    "globeSurfacePick": true,
+    "exactPickedCoordinate": {
+      "latitude": -85.6600285,
+      "longitude": -57.5806059
+    },
+    "curatedDeGerlacheCalculation": true,
+    "baselineUTC": "2026-11-14T00:10:00Z",
+    "revisedStartUTC": "2026-11-16T00:00:00Z",
+    "alternativePreviewStartUTC": "2026-11-17T00:00:00Z",
+    "mainArrivalPreservedDuringPreview": "2026-11-14T00:00",
+    "seasonalPreviewUTC": "2027-06-21T12:00:00Z",
+    "seasonalJanOverlapHours": 0,
+    "seasonalJuneOverlapHours": 45.666666666666664,
+    "keyboardReplay": true,
+    "originalInspectionRestored": true,
+    "mobileViewportRequested": 390,
+    "mobileClientWidth": 375,
+    "mobileDocumentWidth": 375,
+    "browserConsoleErrors": []
+  },
+  "limitations": [
+    "Global globe texture is contextual, with coarse polar fill; calculations remain 85\u201390S.",
+    "Apollo historical sites are context only.",
+    "Seasonal previews are temporary and not restored as pinned scenarios.",
+    "Rendered light and direction glyphs do not compute terrain shadows, physical object scales, electrical power or RF performance.",
+    "No actual human participants."
+  ],
+  "packageChecks": {
+    "candidate": {
+      "path": "release\\moon-park-navigator-v0.15-candidate.zip",
+      "files": 350,
+      "bytes": 51066754,
+      "sha256": "51c155283ba29432381c0b7f5a8a3bef18b6cb0d297406c1c2f975ce79027789",
+      "verified": true
+    },
+    "freshExtraction": "release/validation-integrated-v0.15",
+    "extractedJavaScriptTests": 67,
+    "extractedPythonTests": 30,
+    "sourceHashesVerified": 96,
+    "globeAssetHashVerified": true,
+    "notes": "Fresh extraction verified code/tests/assets without optional raw sources. Real custom UI jobs used the existing acquired sources in the development workspace."
+  }
+}

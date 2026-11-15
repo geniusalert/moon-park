@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "siteId": "Site04",
+  "date": "2026-11-12",
+  "purpose": "Spatially exhaustive visual search for replacement landmarks",
+  "method": "Fixed 3 by 3 partition of the full common inspection grid; no ranking or feature selection",
+  "limitations": [
+    "Support is complete-cell confidence category 14 with both heights available.",
+    "Region support does not establish a feature match, horizontal accuracy or independence.",
+    "Mission and stereo terrain have shared LOLA control heritage.",
+    "Photo and synthetic illumination differ. Panels use nominal coordinates without correction."
+  ],
+  "referenceCatalog": {
+    "url": "/data/registration/reference/catalog-9846904df18e.json",
+    "sha256": "9846904df18e985c511b95facfa04d013ec51cd31a01ee2e7b30462bbaee142d"
+  },
+  "generatorSha256": "ee5b4dcd20cf372bd28697636ab3235e1da0c568f20c617ba978c6774ef4b548",
+  "sources": {
+    "/data/registration/reference/shackleton-comparison-grid.tif": "a7c80f35ce74397608acb975e72e776096ab9a18f247afec397918c0047dc9b5",
+    "/data/registration/Site04-image.png": "8ec06244af9f3726ed984186733fa58bea044ef865b70bad8e654565a3937776",
+    "/data/registration/Site04-shade45.png": "d4e4afcd37799cd6ee586b52424ed6ecb6592cf25a13454d1cc615e692d3df8d",
+    "/data/registration/reference/shackleton-shade45.png": "24dc900dde2c43ba5f484ad60269c049443bf690afb8b90eddaf4c12a0013f30",
+    "/data/registration/reference/shackleton-shade225.png": "2731787aef9ec7a988bfa36eacfdb2795936a4c4018b0dda083e99f0ec46b742",
+    "/data/registration/reference/shackleton-confidence.png": "163f3108eeffcb9aaf3634e98e1378875355a20176492a2672e85f6ca9247455"
+  },
+  "atlasSha256": "8cb9fad5f6a521dc4f68db90f670f0832666b44f5218949fc8341c34d0ff3883",
+  "regions": [
+    {
+      "id": "R1C1",
+      "window": [
+        0,
+        0,
+        133,
+        133
+      ],
+      "boundsXYM": [
+        -3813.0,
+        -6330.673316708229,
+        -3149.3266832917707,
+        -5667.0
+      ],
+      "supportedCells": 17371,
+      "cells": 17689,
+      "supportedFraction": 0.9820227259879021,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R1C2",
+      "window": [
+        133,
+        0,
+        267,
+        133
+      ],
+      "boundsXYM": [
+        -3149.3266832917707,
+        -6330.673316708229,
+        -2480.6633416458853,
+        -5667.0
+      ],
+      "supportedCells": 16509,
+      "cells": 17822,
+      "supportedFraction": 0.9263270115587476,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R1C3",
+      "window": [
+        267,
+        0,
+        401,
+        133
+      ],
+      "boundsXYM": [
+        -2480.6633416458853,
+        -6330.673316708229,
+        -1812.0,
+        -5667.0
+      ],
+      "supportedCells": 17822,
+      "cells": 17822,
+      "supportedFraction": 1.0,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R2C1",
+      "window": [
+        0,
+        133,
+        133,
+        267
+      ],
+      "boundsXYM": [
+        -3813.0,
+        -6999.336658354115,
+        -3149.3266832917707,
+        -6330.673316708229
+      ],
+      "supportedCells": 17740,
+      "cells": 17822,
+      "supportedFraction": 0.9953989451240041,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R2C2",
+      "window": [
+        133,
+        133,
+        267,
+        267
+      ],
+      "boundsXYM": [
+        -3149.3266832917707,
+        -6999.336658354115,
+        -2480.6633416458853,
+        -6330.673316708229
+      ],
+      "supportedCells": 17694,
+      "cells": 17956,
+      "supportedFraction": 0.98540877701047,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R2C3",
+      "window": [
+        267,
+        133,
+        401,
+        267
+      ],
+      "boundsXYM": [
+        -2480.6633416458853,
+        -6999.336658354115,
+        -1812.0,
+        -6330.673316708229
+      ],
+      "supportedCells": 17956,
+      "cells": 17956,
+      "supportedFraction": 1.0,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R3C1",
+      "window": [
+        0,
+        267,
+        133,
+        401
+      ],
+      "boundsXYM": [
+        -3813.0,
+        -7668.0,
+        -3149.3266832917707,
+        -6999.336658354115
+      ],
+      "supportedCells": 15950,
+      "cells": 17822,
+      "supportedFraction": 0.8949612838065313,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R3C2",
+      "window": [
+        133,
+        267,
+        267,
+        401
+      ],
+      "boundsXYM": [
+        -3149.3266832917707,
+        -7668.0,
+        -2480.6633416458853,
+        -6999.336658354115
+      ],
+      "supportedCells": 17417,
+      "cells": 17956,
+      "supportedFraction": 0.9699821786589441,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    },
+    {
+      "id": "R3C3",
+      "window": [
+        267,
+        267,
+        401,
+        401
+      ],
+      "boundsXYM": [
+        -2480.6633416458853,
+        -7668.0,
+        -1812.0,
+        -6999.336658354115
+      ],
+      "supportedCells": 17956,
+      "cells": 17956,
+      "supportedFraction": 1.0,
+      "correspondenceStatus": "unreviewed-region",
+      "acceptedPairs": 0
+    }
+  ],
+  "acceptedPairs": 0,
+  "registrationEstablished": false
+}

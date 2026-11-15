@@ -1,0 +1,38 @@
+{
+  "build": "0.10.0",
+  "passed": true,
+  "reviewType": "Agent-operated browser checks; tentative correspondences are not independently accepted",
+  "checks": [
+    "Matching source assessment restores and recomputes statistics",
+    "Altered source identity rejected without changing two existing pairs",
+    "Shackleton assessment still restores after another area catalog changes",
+    "Complete de Gerlache image displays 100.0% supported pixels with no partial-acquisition warning",
+    "Replay preserves historical image and scope",
+    "Current mission and alignment exports match all 69 software hashes",
+    "Mobile restore retains both pairs without horizontal page overflow"
+  ],
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 375,
+    "restoreInputWidth": 303.2,
+    "retainedPairs": 2,
+    "horizontalOverflow": false
+  },
+  "consoleWarningsAndErrors": [],
+  "receipts": [
+    {
+      "path": "data/sample-decision-receipt.json",
+      "kind": "mission",
+      "softwareHashes": 69,
+      "verified": true
+    },
+    {
+      "path": "docs/tentative-shackleton-alignment-v0.10.json",
+      "kind": "alignment",
+      "softwareHashes": 69,
+      "verified": true
+    }
+  ],
+  "acceptedPhysicalCorrespondences": 0,
+  "registrationEstablished": false
+}

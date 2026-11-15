@@ -1,0 +1,46 @@
+{
+  "participants": 0,
+  "excludedDeveloperOrOtherSessions": 1,
+  "allTasksCorrectUnaided": 0,
+  "gate": "deferred-human-study",
+  "target": "At least 4 of the first 5 actual participants complete all five tasks unaided; larger cohorts use the stated 80% descriptive target",
+  "byTask": [
+    {
+      "task": 1,
+      "correct": 0,
+      "total": 0
+    },
+    {
+      "task": 2,
+      "correct": 0,
+      "total": 0
+    },
+    {
+      "task": 3,
+      "correct": 0,
+      "total": 0
+    },
+    {
+      "task": 4,
+      "correct": 0,
+      "total": 0
+    },
+    {
+      "task": 5,
+      "correct": 0,
+      "total": 0
+    }
+  ],
+  "elapsedSeconds": [],
+  "assisted": 0,
+  "scope": "Formative pilot only; no population generalization or scientific validation",
+  "currentDeliveryGate": {
+    "kind": "agent-operated-task-walkthrough",
+    "passed": true,
+    "tasksPassed": 5,
+    "tasksTotal": 5,
+    "guardsPassed": 2,
+    "humanParticipants": 0,
+    "evidence": "agent-task-audit.json"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "newNetworkBytes": 0,
+  "retainedBlocks": 187,
+  "cacheUnchanged": true,
+  "sourceCooldown": {
+    "httpStatus": 429,
+    "retryAfterSeconds": 3600,
+    "retryNotBeforeEpoch": 1794405893.5077436,
+    "basis": "Conservative cooldown from retained partial acquisition record timestamp, later than observed rate limit"
+  },
+  "observedMessage": "Source retry window active for another 1821 seconds; retained cache is unchanged",
+  "scope": "Offline enforcement check; no network retry made"
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "retainedBlocksChecked": 187,
+  "retainedProvenanceHashes": 187,
+  "networkBytes": 0,
+  "scope": "Existing cached bytes compared with the previously retained acquisition provenance before source resume"
+}

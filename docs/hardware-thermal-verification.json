@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-14",
+  "evidenceType": "synthetic",
+  "hardwareAccuracyStatus": "unvalidated because no hardware measurements were supplied",
+  "inputSHA256": "6b7e2fc01a98c36befd4777eacb859381717a830e4589e056d4d719ed133ac1c",
+  "modelVersion": "lumped-gray-body-2",
+  "calibratedParameters": {
+    "areaM2": 0.1,
+    "absorptivity": 0.8,
+    "emissivity": 0.8,
+    "radiatingAreaM2": 0.2,
+    "conductanceWK": 0,
+    "groundViewFactor": 0,
+    "heatCapacityJK": 1000
+  },
+  "validationMetrics": {
+    "points": 10,
+    "rmseK": 0.07539152872568565,
+    "biasK": 0.07163630021315157,
+    "maeK": 0.07163630021315157,
+    "maxAbsErrorK": 0.0974274812589897
+  },
+  "maxNumericalRefinementDeltaK": 0.048634098675393034,
+  "browserChecks": {
+    "inputImport": true,
+    "cancellation": true,
+    "retry": true,
+    "explicitApplication": true,
+    "missionRangeWarning": true,
+    "export": true,
+    "restorationRecomputes": true,
+    "alteredInputRejectedBeforeChangingProperties": true,
+    "forgedPassFlagDiscarded": true,
+    "syntheticDataCleared": true,
+    "illustrativeDefaultsRestored": true
+  },
+  "workspaceOriginalSHA256": "c39fe6340a6799b67b6a7d2d1b19acd94383397a497374c63557e6385ac4c7bc",
+  "workspaceRestoredSHA256": "c39fe6340a6799b67b6a7d2d1b19acd94383397a497374c63557e6385ac4c7bc",
+  "limitations": [
+    "Browser and analytical checks establish software behavior. No physical spacecraft measurements were supplied."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": 10800,
+  "cases": 900,
+  "points": 30,
+  "heights": [
+    2,
+    5,
+    10
+  ],
+  "sampleDates": [
+    "2026-11-14",
+    "2026-11-20",
+    "2026-11-26",
+    "2026-12-02",
+    "2026-12-08"
+  ],
+  "maxDistanceResidualM": 0.0006274466195463901,
+  "maxBearingResidualDeg": 0.0007497900089106224,
+  "regionalWitnesses": 1283,
+  "localWitnesses": 517,
+  "scope": "Witness reconstruction and stored-coordinate checks, not new terrain, observational validation or a physical error bound. Candidate source coordinates are rounded to millimeters."
+}

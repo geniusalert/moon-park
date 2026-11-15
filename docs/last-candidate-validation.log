@@ -1,0 +1,286 @@
+
+> moon-park@0.6.0 validate:candidates
+> node scripts/validate_candidates.mjs
+
+{
+  "checks": 242,
+  "points": 27,
+  "regions": 15,
+  "recovery": {
+    "tested": 189,
+    "passing": 189,
+    "milliseconds": 98.77689999999996
+  },
+  "expanded": [
+    {
+      "regionId": "Site01-roi-1",
+      "points": [
+        {
+          "id": "Site01-roi-1-anchor",
+          "offsetFromAnchorM": 0,
+          "baseline": {
+            "sun": 72,
+            "overlap": 11.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 59.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site01-roi-1-grid-east",
+          "offsetFromAnchorM": 50,
+          "baseline": {
+            "sun": 72,
+            "overlap": 11.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 59.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site01-roi-1-grid-west",
+          "offsetFromAnchorM": 45,
+          "baseline": {
+            "sun": 72,
+            "overlap": 11.333333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 59.333333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site01-roi-1-grid-north",
+          "offsetFromAnchorM": 42.720018726587654,
+          "baseline": {
+            "sun": 72,
+            "overlap": 11.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 59.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site01-roi-1-grid-south",
+          "offsetFromAnchorM": 50.24937810560445,
+          "baseline": {
+            "sun": 72,
+            "overlap": 5.166666666666671,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 53.16666666666667,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        }
+      ]
+    },
+    {
+      "regionId": "Site04-roi-1",
+      "points": [
+        {
+          "id": "Site04-roi-1-anchor",
+          "offsetFromAnchorM": 0,
+          "baseline": {
+            "sun": 72,
+            "overlap": 0,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 22.666666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site04-roi-1-grid-east",
+          "offsetFromAnchorM": 18.027756377319946,
+          "baseline": {
+            "sun": 72,
+            "overlap": 0,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 24.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site04-roi-1-grid-west",
+          "offsetFromAnchorM": 42.42640687119285,
+          "baseline": {
+            "sun": 72,
+            "overlap": 0,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 28.166666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site04-roi-1-grid-north",
+          "offsetFromAnchorM": 50,
+          "baseline": {
+            "sun": 72,
+            "overlap": 0,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 26.333333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site04-roi-1-grid-south",
+          "offsetFromAnchorM": 41.23105625617661,
+          "baseline": {
+            "sun": 72,
+            "overlap": 0,
+            "dark": 0,
+            "modelPass": false
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 21,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        }
+      ]
+    },
+    {
+      "regionId": "Site11-roi-1",
+      "points": [
+        {
+          "id": "Site11-roi-1-anchor",
+          "offsetFromAnchorM": 0,
+          "baseline": {
+            "sun": 72,
+            "overlap": 8.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 56.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site11-roi-1-grid-east",
+          "offsetFromAnchorM": 50,
+          "baseline": {
+            "sun": 72,
+            "overlap": 8.666666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 56.666666666666664,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site11-roi-1-grid-west",
+          "offsetFromAnchorM": 50,
+          "baseline": {
+            "sun": 72,
+            "overlap": 8.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 56.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site11-roi-1-grid-north",
+          "offsetFromAnchorM": 45.27692569068709,
+          "baseline": {
+            "sun": 72,
+            "overlap": 8.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 56.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        },
+        {
+          "id": "Site11-roi-1-grid-south",
+          "offsetFromAnchorM": 18.027756377319946,
+          "baseline": {
+            "sun": 72,
+            "overlap": 8.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "delayed": {
+            "sun": 72,
+            "overlap": 56.833333333333336,
+            "dark": 0,
+            "modelPass": true
+          },
+          "nominalActivities": 1
+        }
+      ]
+    }
+  ]
+}

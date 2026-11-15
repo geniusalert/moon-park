@@ -1,0 +1,235 @@
+{
+  "date": "2026-11-13",
+  "status": "passed",
+  "interpretation": "Cross-method implementation checks share JPL inputs; residuals are not absolute physical accuracy.",
+  "cases": [
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -87.5,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 72,
+        "delay": 48,
+        "height": 2
+      },
+      "resultId": "ff09b59e822d1f8b99f49977ae5f93564579e124d12abe1158433f3a9dad9466",
+      "wallSeconds": 3.211768999986816,
+      "performance": {
+        "seconds": 1.7855425000016112,
+        "peakWorkingSetBytes": 161828864,
+        "horizonCacheHit": true,
+        "observationCacheHit": false
+      },
+      "references": [
+        {
+          "target": "sun",
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-87.5%2C-3.4207595678578366%27&START_TIME=%272027-01-01+00%3A00%27&STOP_TIME=%272027-01-03+00%3A00%27&STEP_SIZE=%2724+h%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "012c503a544355af3a4e2aa8be4d7c1071f3c3aff4afee63bd02c2dbe395b728",
+          "parameters": {
+            "format": "json",
+            "COMMAND": "'10'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'OBSERVER'",
+            "CENTER": "'coord@301'",
+            "COORD_TYPE": "'GEODETIC'",
+            "SITE_COORD": "'0,-87.5,-3.4207595678578366'",
+            "START_TIME": "'2027-01-01 00:00'",
+            "STOP_TIME": "'2027-01-03 00:00'",
+            "STEP_SIZE": "'24 h'",
+            "QUANTITIES": "'4'",
+            "CSV_FORMAT": "'YES'",
+            "ELEV_CUT": "'-90'",
+            "APPARENT": "'AIRLESS'",
+            "TIME_TYPE": "'UT'"
+          },
+          "residuals": [
+            {
+              "utc": "2027-01-01T00:00:00Z",
+              "azimuthDeg": -4.539289761851251e-06,
+              "elevationDeg": 8.182727260330758e-06
+            },
+            {
+              "utc": "2027-01-02T00:00:00Z",
+              "azimuthDeg": -3.98514387711657e-06,
+              "elevationDeg": 5.423494105344373e-06
+            },
+            {
+              "utc": "2027-01-03T00:00:00Z",
+              "azimuthDeg": -4.597491482627447e-06,
+              "elevationDeg": 3.2829036266668332e-06
+            }
+          ],
+          "maxElevationDifferenceDeg": 8.182727260330758e-06,
+          "checkToleranceDeg": 0.001
+        },
+        {
+          "target": "earth",
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-87.5%2C-3.4207595678578366%27&START_TIME=%272027-01-01+00%3A00%27&STOP_TIME=%272027-01-03+00%3A00%27&STEP_SIZE=%2724+h%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "1dde5df250f8af005ba5a17a7660ef409c616ff4e68862441a9cc67c98834543",
+          "parameters": {
+            "format": "json",
+            "COMMAND": "'399'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'OBSERVER'",
+            "CENTER": "'coord@301'",
+            "COORD_TYPE": "'GEODETIC'",
+            "SITE_COORD": "'0,-87.5,-3.4207595678578366'",
+            "START_TIME": "'2027-01-01 00:00'",
+            "STOP_TIME": "'2027-01-03 00:00'",
+            "STEP_SIZE": "'24 h'",
+            "QUANTITIES": "'4'",
+            "CSV_FORMAT": "'YES'",
+            "ELEV_CUT": "'-90'",
+            "APPARENT": "'AIRLESS'",
+            "TIME_TYPE": "'UT'"
+          },
+          "residuals": [
+            {
+              "utc": "2027-01-01T00:00:00Z",
+              "azimuthDeg": -5.694802410971533e-06,
+              "elevationDeg": 7.213711853193416e-06
+            },
+            {
+              "utc": "2027-01-02T00:00:00Z",
+              "azimuthDeg": -6.461468672114279e-06,
+              "elevationDeg": 7.583482137363262e-06
+            },
+            {
+              "utc": "2027-01-03T00:00:00Z",
+              "azimuthDeg": -5.851614389484894e-06,
+              "elevationDeg": 7.020043465644221e-06
+            }
+          ],
+          "maxElevationDifferenceDeg": 7.583482137363262e-06,
+          "checkToleranceDeg": 0.001
+        }
+      ],
+      "completeHorizon": true
+    },
+    {
+      "request": {
+        "longitude": 90,
+        "latitude": -86.5,
+        "startUTC": "2027-06-21T12:00:00Z",
+        "duration": 72,
+        "delay": 48,
+        "height": 2
+      },
+      "resultId": "1c9887c5dda0de1695ad081b8c02370b6170b177e533506eeea7cb61dc6d67f6",
+      "wallSeconds": 2.631266099997447,
+      "performance": {
+        "seconds": 1.7171074000070803,
+        "peakWorkingSetBytes": 161988608,
+        "horizonCacheHit": true,
+        "observationCacheHit": false
+      },
+      "references": [
+        {
+          "target": "sun",
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2790%2C-86.5%2C0.4362964554459234%27&START_TIME=%272027-06-21+12%3A00%27&STOP_TIME=%272027-06-23+12%3A00%27&STEP_SIZE=%2724+h%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "8670107a87db53ebc2c5779b0d669ab14cf0c8be5b176b818db6a809565725f8",
+          "parameters": {
+            "format": "json",
+            "COMMAND": "'10'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'OBSERVER'",
+            "CENTER": "'coord@301'",
+            "COORD_TYPE": "'GEODETIC'",
+            "SITE_COORD": "'90,-86.5,0.4362964554459234'",
+            "START_TIME": "'2027-06-21 12:00'",
+            "STOP_TIME": "'2027-06-23 12:00'",
+            "STEP_SIZE": "'24 h'",
+            "QUANTITIES": "'4'",
+            "CSV_FORMAT": "'YES'",
+            "ELEV_CUT": "'-90'",
+            "APPARENT": "'AIRLESS'",
+            "TIME_TYPE": "'UT'"
+          },
+          "residuals": [
+            {
+              "utc": "2027-06-21T12:00:00Z",
+              "azimuthDeg": -6.932283469041067e-06,
+              "elevationDeg": 7.583385992493419e-06
+            },
+            {
+              "utc": "2027-06-22T12:00:00Z",
+              "azimuthDeg": -6.2915795240314765e-06,
+              "elevationDeg": 8.08135532048837e-06
+            },
+            {
+              "utc": "2027-06-23T12:00:00Z",
+              "azimuthDeg": -6.028937605151441e-06,
+              "elevationDeg": 7.643539134072341e-06
+            }
+          ],
+          "maxElevationDifferenceDeg": 8.08135532048837e-06,
+          "checkToleranceDeg": 0.001
+        },
+        {
+          "target": "earth",
+          "url": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%27399%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2790%2C-86.5%2C0.4362964554459234%27&START_TIME=%272027-06-21+12%3A00%27&STOP_TIME=%272027-06-23+12%3A00%27&STEP_SIZE=%2724+h%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+          "sha256": "279df522ceb2c37a84b1f9152f77f42e9b269434a78332fc782d52a622cf306e",
+          "parameters": {
+            "format": "json",
+            "COMMAND": "'399'",
+            "OBJ_DATA": "'NO'",
+            "MAKE_EPHEM": "'YES'",
+            "EPHEM_TYPE": "'OBSERVER'",
+            "CENTER": "'coord@301'",
+            "COORD_TYPE": "'GEODETIC'",
+            "SITE_COORD": "'90,-86.5,0.4362964554459234'",
+            "START_TIME": "'2027-06-21 12:00'",
+            "STOP_TIME": "'2027-06-23 12:00'",
+            "STEP_SIZE": "'24 h'",
+            "QUANTITIES": "'4'",
+            "CSV_FORMAT": "'YES'",
+            "ELEV_CUT": "'-90'",
+            "APPARENT": "'AIRLESS'",
+            "TIME_TYPE": "'UT'"
+          },
+          "residuals": [
+            {
+              "utc": "2027-06-21T12:00:00Z",
+              "azimuthDeg": -7.246052859954943e-06,
+              "elevationDeg": 6.140723485703603e-06
+            },
+            {
+              "utc": "2027-06-22T12:00:00Z",
+              "azimuthDeg": -7.3659131771819375e-06,
+              "elevationDeg": 5.932925143170564e-06
+            },
+            {
+              "utc": "2027-06-23T12:00:00Z",
+              "azimuthDeg": -7.35782708716215e-06,
+              "elevationDeg": 6.602188100557349e-06
+            }
+          ],
+          "maxElevationDifferenceDeg": 6.602188100557349e-06,
+          "checkToleranceDeg": 0.001
+        }
+      ],
+      "completeHorizon": true
+    }
+  ],
+  "cached": {
+    "request": {
+      "longitude": 0,
+      "latitude": -87.5,
+      "startUTC": "2027-01-01T00:00:00Z",
+      "duration": 72,
+      "delay": 48,
+      "height": 2
+    },
+    "resultId": "2762374604feaf9fde5c023bc8fd9e4c59ecd11dcd3048ace286f82dc41b1947",
+    "wallSeconds": 2.6469668000063393,
+    "performance": {
+      "seconds": 1.3564131000021007,
+      "peakWorkingSetBytes": 161632256,
+      "horizonCacheHit": true,
+      "observationCacheHit": true
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": 54,
+  "sourceConfidenceFormat": "PDS3 attached IMG, original categories",
+  "strictCorrelationFraction": 0.9727240502235682,
+  "unshiftedDifference": {
+    "count": 156415,
+    "medianM": 0.78125,
+    "p05M": -0.473388671875,
+    "p95M": 2.2154541015625,
+    "rmseM": 1.1674272988997285
+  },
+  "registrationEstablished": false,
+  "scope": "Checks derived pixels, confidence support, source identities and unshifted height differences. Shared control, manual selection error and image-to-terrain registration remain unresolved."
+}

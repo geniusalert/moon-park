@@ -1,0 +1,49 @@
+{
+  "build": "0.9.0",
+  "passed": true,
+  "reviewType": "Agent-operated control check, not human study or physical registration",
+  "checks": [
+    "Named fit and held-out developer pairs produce separate translation/residuals",
+    "Held-out case produces 9.98005 m residual without changing 4.99002 m fit",
+    "Area switch isolates pairs and restores prior area pairs",
+    "Synchronized 2x zoom/pan viewBoxes equal",
+    "Synthetic lighting changes preserve recorded pairs",
+    "Deletion restores empty evidence and null translation",
+    "Zero-landmark and developer exports match all current software and registration identities",
+    "Main navigator exports current build with unchanged recorded example and active Earth trace",
+    "Historical context exposes alignment-workbench link"
+  ],
+  "viewBoxes": {
+    "image": "100.25 50.125 200.5 200.5",
+    "terrain": "100.25 50.125 200.5 200.5"
+  },
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 375,
+    "horizontalOverflow": false,
+    "panelWidth": 337.7
+  },
+  "consoleWarningsAndErrors": [],
+  "receipts": [
+    {
+      "path": "docs/developer-alignment-control-v0.9.json",
+      "softwareHashes": 68,
+      "developerControlOnly": true,
+      "verified": true
+    },
+    {
+      "path": "docs/sample-alignment-evidence.json",
+      "softwareHashes": 68,
+      "developerControlOnly": false,
+      "verified": true
+    }
+  ],
+  "acceptedPhysicalCorrespondences": 0,
+  "registrationEstablished": false,
+  "missionReceipt": {
+    "path": "data/sample-decision-receipt.json",
+    "version": "0.9.0",
+    "softwareHashes": 68,
+    "verified": true
+  }
+}

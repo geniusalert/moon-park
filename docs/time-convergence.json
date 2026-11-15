@@ -1,0 +1,156 @@
+{
+  "method": "Direct SPICE recomputation at each cadence; same 0.25 degree terrain horizon, 50% solar disc / Earth-center thresholds, half-open 72 h bins, 2 m observer",
+  "interpretation": "Temporal convergence only; does not establish terrain-resolution or full physical accuracy.",
+  "cases": [
+    {
+      "siteId": "Site01",
+      "arrivalDateUTC": "2026-11-14",
+      "delayHours": 48,
+      "results": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72.0,
+          "overlap": 59.33333333333333,
+          "longestDark": 0.0,
+          "longestCombined": 59.33333333333333
+        },
+        {
+          "stepMinutes": 5,
+          "sunHours": 72.0,
+          "overlap": 59.33333333333333,
+          "longestDark": 0.0,
+          "longestCombined": 59.33333333333333
+        },
+        {
+          "stepMinutes": 1,
+          "sunHours": 72.0,
+          "overlap": 59.333333333333336,
+          "longestDark": 0.0,
+          "longestCombined": 59.333333333333336
+        }
+      ],
+      "maxSunDifferenceHours": 0.0,
+      "maxOverlapDifferenceHours": 7.105427357601002e-15
+    },
+    {
+      "siteId": "Site11",
+      "arrivalDateUTC": "2026-11-14",
+      "delayHours": 48,
+      "results": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72.0,
+          "overlap": 57.0,
+          "longestDark": 0.0,
+          "longestCombined": 57.0
+        },
+        {
+          "stepMinutes": 5,
+          "sunHours": 72.0,
+          "overlap": 57.0,
+          "longestDark": 0.0,
+          "longestCombined": 57.0
+        },
+        {
+          "stepMinutes": 1,
+          "sunHours": 72.0,
+          "overlap": 57.06666666666666,
+          "longestDark": 0.0,
+          "longestCombined": 57.06666666666666
+        }
+      ],
+      "maxSunDifferenceHours": 0.0,
+      "maxOverlapDifferenceHours": 0.06666666666666288
+    },
+    {
+      "siteId": "Site01",
+      "arrivalDateUTC": "2026-11-29",
+      "delayHours": 48,
+      "results": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 5,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 1,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        }
+      ],
+      "maxSunDifferenceHours": 0.0,
+      "maxOverlapDifferenceHours": 0.0
+    },
+    {
+      "siteId": "Site04",
+      "arrivalDateUTC": "2026-11-21",
+      "delayHours": 48,
+      "results": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 20.333333333333332,
+          "overlap": 0.0,
+          "longestDark": 51.666666666666664,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 5,
+          "sunHours": 20.333333333333332,
+          "overlap": 0.0,
+          "longestDark": 51.666666666666664,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 1,
+          "sunHours": 20.28333333333333,
+          "overlap": 0.0,
+          "longestDark": 51.71666666666667,
+          "longestCombined": 0.0
+        }
+      ],
+      "maxSunDifferenceHours": 0.05000000000000071,
+      "maxOverlapDifferenceHours": 0.0
+    },
+    {
+      "siteId": "Site11",
+      "arrivalDateUTC": "2026-11-30",
+      "delayHours": 48,
+      "results": [
+        {
+          "stepMinutes": 10,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 5,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        },
+        {
+          "stepMinutes": 1,
+          "sunHours": 72.0,
+          "overlap": 0.0,
+          "longestDark": 0.0,
+          "longestCombined": 0.0
+        }
+      ],
+      "maxSunDifferenceHours": 0.0,
+      "maxOverlapDifferenceHours": 0.0
+    }
+  ]
+}

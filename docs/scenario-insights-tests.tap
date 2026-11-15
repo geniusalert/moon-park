@@ -1,0 +1,444 @@
+
+> moon-park@0.16.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: solar radius follows physical distance and rejects invalid ranges
+ok 1 - solar radius follows physical distance and rejects invalid ranges
+  ---
+  duration_ms: 0.8172
+  ...
+# Subtest: spherical solar area matches the straight-horizon analytic solution
+ok 2 - spherical solar area matches the straight-horizon analytic solution
+  ---
+  duration_ms: 10.9852
+  ...
+# Subtest: terrain beside the centre can block the solar disc across north wrap
+ok 3 - terrain beside the centre can block the solar disc across north wrap
+  ---
+  duration_ms: 1.5173
+  ...
+# Subtest: spherical disc handles high elevations and fully hidden directions
+ok 4 - spherical disc handles high elevations and fully hidden directions
+  ---
+  duration_ms: 2.267
+  ...
+# Subtest: legacy missing ranges retain documented fallback while new data uses range
+ok 5 - legacy missing ranges retain documented fallback while new data uses range
+  ---
+  duration_ms: 1.778
+  ...
+# Subtest: interior sample uses its own coordinates, native ground and height-specific observations
+ok 6 - interior sample uses its own coordinates, native ground and height-specific observations
+  ---
+  duration_ms: 46.6531
+  ...
+# Subtest: candidate rejects mismatched coordinates, gaps, missing horizons and malformed target range
+ok 7 - candidate rejects mismatched coordinates, gaps, missing horizons and malformed target range
+  ---
+  duration_ms: 105.3641
+  ...
+# Subtest: periodic horizon interpolates across north
+ok 8 - periodic horizon interpolates across north
+  ---
+  duration_ms: 1.8393
+  ...
+# Subtest: solar disc boundary and symmetry
+ok 9 - solar disc boundary and symmetry
+  ---
+  duration_ms: 0.4578
+  ...
+# Subtest: longest darkness includes leading and trailing bins
+ok 10 - longest darkness includes leading and trailing bins
+  ---
+  duration_ms: 2.1702
+  ...
+# Subtest: all dark and all light exact durations
+ok 11 - all dark and all light exact durations
+  ---
+  duration_ms: 0.3707
+  ...
+# Subtest: reject invalid samples and missing terrain
+ok 12 - reject invalid samples and missing terrain
+  ---
+  duration_ms: 0.7362
+  ...
+# Subtest: more obstruction cannot increase availability
+ok 13 - more obstruction cannot increase availability
+  ---
+  duration_ms: 17.1925
+  ...
+# Subtest: delay zero reproduces baseline; delay changes actual signals
+ok 14 - delay zero reproduces baseline; delay changes actual signals
+  ---
+  duration_ms: 6.3061
+  ...
+# Subtest: trace retains both bracketing witnesses and their interpolation weights
+ok 15 - trace retains both bracketing witnesses and their interpolation weights
+  ---
+  duration_ms: 9.0329
+  ...
+# Subtest: north seam wraps rays and weights without inventing a blocker at target azimuth
+ok 16 - north seam wraps rays and weights without inventing a blocker at target azimuth
+  ---
+  duration_ms: 1.1899
+  ...
+# Subtest: exact-ray target has a single witness; Earth touching horizon is obscured
+ok 17 - exact-ray target has a single witness; Earth touching horizon is obscured
+  ---
+  duration_ms: 1.6053
+  ...
+# Subtest: solar half-disc boundary follows the existing model criterion
+ok 18 - solar half-disc boundary follows the existing model criterion
+  ---
+  duration_ms: 0.5484
+  ...
+# Subtest: missing witness metadata never becomes a fabricated map location
+ok 19 - missing witness metadata never becomes a fabricated map location
+  ---
+  duration_ms: 1.2165
+  ...
+# Subtest: surface path preserves endpoints and lies on the great-circle plane
+ok 20 - surface path preserves endpoints and lies on the great-circle plane
+  ---
+  duration_ms: 0.6158
+  ...
+# Subtest: dense horizon binary interpolation preserves exact ray values and seam
+ok 21 - dense horizon binary interpolation preserves exact ray values and seam
+  ---
+  duration_ms: 3.8653
+  ...
+# Subtest: duplicate and invalid angles are rejected
+ok 22 - duplicate and invalid angles are rejected
+  ---
+  duration_ms: 0.6293
+  ...
+# Subtest: historical crop support distinguishes valid pixels, nodata and outside coverage
+ok 23 - historical crop support distinguishes valid pixels, nodata and outside coverage
+  ---
+  duration_ms: 1.1209
+  ...
+# Subtest: historical image support is not inherited by a different coordinate
+ok 24 - historical image support is not inherited by a different coordinate
+  ---
+  duration_ms: 0.586
+  ...
+# Subtest: catalogue covers requested programmes with source and coordinate meaning
+ok 25 - catalogue covers requested programmes with source and coordinate meaning
+  ---
+  duration_ms: 1.7691
+  ...
+# Subtest: unpublished targets cannot turn null coordinates into a real location
+ok 26 - unpublished targets cannot turn null coordinates into a real location
+  ---
+  duration_ms: 0.4004
+  ...
+# Subtest: automatic model choice is geographic and forced terrain never falls back
+ok 27 - automatic model choice is geographic and forced terrain never falls back
+  ---
+  duration_ms: 0.1689
+  ...
+# Subtest: future region references retain their meaning and filter by operator
+ok 28 - future region references retain their meaning and filter by operator
+  ---
+  duration_ms: 0.1419
+  ...
+# Subtest: side-by-side snapshots preserve scenario values and unavailable columns
+ok 29 - side-by-side snapshots preserve scenario values and unavailable columns
+  ---
+  duration_ms: 7.2838
+  ...
+# Subtest: reference-sphere results cannot inherit terrain-model uncertainty claims
+ok 30 - reference-sphere results cannot inherit terrain-model uncertainty claims
+  ---
+  duration_ms: 6.5928
+  ...
+# Subtest: mixed terrain and reference-sphere alternatives require a common model
+ok 31 - mixed terrain and reference-sphere alternatives require a common model
+  ---
+  duration_ms: 0.5608
+  ...
+# Subtest: original-arrival comparison status includes the continuous activity constraint
+ok 32 - original-arrival comparison status includes the continuous activity constraint
+  ---
+  duration_ms: 87.6817
+  ...
+# Subtest: real pipeline integrates half-open bins without claiming full feasibility
+ok 33 - real pipeline integrates half-open bins without claiming full feasibility
+  ---
+  duration_ms: 9.1982
+  ...
+# Subtest: Earth and Sun use their own azimuth horizon
+ok 34 - Earth and Sun use their own azimuth horizon
+  ---
+  duration_ms: 6.7718
+  ...
+# Subtest: missing coverage, gaps and out-of-bounds dates reject rather than invent data
+ok 35 - missing coverage, gaps and out-of-bounds dates reject rather than invent data
+  ---
+  duration_ms: 5.2966
+  ...
+# Subtest: recovery enumerates a bounded search and returns no fabricated optimum
+ok 36 - recovery enumerates a bounded search and returns no fabricated optimum
+  ---
+  duration_ms: 11.1591
+  ...
+# Subtest: activity requires a continuous window, not accumulated overlap
+ok 37 - activity requires a continuous window, not accumulated overlap
+  ---
+  duration_ms: 0.8702
+  ...
+# Subtest: receipt retains provisional status, assumptions and source evidence
+ok 38 - receipt retains provisional status, assumptions and source evidence
+  ---
+  duration_ms: 2.8967
+  ...
+# Subtest: non-finite and negative inputs are rejected
+ok 39 - non-finite and negative inputs are rejected
+  ---
+  duration_ms: 13.4993
+  ...
+# Subtest: observer-specific ephemerides are selected at the requested height
+ok 40 - observer-specific ephemerides are selected at the requested height
+  ---
+  duration_ms: 2.4316
+  ...
+# Subtest: fine cadence requires actual source observations rather than invented upsampling
+ok 41 - fine cadence requires actual source observations rather than invented upsampling
+  ---
+  duration_ms: 9.4447
+  ...
+# Subtest: refined airless mission retains remote-envelope and spatial diagnostics
+ok 42 - refined airless mission retains remote-envelope and spatial diagnostics
+  ---
+  duration_ms: 15.4632
+  ...
+# Subtest: globe coordinate selection round trips over seam, poles and hemispheres
+ok 43 - globe coordinate selection round trips over seam, poles and hemispheres
+  ---
+  duration_ms: 1.7039
+  ...
+# Subtest: texture coordinates align Greenwich, east and north
+ok 44 - texture coordinates align Greenwich, east and north
+  ---
+  duration_ms: 1.0595
+  ...
+# Subtest: observer-relative globe directions are unit vectors with correct elevation
+ok 45 - observer-relative globe directions are unit vectors with correct elevation
+  ---
+  duration_ms: 1.7681
+  ...
+# Subtest: historical missions never qualify for polar calculations
+ok 46 - historical missions never qualify for polar calculations
+  ---
+  duration_ms: 0.5643
+  ...
+# Subtest: bundled globe asset retains its acquired NASA source checksum
+ok 47 - bundled globe asset retains its acquired NASA source checksum
+  ---
+  duration_ms: 2.0452
+  ...
+# Subtest: curated polar study points request their own supported coordinates
+ok 48 - curated polar study points request their own supported coordinates
+  ---
+  duration_ms: 0.2099
+  ...
+# Subtest: local north and east directions align with Moon coordinate axes
+ok 49 - local north and east directions align with Moon coordinate axes
+  ---
+  duration_ms: 0.3069
+  ...
+# Subtest: every grid cell matches ordinary scenario evaluation and margins
+ok 50 - every grid cell matches ordinary scenario evaluation and margins
+  ---
+  duration_ms: 53.5944
+  ...
+# Subtest: unavailable grid cells remain distinct from constraint failures
+ok 51 - unavailable grid cells remain distinct from constraint failures
+  ---
+  duration_ms: 0.8151
+  ...
+# Subtest: failing cells retain shortfalls and continuous activity requirement
+ok 52 - failing cells retain shortfalls and continuous activity requirement
+  ---
+  duration_ms: 9.0194
+  ...
+# Subtest: operational metrics separate angles and continuous windows
+ok 53 - operational metrics separate angles and continuous windows
+  ---
+  duration_ms: 2.8283
+  ...
+# Subtest: countdowns retain hidden state, final boundary and ten-minute bracket
+ok 54 - countdowns retain hidden state, final boundary and ten-minute bracket
+  ---
+  duration_ms: 0.9066
+  ...
+# Subtest: horizontal reference is zero when hidden or below horizontal
+ok 55 - horizontal reference is zero when hidden or below horizontal
+  ---
+  duration_ms: 0.3173
+  ...
+# Subtest: navigator retains recorded prepared-point regression
+ok 56 - navigator retains recorded prepared-point regression
+  ---
+  duration_ms: 7.983
+  ...
+# Subtest: three pins are unique and a fourth is explicitly rejected
+ok 57 - three pins are unique and a fourth is explicitly rejected
+  ---
+  duration_ms: 1.3482
+  ...
+# Subtest: event brackets distinguish hidden, permanent visibility and multiple transitions
+ok 58 - event brackets distinguish hidden, permanent visibility and multiple transitions
+  ---
+  duration_ms: 0.2293
+  ...
+# Subtest: alternatives keep height fixed and preserve ties within a bounded search
+ok 59 - alternatives keep height fixed and preserve ties within a bounded search
+  ---
+  duration_ms: 52.1464
+  ...
+# Subtest: continuous activity is separate from total overlap
+ok 60 - continuous activity is separate from total overlap
+  ---
+  duration_ms: 58.6539
+  ...
+# Subtest: pixel centers and mask boundaries preserve north-up coordinates
+ok 61 - pixel centers and mask boundaries preserve north-up coordinates
+  ---
+  duration_ms: 5.6296
+  ...
+# Subtest: restoring evidence verifies sources and recomputes rather than trusting saved approval
+ok 62 - restoring evidence verifies sources and recomputes rather than trusting saved approval
+  ---
+  duration_ms: 2.0283
+  ...
+# Subtest: held-out landmarks do not influence translation and expose mismatch
+ok 63 - held-out landmarks do not influence translation and expose mismatch
+  ---
+  duration_ms: 0.6904
+  ...
+# Subtest: no evidence, narrow coverage and reused landmarks cannot establish registration
+ok 64 - no evidence, narrow coverage and reused landmarks cannot establish registration
+  ---
+  duration_ms: 1.3612
+  ...
+# Subtest: separates clone counts from numerical counts
+ok 65 - separates clone counts from numerical counts
+  ---
+  duration_ms: 17.2338
+  ...
+# Subtest: one failing realization makes the decision sensitive
+ok 66 - one failing realization makes the decision sensitive
+  ---
+  duration_ms: 7.4689
+  ...
+# Subtest: missing or invalid variants prevent a stability claim
+ok 67 - missing or invalid variants prevent a stability claim
+  ---
+  duration_ms: 7.0537
+  ...
+# Subtest: rank envelopes expose a possible reversal and preserve ties
+ok 68 - rank envelopes expose a possible reversal and preserve ties
+  ---
+  duration_ms: 1.7524
+  ...
+# Subtest: requirements outrank raw overlap and failing choices are not recommended
+ok 69 - requirements outrank raw overlap and failing choices are not recommended
+  ---
+  duration_ms: 0.2695
+  ...
+# Subtest: recovery returns the support evidence and is bounded
+ok 70 - recovery returns the support evidence and is bounded
+  ---
+  duration_ms: 6.4173
+  ...
+# Subtest: radial observer correction has the right sign and requires range
+ok 71 - radial observer correction has the right sign and requires range
+  ---
+  duration_ms: 0.3803
+  ...
+# Subtest: incompatible prepared terrain is rejected
+ok 72 - incompatible prepared terrain is rejected
+  ---
+  duration_ms: 2.1912
+  ...
+# Subtest: passing aggregate constraints does not imply a shared activity window
+ok 73 - passing aggregate constraints does not imply a shared activity window
+  ---
+  duration_ms: 5.0283
+  ...
+# Subtest: near a sampling boundary a passing result is flagged for finer timing
+ok 74 - near a sampling boundary a passing result is flagged for finer timing
+  ---
+  duration_ms: 7.0043
+  ...
+# Subtest: schedule impact aligns relative samples, preserves signed losses and constraint flips
+ok 75 - schedule impact aligns relative samples, preserves signed losses and constraint flips
+  ---
+  duration_ms: 2.5037
+  ...
+# Subtest: shadow illustration handles low Sun, vertical Sun and below-horizontal cases
+ok 76 - shadow illustration handles low Sun, vertical Sun and below-horizontal cases
+  ---
+  duration_ms: 0.473
+  ...
+# Subtest: spherical pair distances handle wrapping and poles
+ok 77 - spherical pair distances handle wrapping and poles
+  ---
+  duration_ms: 0.3033
+  ...
+# Subtest: visible low Sun, blocked high Sun and depressed horizon are separate from incidence
+ok 78 - visible low Sun, blocked high Sun and depressed horizon are separate from incidence
+  ---
+  duration_ms: 1.4569
+  ...
+# Subtest: projection uses clipped time bins and does not turn partial-disc fraction into watts
+ok 79 - projection uses clipped time bins and does not turn partial-disc fraction into watts
+  ---
+  duration_ms: 0.7906
+  ...
+# Subtest: south polar axes and projection round trip
+ok 80 - south polar axes and projection round trip
+  ---
+  duration_ms: 3.7719
+  ...
+# Subtest: celestial azimuth maps north/east/up in the terrain frame
+ok 81 - celestial azimuth maps north/east/up in the terrain frame
+  ---
+  duration_ms: 0.1728
+  ...
+# Subtest: terrain observer origin, vertical height and lunar curvature
+ok 82 - terrain observer origin, vertical height and lunar curvature
+  ---
+  duration_ms: 1.2983
+  ...
+# Subtest: study outline holes and boundaries are respected
+ok 83 - study outline holes and boundaries are respected
+  ---
+  duration_ms: 0.5898
+  ...
+# Subtest: display interpolation follows descending rows and rejects missing coverage
+ok 84 - display interpolation follows descending rows and rejects missing coverage
+  ---
+  duration_ms: 0.4051
+  ...
+# Subtest: reference binds only to the exact image, mission DEM and grid
+ok 85 - reference binds only to the exact image, mission DEM and grid
+  ---
+  duration_ms: 1.8677
+  ...
+# Subtest: reference terrain cannot silently supply mission registration picks
+ok 86 - reference terrain cannot silently supply mission registration picks
+  ---
+  duration_ms: 0.2155
+  ...
+1..86
+# tests 86
+# suites 0
+# pass 86
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 527.7023

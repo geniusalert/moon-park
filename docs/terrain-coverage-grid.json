@@ -1,0 +1,598 @@
+{
+  "generatedUTC": "2026-11-14T08:18:59.071079+00:00",
+  "sources": [
+    {
+      "id": "polar-20m",
+      "path": "data/raw/navigator/polar-20m.tif",
+      "url": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_80S_20MPP_ADJ.TIF",
+      "sha256": "cc564a488b1a718e0893c09dd06f3fafa4762e7fcec050652b8e9d7c64fb6513",
+      "pixelM": 20,
+      "boundsXYM": [
+        -170000.0,
+        -170000.0,
+        170000.0,
+        170000.0
+      ],
+      "crsWKT": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "sourceWindow": [
+        6700,
+        6700,
+        17000,
+        17000
+      ],
+      "fullSourceSha256": null,
+      "frame": "MOON_ME_DE421",
+      "scope": "Native source crop; derived bytes hashed; full remote source not downloaded."
+    },
+    {
+      "id": "polar-240m",
+      "path": "data/raw/navigator/polar-240m.tif",
+      "url": "https://pgda.gsfc.nasa.gov/data/LOLA_20mpp/LDEM_60S_240MPP_ADJ.TIF",
+      "sha256": "a8547c0c55c6ac8d84caf54109155a2ff60e6f310896a82ecc5cdc2f0a55af7a",
+      "pixelM": 240,
+      "boundsXYM": [
+        -350160.0,
+        -350160.0,
+        350160.0,
+        350160.0
+      ],
+      "crsWKT": "PROJCS[\"Moon (2015) - Sphere / Ocentric / South Polar\",GEOGCS[\"Moon (2015) - Sphere / Ocentric\",DATUM[\"Moon (2015) - Sphere\",SPHEROID[\"Moon (2015) - Sphere\",1737400,0,AUTHORITY[\"IAU\",\"30100\"]],AUTHORITY[\"IAU\",\"30100\"]],PRIMEM[\"Reference Meridian\",0,AUTHORITY[\"IAU\",\"30100\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"IAU\",\"30100\"]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH],AUTHORITY[\"IAU\",\"30135\"]]",
+      "sourceWindow": [
+        2421,
+        2421,
+        2918,
+        2918
+      ],
+      "fullSourceSha256": null,
+      "frame": "MOON_ME_DE421",
+      "scope": "Native source crop; derived bytes hashed; full remote source not downloaded."
+    }
+  ],
+  "azimuthSpacingDeg": 5,
+  "distancesM": [
+    100,
+    500,
+    1000,
+    5000,
+    11990,
+    12010,
+    30000,
+    90000,
+    180000
+  ],
+  "cases": [
+    {
+      "longitude": -180,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -85,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -180,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -86,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -180,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -87,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -180,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -88,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -180,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -89,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -180,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -150,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -120,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -90,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -60,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -30,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 30,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 60,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 90,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 120,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 150,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": 0,
+      "latitude": -90,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -139.9,
+      "latitude": -89.9,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -139.9,
+      "latitude": -89.8,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    },
+    {
+      "longitude": -68.4,
+      "latitude": -88.67,
+      "testedRays": 648,
+      "missingSamples": 0,
+      "supported": true
+    }
+  ],
+  "scope": "Sampled support and four-neighbour validity check. The actual worker still verifies its full 0.125-degree ray grid per request. This check does not establish elevation accuracy."
+}

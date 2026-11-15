@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "request": {
+        "longitude": -71.57650346145736,
+        "latitude": -88.43488023911807,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "4b2163f8d03e97f1e265989b576b590851507af2178d8c8078642d4cb16db249",
+      "siteId": "custom-f17de3e367056432",
+      "groundResolutionM": 20,
+      "groundM": 716.8038940426555,
+      "horizonHash": "8ab7ea15c37890596912b9e5c64223fcc2bd6a08f4cd07a139f749ccf512eabb",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 10.375934199997573,
+        "peakWorkingSetBytes": 581222400,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 11.824804000003496
+    },
+    {
+      "request": {
+        "longitude": -71.55358514170713,
+        "latitude": -88.43675702353838,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 1,
+        "delay": 0,
+        "height": 2
+      },
+      "resultId": "14b89587c4f1851ef6e7d3d7a9fa0e1d6cb1114918b8fa1f9044b1af71b65819",
+      "siteId": "custom-176bf35b0ccf08b4",
+      "groundResolutionM": 5,
+      "groundM": 718.0552520752126,
+      "horizonHash": "fe0b6fed3e064d27f37e3a4ea1b0f9e657f25fc030e212544340735f2d9b061c",
+      "observations": [
+        "2027-01-01T00:00:00Z",
+        "2027-01-04T01:10:00Z"
+      ],
+      "performance": {
+        "seconds": 10.365598800002772,
+        "peakWorkingSetBytes": 581611520,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      },
+      "wallSeconds": 11.864558000001125
+    }
+  ]
+}

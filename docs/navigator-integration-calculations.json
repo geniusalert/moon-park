@@ -1,0 +1,75 @@
+{
+  "date": "2026-11-13",
+  "status": "passed",
+  "cases": [
+    {
+      "location": {
+        "id": "Site01-roi-1-grid-south",
+        "name": "Site01 published study region 1 / grid-south",
+        "latitude": -89.43760554520676,
+        "longitude": -137.1980329428987,
+        "kind": "interior"
+      },
+      "calculatedCoordinates": {
+        "latitude": -89.43760554520676,
+        "longitude": -137.1980329428987
+      },
+      "reference": {
+        "url": "/api/results/1e1c84f032f498dcc819555f86681f473f3e8291c85fbd42169a8a19a8290499",
+        "sha256": "1e1c84f032f498dcc819555f86681f473f3e8291c85fbd42169a8a19a8290499"
+      },
+      "performance": {
+        "seconds": 1.3386916000017663,
+        "peakWorkingSetBytes": 161861632,
+        "horizonCacheHit": true,
+        "observationCacheHit": true
+      }
+    },
+    {
+      "location": {
+        "id": "coordinate:-85.6600285:-57.58060590000002",
+        "name": "85.66003\u00b0 S, -57.58061\u00b0 E",
+        "latitude": -85.6600285,
+        "longitude": -57.58060590000002,
+        "kind": "custom"
+      },
+      "calculatedCoordinates": {
+        "latitude": -85.6600285,
+        "longitude": -57.58060590000002
+      },
+      "reference": {
+        "url": "/api/results/b2cc67a2805e45cc8f0b928421d730a773922f1c8cd2b4c582691851278b2ef3",
+        "sha256": "b2cc67a2805e45cc8f0b928421d730a773922f1c8cd2b4c582691851278b2ef3"
+      },
+      "performance": {
+        "seconds": 1.2968050000054063,
+        "peakWorkingSetBytes": 161255424,
+        "horizonCacheHit": true,
+        "observationCacheHit": true
+      }
+    },
+    {
+      "location": {
+        "id": "coordinate:-88.668:-68.4034",
+        "name": "de Gerlache rim \u00b7 image study coordinate",
+        "latitude": -88.668,
+        "longitude": -68.4034,
+        "kind": "custom"
+      },
+      "calculatedCoordinates": {
+        "latitude": -88.668,
+        "longitude": -68.4034
+      },
+      "reference": {
+        "url": "/api/results/ab1833083e21199ba4d63ba847b8802df739f182f239ceaee51eb89db13a974e",
+        "sha256": "ab1833083e21199ba4d63ba847b8802df739f182f239ceaee51eb89db13a974e"
+      },
+      "performance": {
+        "seconds": 5.402683599997545,
+        "peakWorkingSetBytes": 581783552,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "siteId": "Site01",
+    "cloneId": 1,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Clones/Site01_final_adj_5mpp_0001_err.tif",
+    "path": "data/raw/clones/Site01-0001-error.tif",
+    "cropSha256": "5fdb961388e06fe308629cbeb2dbb4166b0e50a918ed254fe511e83d914cec52",
+    "window": {
+      "col": 1084,
+      "row": 1292,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.4441678524017334,
+    "minErrorM": -3.6998291015625,
+    "maxErrorM": 3.613525390625,
+    "byteRanges": [
+      [
+        16564765,
+        26868764
+      ]
+    ]
+  },
+  {
+    "siteId": "Site01",
+    "cloneId": 26,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Clones/Site01_final_adj_5mpp_0026_err.tif",
+    "path": "data/raw/clones/Site01-0026-error.tif",
+    "cropSha256": "ed230c35bef230304e61619e273952fb1bbb7602618028f99975ac7daaf57627",
+    "window": {
+      "col": 1084,
+      "row": 1292,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.44145718216896057,
+    "minErrorM": -3.585693359375,
+    "maxErrorM": 4.2230224609375,
+    "byteRanges": [
+      [
+        16564759,
+        26868758
+      ]
+    ]
+  },
+  {
+    "siteId": "Site01",
+    "cloneId": 51,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Clones/Site01_final_adj_5mpp_0051_err.tif",
+    "path": "data/raw/clones/Site01-0051-error.tif",
+    "cropSha256": "4a4406347e5f0d25dedb89a680ec839b1cfd2c17fb48f9446387b0078b5e975f",
+    "window": {
+      "col": 1084,
+      "row": 1292,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.44579800963401794,
+    "minErrorM": -3.1337890625,
+    "maxErrorM": 3.90087890625,
+    "byteRanges": [
+      [
+        16564759,
+        26868758
+      ]
+    ]
+  },
+  {
+    "siteId": "Site01",
+    "cloneId": 76,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Clones/Site01_final_adj_5mpp_0076_err.tif",
+    "path": "data/raw/clones/Site01-0076-error.tif",
+    "cropSha256": "df03f904c286a50501d1367ecdf7e9bf601b1be8e66bf59174d8712c3c716b84",
+    "window": {
+      "col": 1084,
+      "row": 1292,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.43392449617385864,
+    "minErrorM": -3.5821533203125,
+    "maxErrorM": 3.3367919921875,
+    "byteRanges": [
+      [
+        16564765,
+        26868764
+      ]
+    ]
+  },
+  {
+    "siteId": "Site04",
+    "cloneId": 1,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Clones/Site04_final_adj_5mpp_0001_err.tif",
+    "path": "data/raw/clones/Site04-0001-error.tif",
+    "cropSha256": "f88034bc100acae0c72c8098b1982128e0853cf920715f2793b9ffd68359be14",
+    "window": {
+      "col": 1004,
+      "row": 1004,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.513347327709198,
+    "minErrorM": -4.36474609375,
+    "maxErrorM": 4.61279296875,
+    "byteRanges": [
+      [
+        12878361,
+        23182360
+      ]
+    ]
+  },
+  {
+    "siteId": "Site04",
+    "cloneId": 26,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Clones/Site04_final_adj_5mpp_0026_err.tif",
+    "path": "data/raw/clones/Site04-0026-error.tif",
+    "cropSha256": "abace08825af96fdd5413d4a0c9f593afb105507b73c1e838849094ee37d208b",
+    "window": {
+      "col": 1004,
+      "row": 1004,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.5161243677139282,
+    "minErrorM": -4.17333984375,
+    "maxErrorM": 5.517730712890625,
+    "byteRanges": [
+      [
+        12878359,
+        23182358
+      ]
+    ]
+  },
+  {
+    "siteId": "Site04",
+    "cloneId": 51,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Clones/Site04_final_adj_5mpp_0051_err.tif",
+    "path": "data/raw/clones/Site04-0051-error.tif",
+    "cropSha256": "1aadb7d445dabaa0aae26e657f318537869e55bd52a32dd12e6d6a675501a5df",
+    "window": {
+      "col": 1004,
+      "row": 1004,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.5176730751991272,
+    "minErrorM": -4.7264404296875,
+    "maxErrorM": 5.450225830078125,
+    "byteRanges": [
+      [
+        12878359,
+        23182358
+      ]
+    ]
+  },
+  {
+    "siteId": "Site04",
+    "cloneId": 76,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Clones/Site04_final_adj_5mpp_0076_err.tif",
+    "path": "data/raw/clones/Site04-0076-error.tif",
+    "cropSha256": "f5cb5db2a256dc9428286804d2a1348754a88c1f240304c9a999bac36532679d",
+    "window": {
+      "col": 1004,
+      "row": 1004,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.5178573131561279,
+    "minErrorM": -4.5767822265625,
+    "maxErrorM": 4.969696044921875,
+    "byteRanges": [
+      [
+        12878361,
+        23182360
+      ]
+    ]
+  },
+  {
+    "siteId": "Site11",
+    "cloneId": 1,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Clones/Site11_final_adj_5mpp_0001_err.tif",
+    "path": "data/raw/clones/Site11-0001-error.tif",
+    "cropSha256": "667a90b7f32f4540d44ef97c65eff48c4ac54bfe9f705e45e1f0cb0531f83b63",
+    "window": {
+      "col": 1068,
+      "row": 1216,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.45608749985694885,
+    "minErrorM": -2.6781005859375,
+    "maxErrorM": 3.7657470703125,
+    "byteRanges": [
+      [
+        15591963,
+        25895962
+      ]
+    ]
+  },
+  {
+    "siteId": "Site11",
+    "cloneId": 26,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Clones/Site11_final_adj_5mpp_0026_err.tif",
+    "path": "data/raw/clones/Site11-0026-error.tif",
+    "cropSha256": "73a8464ab686923eea9156befd4b9a6d40b5a6781c24c54d6230be0ec3a08443",
+    "window": {
+      "col": 1068,
+      "row": 1216,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.45801520347595215,
+    "minErrorM": -3.369384765625,
+    "maxErrorM": 4.243896484375,
+    "byteRanges": [
+      [
+        15591963,
+        25895962
+      ]
+    ]
+  },
+  {
+    "siteId": "Site11",
+    "cloneId": 51,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Clones/Site11_final_adj_5mpp_0051_err.tif",
+    "path": "data/raw/clones/Site11-0051-error.tif",
+    "cropSha256": "d023d9bd3dc6d40811b589c972d93d34c55b1b854afefba3392bb1f2d1431951",
+    "window": {
+      "col": 1068,
+      "row": 1216,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.4566899240016937,
+    "minErrorM": -2.5614013671875,
+    "maxErrorM": 4.5836181640625,
+    "byteRanges": [
+      [
+        15591961,
+        25895960
+      ]
+    ]
+  },
+  {
+    "siteId": "Site11",
+    "cloneId": 76,
+    "url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Clones/Site11_final_adj_5mpp_0076_err.tif",
+    "path": "data/raw/clones/Site11-0076-error.tif",
+    "cropSha256": "a3edf30e960e8d1b01dcd8111e1ba850a934baf7b5da42fba1852ca7d77506dd",
+    "window": {
+      "col": 1068,
+      "row": 1216,
+      "width": 805,
+      "height": 805
+    },
+    "perturbationRadiusM": 2000,
+    "semantics": "Published absolute clone surface minus co-registered nominal DEM; derived error applied inside 2 km, nominal terrain held fixed outside",
+    "rmsErrorM": 0.45830491185188293,
+    "minErrorM": -2.730712890625,
+    "maxErrorM": 4.11236572265625,
+    "byteRanges": [
+      [
+        15591961,
+        25895960
+      ]
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-12",
+  "siteId": "Site04",
+  "method": "Three atlas-selected 300 m native-photo windows; terrain and confidence displays sampled on identical nominal footprints.",
+  "generatorSha256": "bb2be66a5dc2525272cf9301f8e5656c3ea6a4e0acc28fcecb6d7dc5358b2ca3",
+  "sources": {
+    "/data/registration/catalog-ed58bddfdcf8.json": "ed58bddfdcf8ccc0032d32497b202b2b6be7a9162797f15e6c74ddef0550a601",
+    "/data/registration/reference/catalog-9846904df18e.json": "9846904df18e985c511b95facfa04d013ec51cd31a01ee2e7b30462bbaee142d",
+    "/data/registration/Site04-shade45.png": "d4e4afcd37799cd6ee586b52424ed6ecb6592cf25a13454d1cc615e692d3df8d",
+    "/data/registration/Site04-shade225.png": "c5b40d714571e8e65134f88499b554d9a3e242c1d8606e564e23cbb61dc6e39e",
+    "/data/registration/reference/shackleton-shade45.png": "24dc900dde2c43ba5f484ad60269c049443bf690afb8b90eddaf4c12a0013f30",
+    "/data/registration/reference/shackleton-confidence.png": "163f3108eeffcb9aaf3634e98e1378875355a20176492a2672e85f6ca9247455",
+    "/data/imagery/shackleton-context-native.tif": "ce106eccf6cf72de99e9683cddf37a38ee4ce7956fdef1ca97ee062d365913ef",
+    "/data/registration/reference/shackleton-confidence-native.tif": "7988b79b40cfc6343de09bb2d8d68886bd33a1f3b178fc00623dd2bff5d6e0c8"
+  },
+  "imageSha256": "57ef79cf8940fd1255502c7f02d682d84e8116a4450430251b2a7cd0e0ee6140",
+  "photoPixelM": 1,
+  "inspectionPixelM": [
+    4.9900249376558605,
+    4.9900249376558605
+  ],
+  "limitations": [
+    "Nearest-neighbour display enlargement supplies no extra terrain resolution.",
+    "Quality counts cover enclosing native 2 m cells, with their own bounds; not support at an accepted landmark.",
+    "Repeated blind picks were not performed because an unambiguous mission-side feature was not established."
+  ],
+  "searches": [
+    {
+      "id": "Search-1",
+      "searchCentreInspectionPixel": [
+        50,
+        29
+      ],
+      "nativePhotoWindow": [
+        101,
+        0,
+        300,
+        300
+      ],
+      "boundsXYM": [
+        -3712.0,
+        -5967.0,
+        -3412.0,
+        -5667.0
+      ],
+      "nativePhotoSupportedPixels": 90000,
+      "confidenceCountBoundsXYM": [
+        -3713.0,
+        -5967.0,
+        -3411.0,
+        -5667.0
+      ],
+      "nativeConfidenceCounts": {
+        "1": 225,
+        "4": 495,
+        "14": 21930
+      },
+      "status": "not-accepted",
+      "imagePick": null,
+      "missionPick": null,
+      "pickingUncertaintyM": null,
+      "reason": "Crater vicinity recognizable; unique corresponding rim point not established on mission terrain. Shadow centre unsuitable as a stable feature."
+    },
+    {
+      "id": "Search-2",
+      "searchCentreInspectionPixel": [
+        98,
+        106
+      ],
+      "nativePhotoWindow": [
+        341,
+        381,
+        300,
+        300
+      ],
+      "boundsXYM": [
+        -3472.0,
+        -6348.0,
+        -3172.0,
+        -6048.0
+      ],
+      "nativePhotoSupportedPixels": 90000,
+      "confidenceCountBoundsXYM": [
+        -3473.0,
+        -6349.0,
+        -3171.0,
+        -6047.0
+      ],
+      "nativeConfidenceCounts": {
+        "1": 6,
+        "4": 186,
+        "14": 22609
+      },
+      "status": "not-accepted",
+      "imagePick": null,
+      "missionPick": null,
+      "pickingUncertaintyM": null,
+      "reason": "Crater vicinity recognizable; unique corresponding rim point not established on mission terrain. Shadow centre unsuitable as a stable feature."
+    },
+    {
+      "id": "Search-3",
+      "searchCentreInspectionPixel": [
+        44,
+        284
+      ],
+      "nativePhotoWindow": [
+        72,
+        1269,
+        300,
+        300
+      ],
+      "boundsXYM": [
+        -3741.0,
+        -7236.0,
+        -3441.0,
+        -6936.0
+      ],
+      "nativePhotoSupportedPixels": 90000,
+      "confidenceCountBoundsXYM": [
+        -3741.0,
+        -7237.0,
+        -3441.0,
+        -6935.0
+      ],
+      "nativeConfidenceCounts": {
+        "1": 25,
+        "4": 243,
+        "14": 22382
+      },
+      "status": "not-accepted",
+      "imagePick": null,
+      "missionPick": null,
+      "pickingUncertaintyM": null,
+      "reason": "Crater vicinity recognizable; unique corresponding rim point not established on mission terrain. Shadow centre unsuitable as a stable feature."
+    }
+  ],
+  "acceptedPairs": 0,
+  "registrationEstablished": false
+}

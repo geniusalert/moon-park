@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-13",
+  "candidate": "0.14",
+  "archive": {
+    "path": "release\\moon-park-navigator-v0.14-candidate.zip",
+    "files": 334,
+    "bytes": 50325197,
+    "sha256": "5b63840af2350807062838990c7befbee09d79229b187a4ea2cf626bd7775753",
+    "verified": true
+  },
+  "freshExtraction": "release/validation-objective-v0.14",
+  "sourceSetup": "Existing verified acquisitions provisioned through a data/raw junction; no fresh network acquisition asserted.",
+  "workspaceSha256": "58453b978eefe92877be2d8bc125352516de0ad58101e922a422097ff20e239a",
+  "results": [
+    {
+      "id": "Site01-roi-1-grid-south",
+      "resultReference": {
+        "url": "/api/results/dea91bda24edacef93575f18604f4c34d1ffeba5c6d15e9503ae78d052a72be1",
+        "sha256": "dea91bda24edacef93575f18604f4c34d1ffeba5c6d15e9503ae78d052a72be1"
+      },
+      "performance": {
+        "seconds": 5.50807789999817,
+        "peakWorkingSetBytes": 582664192,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      }
+    },
+    {
+      "id": "coordinate:-87.5:0",
+      "resultReference": {
+        "url": "/api/results/75f5a4dfe0cab27c589e2fccd874040c75b3ff03533641d837a18edd7eb1c4ac",
+        "sha256": "75f5a4dfe0cab27c589e2fccd874040c75b3ff03533641d837a18edd7eb1c4ac"
+      },
+      "performance": {
+        "seconds": 5.3090917999943485,
+        "peakWorkingSetBytes": 581562368,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      }
+    }
+  ],
+  "status": "passed",
+  "finalCandidate": {
+    "path": "release\\moon-park-navigator-v0.14-candidate.zip",
+    "files": 335,
+    "bytes": 50326141,
+    "sha256": "4d034eb4ebba21defdf6eb8e613cdc26fa67893ecada6c34876d5c66b7b245f4",
+    "verified": true
+  },
+  "finalExtraction": "release/validation-objective-v0.14-final",
+  "finalWorkspaceSha256": "4ed74383a189ae6d3f0ad6f81289123ee53c6ce55d501b03d48d88c6edb46fee",
+  "finalResults": [
+    {
+      "id": "Site01-roi-1-grid-south",
+      "resultReference": {
+        "url": "/api/results/fd9af687299abb6df62976075d3ec374348f97eba990596a06b029a036a67368",
+        "sha256": "fd9af687299abb6df62976075d3ec374348f97eba990596a06b029a036a67368"
+      },
+      "performance": {
+        "seconds": 1.4227599000005284,
+        "peakWorkingSetBytes": 161865728,
+        "horizonCacheHit": true,
+        "observationCacheHit": true
+      }
+    },
+    {
+      "id": "Site04",
+      "resultReference": {
+        "url": "/api/results/58a55584337d0403eb9d36afadcce0910fdff2185a72eace6fc1229c541a64c6",
+        "sha256": "58a55584337d0403eb9d36afadcce0910fdff2185a72eace6fc1229c541a64c6"
+      },
+      "performance": {
+        "seconds": 5.568698300005053,
+        "peakWorkingSetBytes": 581619712,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      }
+    },
+    {
+      "id": "coordinate:-87.5:0",
+      "resultReference": {
+        "url": "/api/results/db21aa0ca08c17123bee2bf69769f9d9f4d0b0aaba417f6d94ac9c1e269a2e17",
+        "sha256": "db21aa0ca08c17123bee2bf69769f9d9f4d0b0aaba417f6d94ac9c1e269a2e17"
+      },
+      "performance": {
+        "seconds": 5.36891820000892,
+        "peakWorkingSetBytes": 581914624,
+        "horizonCacheHit": false,
+        "observationCacheHit": false
+      }
+    }
+  ],
+  "extractedTests": {
+    "javascript": 60,
+    "python": 30
+  },
+  "releaseValidationExtraction": "release/validation-objective-v0.14-release",
+  "releaseCandidate": {
+    "path": "release\\moon-park-navigator-v0.14-candidate.zip",
+    "files": 336,
+    "bytes": 50328587,
+    "sha256": "6d0e3e790aaff096b43b24a15495f7b7e00e3bbfe42c0a4a162f5591a44571db",
+    "verified": true
+  },
+  "browserRestore": true,
+  "changedSourceRejected": true,
+  "seasonalCancellation": true,
+  "desktopAndMobile": true,
+  "sourceSetupLimit": "Existing verified terrain/kernel acquisitions and existing runtimes; fresh network download not asserted."
+}

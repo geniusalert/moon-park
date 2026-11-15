@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "format": "moon-park-hardware-thermal-test",
+  "physicalTarget": "spacecraft-component",
+  "temperatureUnit": "K",
+  "evidenceType": "measured",
+  "hardwareId": "REPLACE with component identity",
+  "sensorId": "REPLACE with sensor identity",
+  "sensorLocation": "REPLACE with sensor location",
+  "sensorCalibrationReference": "REPLACE with sensor calibration record",
+  "sensorUncertaintyK": 0.1,
+  "parameters": {
+    "areaM2": 0.1,
+    "absorptivity": 0.8,
+    "emissivity": 0.8,
+    "radiatingAreaM2": 0.2,
+    "conductanceWK": 0,
+    "groundViewFactor": 0,
+    "heatCapacityJK": 1000
+  },
+  "criteria": {
+    "maxRMSEK": 0.25,
+    "maxAbsErrorK": 0.5
+  },
+  "fitGrids": {},
+  "runs": [
+    {
+      "runId": "REPLACE-calibration",
+      "role": "calibration",
+      "sourceReference": "REPLACE with measurement source and test conditions",
+      "rows": [
+        {
+          "elapsedSeconds": 0,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 120,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 240,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 360,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 480,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 600,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 720,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 840,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 960,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 1080,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 1200,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        }
+      ]
+    },
+    {
+      "runId": "REPLACE-validation",
+      "role": "validation",
+      "sourceReference": "REPLACE with measurement source and test conditions",
+      "rows": [
+        {
+          "elapsedSeconds": 0,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 120,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 240,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 360,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 480,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 600,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 720,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 840,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 960,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 1080,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        },
+        {
+          "elapsedSeconds": 1200,
+          "temperatureK": null,
+          "irradianceWm2": null,
+          "internalHeatW": null,
+          "electricalW": null,
+          "groundTemperatureK": null,
+          "skyTemperatureK": null
+        }
+      ]
+    }
+  ]
+}

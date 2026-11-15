@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-13",
+  "cases": [
+    {
+      "request": {
+        "longitude": 0,
+        "latitude": -87.5,
+        "startUTC": "2027-01-01T00:00:00Z",
+        "duration": 72,
+        "delay": 48,
+        "height": 2
+      },
+      "nominal": {
+        "sun": 0,
+        "earth": 0,
+        "overlap": 0,
+        "longestCombined": 0
+      },
+      "coarserAzimuthHalfDegree": {
+        "sun": 0,
+        "earth": 0,
+        "overlap": 0,
+        "longestCombined": 0
+      },
+      "coarserTime20Minutes": {
+        "sun": 0,
+        "earth": 0,
+        "overlap": 0,
+        "longestCombined": 0
+      }
+    },
+    {
+      "request": {
+        "longitude": 90,
+        "latitude": -86.5,
+        "startUTC": "2027-06-21T12:00:00Z",
+        "duration": 72,
+        "delay": 48,
+        "height": 2
+      },
+      "nominal": {
+        "sun": 0,
+        "earth": 40.33333333333333,
+        "overlap": 0,
+        "longestCombined": 0
+      },
+      "coarserAzimuthHalfDegree": {
+        "sun": 0,
+        "earth": 40.5,
+        "overlap": 0,
+        "longestCombined": 0
+      },
+      "coarserTime20Minutes": {
+        "sun": 0,
+        "earth": 40.33333333333333,
+        "overlap": 0,
+        "longestCombined": 0
+      }
+    }
+  ],
+  "interpretation": "Coarsening sensitivity at two nominal custom scenarios, not fine-resolution convergence or full-field uncertainty. Existing finer temporal benchmark evidence remains separate."
+}

@@ -1,0 +1,13 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {alternatives,comparePoint} from '../src/navigator-model.js';
+import {operationalMetrics,nextEventSummary,solarReference} from '../src/navigator-operations.js';
+const data=JSON.parse(readFileSync(new URL('../data/mission-data.json',import.meta.url)));
+const config={startUTC:'2026-11-14T00:00:00Z',delay:48,duration:72,height:2,maxDark:12,minOverlap:8};
+test('every grid cell matches ordinary scenario evaluation and margins',()=>{const grid=alternatives([data.sites[0]],config,2);assert.equal(grid.cells.length,7);for(const cell of grid.cells){const r=comparePoint(data.sites[0],{...config,delay:config.delay+cell.extraHours},2);assert.equal(cell.overlap,r.revised.overlap);assert.equal(cell.arrivalUTC,r.revised.startUTC);assert.equal(cell.status,r.failures.length?'fails':'passes');assert.equal(cell.margins.activity,r.revised.longestCombined-2);}});
+test('unavailable grid cells remain distinct from constraint failures',()=>{const grid=alternatives([data.sites[0]],{...config,startUTC:'2027-06-01T00:00:00Z'},2);assert.equal(grid.cells.length,7);assert.ok(grid.cells.every(c=>c.status==='unavailable'&&c.reason));assert.equal(grid.choices.length,0);});
+test('failing cells retain shortfalls and continuous activity requirement',()=>{const grid=alternatives([data.sites[0]],{...config,minOverlap:100},2);assert.ok(grid.cells.every(c=>c.status==='fails'&&c.margins.overlap<0));});
+test('operational metrics separate angles and continuous windows',()=>{const r=comparePoint(data.sites[0],config,2);const metrics=operationalMetrics(r);assert.equal(metrics.find(m=>m.label==='Peak Sun elevation').unit,'°');assert.equal(metrics.find(m=>m.label==='Longest Sun window').revised,72);assert.equal(metrics.find(m=>m.label==='Direct Earth visibility').revised,r.revised.earthHours);});
+test('countdowns retain hidden state, final boundary and ten-minute bracket',()=>{const samples=[false,false,true].map((sun,i)=>({sun,earth:false,utc:String(i),hour:i/6}));assert.match(nextEventSummary(samples,0,'sun'),/10–20 min/);assert.match(nextEventSummary(samples,2,'earth'),/currently hidden.*no visibility transition/);assert.match(nextEventSummary(samples,1,'sun'),/0–10 min/);});
+test('horizontal reference is zero when hidden or below horizontal',()=>{assert.match(solarReference({sun:false,sunEl:30,horizon:40,sunFraction:0}),/0.0%/);assert.match(solarReference({sun:true,sunEl:-1,horizon:-2,sunFraction:1}),/0.0%/);assert.match(solarReference({sun:true,sunEl:30,horizon:0,sunFraction:1}),/50.0%/);});

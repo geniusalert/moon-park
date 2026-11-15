@@ -1,0 +1,14 @@
+{
+  "resultId": "a8463a35168183cdd865f950453cc6d0a5d474b1d57777944b280b80e8c12d14",
+  "siteId": "custom-719dc73276c057f0",
+  "terrainElevationOffsetM": 1,
+  "performance": {
+    "seconds": 64.05974709999282,
+    "peakWorkingSetBytes": 581218304,
+    "horizonCacheHit": false,
+    "observationCacheHit": false
+  },
+  "sourceStepMinutes": 1,
+  "samples": 60,
+  "scope": "One real +1 m relative elevation stress with exact coordinate, full terrain worker and Horizons observations."
+}

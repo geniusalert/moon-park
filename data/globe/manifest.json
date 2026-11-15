@@ -1,0 +1,22 @@
+{
+  "source": "https://svs.gsfc.nasa.gov/4720/",
+  "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_2k.jpg",
+  "file": "data/globe/lroc-color-2k.jpg",
+  "sha256": "f7130a1822681fa7512d7dcfd40db8c10b9ba4f06777910348698260ed7a2170",
+  "retrieved": "2026-11-13",
+  "credit": "NASA Scientific Visualization Studio; Ernie Wright and Noah Petro; LRO LROC/LOLA",
+  "purpose": "Global visual context only; aesthetics-optimized map, not horizon calculation terrain; poles include lower-resolution albedo fill.",
+  "highResolution": {
+    "file": "data/globe/lroc-color-8k.jpg",
+    "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_poles_8k.tif",
+    "sourceSHA256": "4af8b0cd4d50c30851359d98e7e72040240dd8d03256b58b345b5b76e9edb4ef",
+    "sha256": "e688608d26c11456a7a11fe6b1a94e3cb45d5eb573e031e55965e598e78b1453",
+    "dimensions": [
+      8192,
+      4096
+    ],
+    "derived": "2019 NASA SVS 8k RGB TIFF converted to JPEG quality 92; no generative enhancement",
+    "retrieved": "2026-11-14",
+    "purpose": "Global visual context only; aesthetics-optimized map, not horizon calculation terrain; poles include lower-resolution albedo fill."
+  }
+}

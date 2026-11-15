@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "anonymousSessionId": "15fe5285-9478-4214-81ed-886b9b298f0c",
+  "createdAt": "2026-11-11T05:38:19.319Z",
+  "kind": "developer",
+  "includeInHumanStudy": false,
+  "elapsedSeconds": 9,
+  "assisted": false,
+  "answers": [
+    {
+      "task": 1,
+      "prompt": "At the original Shackleton research point, which configured requirement fails after the delay?",
+      "response": "Minimum combined Sun + Earth availability",
+      "correct": true
+    },
+    {
+      "task": 2,
+      "prompt": "At the original Connecting Ridge research point, does the delay increase or decrease total combined availability?",
+      "response": "Increase",
+      "correct": true
+    },
+    {
+      "task": 3,
+      "prompt": "For a two-hour Connecting Ridge activity, which first start is shared by the nominal model and all eight tested variants?",
+      "response": "16 November, 12:50 UTC",
+      "correct": true
+    },
+    {
+      "task": 4,
+      "prompt": "When you inspect a calculated point inside a published study outline, what area do its results cover?",
+      "response": "The sampled point only",
+      "correct": true
+    },
+    {
+      "task": 5,
+      "prompt": "What does a model pass establish?",
+      "response": "The configured visibility limits pass under stated assumptions",
+      "correct": true
+    }
+  ],
+  "correctCount": 5,
+  "allTasksCorrectUnaided": true,
+  "reference": {
+    "version": {
+      "index.html": "d614206544a183631e2e4b7f1c49525eaa2ecc53da038f5cd5fb32f67d3172bc",
+      "package-lock.json": "113c6c710f44dc95f591eea248354ab46eb2278e88bf09c466590c6de73f9f40",
+      "package.json": "3ac2a08705f0386761303439e7940a00b1a5517c898c2804fa34511c5b582eae",
+      "requirements.txt": "3719eb22fe96106702d12038d0769baa883180e64646484b07889c12fcc5b19f",
+      "scripts/benchmark.mjs": "2d58e7f0b2aa46997c5d55c93d3312bf08dd401152acf097ecfc923478e94ad5",
+      "scripts/build_presentation.mjs": "d9a5261f1cb4efa27c18a1b7dd1bb57d6bdec1236be8d567b90a93d0522c2bc0",
+      "scripts/build_science.py": "3cb12e4d05462aa5108204eda4d2ea80647d20bdba879bbd82e687bd961ce9dd",
+      "scripts/build_uncertainty.py": "c327aebcab7c51f10b394f032ee161b54f0a7ccf30e7c93dd858782d608e6f64",
+      "scripts/candidate_geometry.py": "b61a9ac6e54cc51cc6f1f26596ba9a3dc4f29c58600f6fefd2372a1654c7656d",
+      "scripts/compare_terrain.mjs": "36d324939aa808a1b2d296c6e6ae2458e6c078371c76639f70f0330b8a22265b",
+      "scripts/discover_regional.py": "760a5010f727915a6ae72806573dd23ac7c1d332c24e6e6af037970799452098",
+      "scripts/extend_horizons.py": "83f90a3657d3df5e81f3732535d688e98434d8e5040e7b2b8dc32289c1ed5ed2",
+      "scripts/fetch_clones.py": "c9ab584e238f6d79e6dea2d533e68f389bbc0cc1f1e0f89bbc9b6584d75b9511",
+      "scripts/fetch_ephemeris.py": "461f78cd7d1b342e85faa5a4782f6482819b60284d51d723654294e016efe40e",
+      "scripts/fetch_kernels.py": "fc03cee9ef61f27dc7181832ffd52f27e42e244fd7c76939211c4c6732d90a48",
+      "scripts/fetch_regional.py": "978ef2f241240ad6563cd26749073a8f0f838c78d0a50a0c371a7b9ce8fd4e38",
+      "scripts/inspect_sources.py": "a8a907225adbf644df4609f40d8455635e5a88972e3666a2659e3da293a933dd",
+      "scripts/package_release.py": "1c5916779338a0362608a8aeba588ac532f2855ec81d3f61328846679b0764ab",
+      "scripts/prepare_candidates.py": "02e39de081171348cf71c4cb4cd0bc278444bf35a2b874f91efca262c67ba806",
+      "scripts/prepare_ephemerides.py": "fcf8afc0b16884264ce28cccc74d6522b6456aac920a8a4dc1a22a830e2bd555",
+      "scripts/prepare_spatial.py": "82d829f77ba43bc254c4c71b79517f5c0a7eac271ae472b50030ca6473117dd5",
+      "scripts/prepare_spice.py": "5e028bd499739b2a138e3a86d88de1df1be526a464b51baeb7ec31b66a5acc8f",
+      "scripts/prepare_terrain.py": "c6d4ad2eed73a693e26734acd665eb80ce9b41ab76e176f973d28675356eb581",
+      "scripts/prepare_variants.py": "8be442fea0c21b4fad5007122b7174e55725b05e2657e8eaae7595d6d4a5d222",
+      "scripts/refine_uncertainty.py": "1cd6789fd4c65c300d9fdf6ee7dc25091e38e000ff07301a44f5031037e6b4d5",
+      "scripts/serve.mjs": "1bfee2f33df94f660841ddbacbeba89d0bfd2a5098028a4ae6683031b105a5d8",
+      "scripts/snapshot_baseline.mjs": "527f606d71381b34774290e20901901e6920e3b641829a571e616acaaf93d3dc",
+      "scripts/stamp_build.py": "72ce51e62fe9f36fd7af6e159510acbc7c649fc04db2da3df6bedffe0d1ff7d9",
+      "scripts/summarize_pilot.py": "e91abf3045128becb388ea240598a403cb98518c9d6303914432f76531284f7b",
+      "scripts/validate_candidate_science.py": "9c668e5beacbd1005f300f0e0776bc0eef5a18ef19e2e835527c6654ec7450da",
+      "scripts/validate_candidates.mjs": "5d9c4ed198517b04386760306d4826463c3f8e2f8443d0c65157f1d9da978721",
+      "scripts/validate_convergence.py": "191f32d4c09ebd01307819e0f49f48c988965504afe4746829dbc47a9840832f",
+      "scripts/validate_data.mjs": "bc696570e89183f46a6894cac4655025ff6a6fdf0171163f83ffd87de068052c",
+      "scripts/validate_spatial.mjs": "b32b90fcc6b9011ff135cd4a2665e1147a432241e51ddbdadee273978d750cce",
+      "scripts/validate_uncertainty.mjs": "10a5d17e8ecd6ba274c75c1716db4bc931f6e574c4cd51603adf61ad4f164294",
+      "scripts/vendor_three.mjs": "88b215fc2967e011eecebff15db0ce9c230206abea54e759d2aafaf03c8dfe80",
+      "src/additions.css": "e5a6938edabbec73a4f320852254f322a825fa72642dbfde1d2d41fe35f42447",
+      "src/candidate-model.js": "9dbc4b024d6e786e211e35e82f03414257175f46d4b69d1ff74bb427fbbb5977",
+      "src/dashboard.js": "fc0fa3cf99dc1b6b2a10a0842e8b3a42c7a40827649db419ed17252a4aa9c70e",
+      "src/engine.js": "10778b2965ca8e2eaf4fe3244cc8dfb53155def2e4226cb020874acdcdbf342a",
+      "src/mission.js": "553fb958f6d23a5b887c6fe0dfda75a33b58825f477236f9ffed898eb3e72ed3",
+      "src/pilot.js": "cb8d4031f8d50c82f69bb1600a56f3e3ead69dba004c2b5cbb8752eee23d75ef",
+      "src/region-study.js": "f6449092b1c655f456e912fbc761b6aa357bf7fc81aeeb99db06c794f70a5c0a",
+      "src/robustness.js": "7e6678f15af5948d87707a020817f21dc5d109113329b37ec1968be335afa355",
+      "src/spatial-math.js": "812cf076bcc62e0fca72811b856386f90eaa5c1858cd6c5bc86790f2a1203874",
+      "src/spatial-view.js": "8dbf6069f81ae35ae3adf426d442b7fb5663e8a3b26d7008a5a7452723c8b242",
+      "src/spatial.css": "7923b9ed006794435863bd39ce292c477ec6743ac532b7e83ca0ee38a0cbf825",
+      "src/style.css": "dd8c3b9959d30579534c150e6152fce9606ded1279d809a1d2a507a2c698f6a4",
+      "src/vendor/OrbitControls.js": "e7fca2fe9e7670a828af9b28084669a5909445b7f36f1f26cee9bf8f2961c32c",
+      "src/vendor/THREE-LICENSE.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "src/vendor/three.core.js": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578",
+      "src/vendor/three.module.js": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341",
+      "src/vendor/manifest.json": "ce96131b66b8d0507c3d35fc196f2e6eed2227a9477f0a682c76481c7a0edd29",
+      "pilot.html": "3335f474909f0857c4ece6cd7c8a96a3db2b928ac9fb1d446ae300b42b839742"
+    },
+    "config": {
+      "startUTC": "2026-11-14T00:00:00Z",
+      "delay": 48,
+      "duration": 72,
+      "height": 2,
+      "maxDark": 12,
+      "minOverlap": 8
+    },
+    "derivedAt": "2026-11-11T05:38:03.230Z"
+  }
+}

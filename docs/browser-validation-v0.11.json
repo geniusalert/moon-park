@@ -1,0 +1,38 @@
+{
+  "build": "0.11.0",
+  "passed": true,
+  "reviewType": "Agent-operated browser verification; no accepted correspondence or human study result",
+  "checks": [
+    "Direct link selects Shackleton stereo confidence layer",
+    "Reference summary shows 97.3 percent strict support and 0.8 m median product difference",
+    "Recorded landmark audit flags one unsupported historical pair",
+    "Reference keyboard pick rejected with no pair change",
+    "Reference panel hides mission pair markers",
+    "Mission source restores both markers and prior measurements",
+    "Other area disables Shackleton reference and returns to mission source",
+    "Synthetic stereo light view loads, then quality layer returns",
+    "Existing recorded mission example remains 5.17 to 53.17 hours with active Earth trace",
+    "Both exports match all 73 current source hashes"
+  ],
+  "mobile": {
+    "viewportWidth": 390,
+    "documentWidth": 375,
+    "horizontalOverflow": false,
+    "selectedSource": "stereo",
+    "selectedLayer": "confidence"
+  },
+  "consoleWarningsAndErrors": [],
+  "receipts": [
+    {
+      "path": "docs/stereo-review-receipt-v0.11.json",
+      "softwareHashes": 73,
+      "verified": true
+    },
+    {
+      "path": "data/sample-decision-receipt.json",
+      "softwareHashes": 73,
+      "verified": true
+    }
+  ],
+  "acceptedCorrespondences": 0
+}

@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "checks": 84,
+  "entries": [
+    {
+      "siteId": "Site01",
+      "grid": [
+        401,
+        401
+      ],
+      "pixelM": [
+        4.988528678304238,
+        4.988528678304238
+      ],
+      "imageValidFraction": 0.4166702943389656,
+      "projectionRoundTripMaxM": 0.0,
+      "registrationStatus": "unmeasured"
+    },
+    {
+      "siteId": "Site04",
+      "grid": [
+        401,
+        401
+      ],
+      "pixelM": [
+        4.9900249376558605,
+        4.9900249376558605
+      ],
+      "imageValidFraction": 1.0,
+      "projectionRoundTripMaxM": 0.0,
+      "registrationStatus": "unmeasured"
+    },
+    {
+      "siteId": "Site11",
+      "grid": [
+        401,
+        401
+      ],
+      "pixelM": [
+        4.9900249376558605,
+        4.9900249376558605
+      ],
+      "imageValidFraction": 1.0,
+      "projectionRoundTripMaxM": 0.0,
+      "registrationStatus": "unmeasured"
+    }
+  ],
+  "scope": "Asset/grid/provenance checks only. No landmark correspondences, physical registration accuracy or independent review are established."
+}

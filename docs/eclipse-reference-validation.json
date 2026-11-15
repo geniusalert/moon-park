@@ -1,0 +1,206 @@
+{
+  "reference": "2025-09-07 total lunar eclipse; greatest eclipse 18:12:58 TD. Samples use UTC; this check verifies occurrence, not contact timing.",
+  "source": "https://eclipse.gsfc.nasa.gov/LEdecade/LEdecade2021.html",
+  "cases": [
+    {
+      "utc": "2025-09-07T16:00:00Z",
+      "unoccultedFraction": 1
+    },
+    {
+      "utc": "2025-09-07T16:05:00Z",
+      "unoccultedFraction": 0.972412109375
+    },
+    {
+      "utc": "2025-09-07T16:10:00Z",
+      "unoccultedFraction": 0.909423828125
+    },
+    {
+      "utc": "2025-09-07T16:15:00Z",
+      "unoccultedFraction": 0.830810546875
+    },
+    {
+      "utc": "2025-09-07T16:20:00Z",
+      "unoccultedFraction": 0.7392578125
+    },
+    {
+      "utc": "2025-09-07T16:25:00Z",
+      "unoccultedFraction": 0.63916015625
+    },
+    {
+      "utc": "2025-09-07T16:30:00Z",
+      "unoccultedFraction": 0.533935546875
+    },
+    {
+      "utc": "2025-09-07T16:35:00Z",
+      "unoccultedFraction": 0.42822265625
+    },
+    {
+      "utc": "2025-09-07T16:40:00Z",
+      "unoccultedFraction": 0.322998046875
+    },
+    {
+      "utc": "2025-09-07T16:45:00Z",
+      "unoccultedFraction": 0.220703125
+    },
+    {
+      "utc": "2025-09-07T16:50:00Z",
+      "unoccultedFraction": 0.12841796875
+    },
+    {
+      "utc": "2025-09-07T16:55:00Z",
+      "unoccultedFraction": 0.050537109375
+    },
+    {
+      "utc": "2025-09-07T17:00:00Z",
+      "unoccultedFraction": 0.00146484375
+    },
+    {
+      "utc": "2025-09-07T17:05:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:10:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:15:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:20:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:25:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:30:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:35:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:40:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:45:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:50:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T17:55:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:00:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:05:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:10:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:15:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:20:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:25:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:30:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:35:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:40:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:45:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:50:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T18:55:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:00:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:05:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:10:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:15:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:20:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:25:00Z",
+      "unoccultedFraction": 0
+    },
+    {
+      "utc": "2025-09-07T19:30:00Z",
+      "unoccultedFraction": 0.017578125
+    },
+    {
+      "utc": "2025-09-07T19:35:00Z",
+      "unoccultedFraction": 0.083251953125
+    },
+    {
+      "utc": "2025-09-07T19:40:00Z",
+      "unoccultedFraction": 0.168212890625
+    },
+    {
+      "utc": "2025-09-07T19:45:00Z",
+      "unoccultedFraction": 0.26416015625
+    },
+    {
+      "utc": "2025-09-07T19:50:00Z",
+      "unoccultedFraction": 0.3701171875
+    },
+    {
+      "utc": "2025-09-07T19:55:00Z",
+      "unoccultedFraction": 0.477294921875
+    },
+    {
+      "utc": "2025-09-07T20:00:00Z",
+      "unoccultedFraction": 0.58154296875
+    }
+  ],
+  "limitations": [
+    "Opaque spherical Earth and uniform solar disc. No atmospheric transmission or limb darkening.",
+    "Checks occurrence at a lunar surface point. NASA shadow contact times describe a different global quantity."
+  ]
+}

@@ -1,0 +1,11 @@
+node_modules/
+__pycache__/
+data/raw/
+
+release/
+data/pilot-records/
+
+data/verification-cache/
+.env
+.env.*
+!.env.example

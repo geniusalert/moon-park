@@ -1,0 +1,96 @@
+{
+  "originalSHA256": "071801f6163051ee1f7f7a15c1efc4dfbec2ae322d33dcda1094c7aa1b4c6994",
+  "restoredSHA256": "8f2bc357be6bc478ba8c7f8ecde2f7f8da8f8a47ea873e236671f1dbd023063b",
+  "scenarioConfig": {
+    "stepMinutes": 10,
+    "includeEclipses": false,
+    "startUTC": "2027-03-20T00:00:00Z",
+    "delay": 0,
+    "duration": 1,
+    "height": 2,
+    "maxDark": 12,
+    "minOverlap": 8,
+    "minSun": null,
+    "maxBlackout": null,
+    "modelPreference": "auto"
+  },
+  "uncertaintyCases": [
+    {
+      "bearing": 0,
+      "longitude": -137.1440154124448,
+      "latitude": -89.43836616685887,
+      "terrainElevationOffsetM": 0,
+      "resultId": "430509ef421b348e55ac1d435412a118879146d0cb16cac0049bac89073ca3f0",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    },
+    {
+      "bearing": 90,
+      "longitude": -137.07664964905592,
+      "latitude": -89.43902533686298,
+      "terrainElevationOffsetM": 0,
+      "resultId": "6856b009c76f0a5a726e3b9663960964ab41a3053d76cb21306b64464169d25d",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    },
+    {
+      "bearing": 180,
+      "longitude": -137.1440154124448,
+      "latitude": -89.4396852823079,
+      "terrainElevationOffsetM": 0,
+      "resultId": "cd3c9194d5bc0d67b8f0064b02fa0a9deec2f4481299baaeb16d02b878c82a44",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    },
+    {
+      "bearing": 270,
+      "longitude": -137.2113811758337,
+      "latitude": -89.43902533686298,
+      "terrainElevationOffsetM": 0,
+      "resultId": "cff481001ada8901487a04ced9b30956d24d36881c0ed8e133b53e8983cefb4d",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    },
+    {
+      "bearing": "relative terrain elevation -1 m",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "terrainElevationOffsetM": -1,
+      "resultId": "ccc92be797d2ecb5006e4a95e6daad6d486e1478bbd05f81d48c1e2d370bdfb9",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    },
+    {
+      "bearing": "relative terrain elevation 1 m",
+      "longitude": -137.14401541244482,
+      "latitude": -89.4390257245831,
+      "terrainElevationOffsetM": 1,
+      "resultId": "0555652f7fffa4ab8507f8293c34de29f6afb201935aca9f2290dd3906591889",
+      "sunHours": 0,
+      "earthHours": 0,
+      "longestCombined": 0,
+      "modelPass": false
+    }
+  ],
+  "checks": {
+    "sixTerrainCasesCompleted": true,
+    "cancellationDisplayed": true,
+    "cachedRetryCompleted": true,
+    "engineeringAssumptionsRestored": true,
+    "sourceIdentitiesMatched": true,
+    "uncertaintyReceiptsRecomputed": true,
+    "scenarioMetricsReproduced": true,
+    "alteredSourceIdentityRejected": true
+  },
+  "scope": "Observed browser controls, real worker jobs, actual exported/downloaded workspaces. No mocked job responses."
+}

@@ -1,0 +1,25 @@
+{
+  "source": "https://ssd.jpl.nasa.gov/api/horizons.api?format=json&COMMAND=%2710%27&OBJ_DATA=%27NO%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%270%2C-89%2C0%27&START_TIME=%272026-11-14%27&STOP_TIME=%272026-11-15%27&STEP_SIZE=%2730+m%27&QUANTITIES=%274%27&CSV_FORMAT=%27YES%27&ELEV_CUT=%27-90%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27",
+  "retrievedAt": "2026-11-10T19:11:01.295659+00:00",
+  "sha256": "54796b9be2fed59b3abcdc9ec8833a7a619ebe582e1ab5b6e337012684d165dc",
+  "parameters": {
+    "format": "json",
+    "COMMAND": "'10'",
+    "OBJ_DATA": "'NO'",
+    "MAKE_EPHEM": "'YES'",
+    "EPHEM_TYPE": "'OBSERVER'",
+    "CENTER": "'coord@301'",
+    "COORD_TYPE": "'GEODETIC'",
+    "SITE_COORD": "'0,-89,0'",
+    "START_TIME": "'2026-11-14'",
+    "STOP_TIME": "'2026-11-15'",
+    "STEP_SIZE": "'30 m'",
+    "QUANTITIES": "'4'",
+    "CSV_FORMAT": "'YES'",
+    "ELEV_CUT": "'-90'",
+    "APPARENT": "'AIRLESS'",
+    "TIME_TYPE": "'UT'"
+  },
+  "status": "raw-reference-not-validated",
+  "aiAssistance": "Acquisition script developed with AI assistance"
+}

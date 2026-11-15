@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {comparisonAtUTC,comparisonRects} from '../src/scene-comparison.js';
+const utc='2027-06-21T12:00:00Z';
+const entry=(id,samples=[{utc,sun:true,earth:false}])=>({point:{id,name:id},site:{id},result:{config:{height:5},samples}});
+test('3D comparison uses exact UTC from each independent result',()=>{const entries=[entry('a'),entry('b',[{utc:'2027-06-21T11:50:00Z'},{utc,sun:false,earth:true}]),entry('c')],out=comparisonAtUTC(entries,utc);assert.equal(out.length,3);assert.equal(out[0].sample.sun,true);assert.equal(out[1].sample.sun,false);assert.equal(out[1].index,1);assert.equal(out[1].height,5);assert.equal(out[2].site.id,'c');assert.notEqual(out[0].sample,out[1].sample);});
+test('missing data and off-grid samples are never replaced by another point or rounded',()=>{const out=comparisonAtUTC([entry('a'),entry('b',[{utc:'2027-06-21T12:10:00Z'}]),{point:{id:'c'},reason:'Missing terrain'}],utc);assert.equal(out[0].available,true);assert.equal(out[1].available,false);assert.match(out[1].reason,/exact sample/);assert.equal(out[1].sample,undefined);assert.equal(out[2].reason,'Missing terrain');assert.equal(comparisonAtUTC([entry('a')],null)[0].available,false);});
+test('split-view rectangles cover desktop and stacked mobile with no overlapping pixels',()=>{for(const [width,height]of [[1251,640],[390,1200]])for(const n of [1,2,3]){const rects=comparisonRects(width,height,n);assert.equal(rects.reduce((sum,r)=>sum+r.width*r.height,0),width*height);for(let i=1;i<n;i++)assert.equal(width<700?rects[i].y:rects[i].x,width<700?rects[i-1].y+rects[i-1].height:rects[i-1].x+rects[i-1].width);}assert.throws(()=>comparisonRects(100,100,4));});
+test('user Earth and Sun models are preserved byte-for-byte with source identities',()=>{const manifest=JSON.parse(readFileSync('data/models/manifest.json'));for(const name of ['earth.glb','sun.glb']){const record=manifest.models.find(r=>r.file===name),bytes=readFileSync('data/models/'+name);assert.equal(bytes.length,record.bytes);assert.equal(createHash('sha256').update(bytes).digest('hex'),record.sha256);assert.equal(bytes.subarray(0,4).toString(),'glTF');}});
+
+test('comparison preserves continuous-activity failures and input evidence without mutation',()=>{const input=entry('a');input.failures=['No continuous combined window fits the requested activity'];const before=structuredClone(input),output=comparisonAtUTC([input],utc)[0];assert.deepEqual(output.failures,input.failures);assert.deepEqual(input,before);});
