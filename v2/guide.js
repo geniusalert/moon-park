@@ -6,7 +6,7 @@ export function installGuide({context}){
  document.body.append(dialog);let stage='location',active='location',history=[],controller=null,epoch=0,opener;
  for(const [key,v]of Object.entries(HELP))$('v2HelpStage').add(new Option(v.title,key));
  function showContent(key){stage=HELP[key]?key:'location';const help=HELP[stage];$('v2HelpStage').value=stage;$('v2GuideTitle').textContent=help.title;$('v2GuideMeaning').textContent=help.meaning;$('v2GuideSteps').replaceChildren(...help.steps.map(t=>{const li=document.createElement('li');li.textContent=t;return li;}));$('v2GuideLimit').textContent=help.limit;}
- async function connection(){try{const r=await fetch('/api/ai/status');if(!r.ok)throw new Error();const s=await r.json();$('v2GuideConnection').textContent=s.configured?`${s.provider} · ${s.model}`:'AI needs a Meta key in .env. Step-by-step help works offline.';}catch{$('v2GuideConnection').textContent='AI service unavailable. Step-by-step help remains available.';}}
+ async function connection(){try{const r=await fetch('/api/ai/status');if(!r.ok)throw new Error();const s=await r.json();$('v2GuideConnection').textContent=s.configured?`${s.provider} · ${s.model}`:'AI is not configured for this deployment. Step-by-step help works offline.';}catch{$('v2GuideConnection').textContent='AI service unavailable. Step-by-step help remains available.';}}
  function open(key){opener=document.activeElement;showContent(key);if(!dialog.open)dialog.showModal();connection();}
  function busy(value){$('v2GuideSend').disabled=value;$('v2GuideNew').disabled=value;$('v2GuideCancel').hidden=!value;}
  function cancel(){++epoch;controller?.abort();controller=null;busy(false);}
