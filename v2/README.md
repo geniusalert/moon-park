@@ -1,6 +1,6 @@
-# Moon Park V2 — experimental 3D-first interface
+# Moon Park — V2 mission observatory
 
-Open `http://127.0.0.1:4182/v2/index.html` with the existing local service running. The current interface remains at `http://127.0.0.1:4182/`.
+Open `http://127.0.0.1:4173/` with the local service running. The V2 observatory is the main interface.
 
 The 3D scene fills the viewport. On desktop the collapsible left column uses about 30% of the width for inputs alone. Essential conditions float at the upper right. **Menu** contains scene views, comparisons, scientific detail, alternatives, exports and sources. Mission playback remains at the bottom; **Graphs** opens an optional, resizable horizon/timeline overlay. Graphs and the map start hidden. On narrow screens the inputs and conditions become drawers. Horizon/Timeline tabs show each chart at full width on phones.
 
